@@ -17,6 +17,7 @@ class CreatePubTablesTable extends Migration
             $table->bigIncrements('id');
             $table->string('pub_id');
             $table->string('title');
+            $table->string('bab_num')->nullable();
             $table->string('pdf')->nullable();
             $table->unsignedInteger('hal_pdf_first')->nullable();
             $table->unsignedInteger('hal_pdf_last')->nullable();

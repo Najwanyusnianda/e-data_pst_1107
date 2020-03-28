@@ -60,7 +60,7 @@
     <script src="{{asset('vendor/jquery.nicescroll.min.js')}}"></script>
     <script src="{{asset('vendor/bootstrap/js/bootstrap.min.js')}}"></script>
 
-    <script src="{{asset('vendor/popper.js')}}"></script>
+    <!--<script src="{{asset('vendor/popper.js')}}"></script>-->
 
     <script src="{{asset('vendor/stisla/js/stisla.js')}}"></script>
   

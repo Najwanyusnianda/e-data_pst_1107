@@ -20,8 +20,10 @@ class PubTableController extends Controller
             'title'=>$request->tableTitle,
             'hal_pdf_first'=>$request->hal_pdf_first,
             'hal_pdf_last'=>$request->hal_pdf_last,
+            'bab_num'=>$request->babNumberForm,
             'pdf'=>$pdfFile
         ]);
 
     }
+    
 }

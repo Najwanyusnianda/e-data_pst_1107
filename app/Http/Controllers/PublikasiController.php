@@ -71,7 +71,7 @@ class PublikasiController extends Controller
         return($dt);
     }
 
-
+//input tabel ui
     public function publicationTableDetail($id){
         $id_pub=$id;
 

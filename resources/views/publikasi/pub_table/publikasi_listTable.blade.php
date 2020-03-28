@@ -91,7 +91,7 @@
                         <div class="col-md-6">
                             <div class="card">
                                 <div class="card-header">
-                                    <h6 id="Bab-title">Bab {{$i+1}}</h6>
+                                    <h6 id="Bab-title" bab-data="{{$i+1}}">Bab <span>{{$i+1}}</span> </h6>
                                     <div class="ml-auto">
                                         
                                         <a href="#" class="btn btn-icon btn-primary addTableButton" >
@@ -162,8 +162,12 @@
             e.preventDefault();
             var tableListheaderComponent=$(this).parent().parent();
             //console.log(tableListheaderComponent.find('#Bab-title').html());
+
+            var babNumber=tableListheaderComponent.find('#Bab-title').attr('bab-data');
+            console.log(babNumber);
             var judulModal="Form Tambah Indeks Tabel Baru - "+tableListheaderComponent.find('#Bab-title').html();
             $('#addTableFormModal .modal-title').html(judulModal);
+            $('#babNumberForm').val(babNumber);
             addTableForm.modal('show');
         
         })

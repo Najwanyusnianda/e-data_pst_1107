@@ -3,7 +3,11 @@
     <p class="text-muted">Menambah Daftar Tabel Baru Untuk Publikasi</p>
     <div class="card">
         <div class="card-body">
-
+            <div class="form-group">
+              
+                <input type="hidden" class="form-control" 
+                    placeholder="" id="babNumberForm" name="babNumberForm">
+            </div>
             <div class="form-group">
                 <label for="title">Judul Tabel</label>
                 <input type="text" class="form-control" id="title"

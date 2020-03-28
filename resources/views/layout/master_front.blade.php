@@ -8,15 +8,15 @@
     <title>Document</title>
     <!-- General CSS Files -->
 
-    <link rel="stylesheet" href="{{asset('vendor/bootstrap/css/bootstrap.min.css')}}">
-    <link rel="stylesheet" href="{{asset('vendor/fontawesome/css/all.min.css')}}">
+    <link rel="stylesheet" href="{{asset('vendor/bootstrap/css/bootstrap.min.css',true)}}">
+    <link rel="stylesheet" href="{{asset('vendor/fontawesome/css/all.min.css',true)}}">
 
     <!-- CSS Libraries -->
 
     <!-- Template CSS -->
 
-    <link rel="stylesheet" href="{{asset('vendor/stisla/css/style.css')}}">
-    <link rel="stylesheet" href="{{asset('vendor/stisla/css/components.css')}}">
+    <link rel="stylesheet" href="{{asset('vendor/stisla/css/style.css',true)}}">
+    <link rel="stylesheet" href="{{asset('vendor/stisla/css/components.css',true)}}">
 </head>
 <style>
     html {
@@ -129,13 +129,13 @@
 
 
     <!-- General JS Scripts -->
-    <script src="{{asset('vendor/jquery-3.4.1.min.js')}}"></script>
-    <script src="{{asset('vendor/jquery.nicescroll.min.js')}}"></script>
-    <script src="{{asset('vendor/bootstrap/js/bootstrap.min.js')}}"></script>
+    <script src="{{asset('vendor/jquery-3.4.1.min.js',true)}}"></script>
+    <script src="{{asset('vendor/jquery.nicescroll.min.js',true)}}"></script>
+    <script src="{{asset('vendor/bootstrap/js/bootstrap.min.js',true)}}"></script>
 
-    <script src="{{asset('vendor/popper.js')}}"></script>
+    <script src="{{asset('vendor/popper.js',true)}}"></script>
 
-    <script src="{{asset('vendor/stisla/js/stisla.js')}}"></script>
+    <script src="{{asset('vendor/stisla/js/stisla.js',true)}}"></script>
 
 
     <!-- JS Libraies -->
@@ -144,8 +144,8 @@
 
     <!-- Template JS File -->
 
-    <script src="{{asset('vendor/stisla/js/scripts.js')}}"></script>
-    <script src="{{asset('vendor/stisla/js/custom.js')}}"></script>
+    <script src="{{asset('vendor/stisla/js/scripts.js',true)}}"></script>
+    <script src="{{asset('vendor/stisla/js/custom.js',true)}}"></script>
 
 </body>
 

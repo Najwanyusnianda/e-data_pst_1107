@@ -1,5 +1,7 @@
 <?php
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -14,26 +16,24 @@ use Illuminate\Support\Facades\Route;
 
 
 
+Auth::routes();
 
-
-
-
-Route::name('admin.')->group(function () {
-    //Publikasi
-    Route::get('backend','PublikasiController@index')->name('publikasi_index');
-    Route::get('backend/publikasi_table_detail/{id}','PublikasiController@publicationTableDetail')->name('pubTable.detail');
-    Route::post('backend/publikasi/post','PublikasiController@postPublikasi')->name('pubCollection.store');
-    Route::get('backend/table/publikasi','PublikasiController@publicationListTable')->name('pubCollection.table');
-
-    //Tabel Publikasi
-    Route::post('backend/pub_table/{pub_id}','PubTableController@create')->name('pubTable_create');
-
-
-
-
+Route::group(['middleware' => ['auth']], function () {
+    //
+    Route::name('admin.')->group(function () {
+        //Publikasi
+        Route::get('backend/dashboard','DashboardController@index')->name('dashboard_index');
+        Route::get('backend/publikasi','PublikasiController@index')->name('publikasi_index');
+        Route::get('backend/publikasi/publikasi_table_detail/{id}','PublikasiController@publicationTableDetail')->name('pubTable.detail');
+        Route::post('backend/publikasi/post','PublikasiController@postPublikasi')->name('pubCollection.store');
+        Route::get('backend/table/publikasi','PublikasiController@publicationListTable')->name('pubCollection.table');
     
-  
+        //Tabel Publikasi
+        Route::post('backend/pub_table/{pub_id}','PubTableController@create')->name('pubTable_create');    
+    });
 });
+
+
 
 
 /*Route::get('/', function () {
@@ -42,3 +42,9 @@ Route::name('admin.')->group(function () {
 Route::name('home.')->group(function () {
     Route::get('/','HomeController@index')->name('home');
 });
+
+
+
+
+
+

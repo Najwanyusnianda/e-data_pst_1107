@@ -47,16 +47,27 @@
                                             </tr>
                                             <tr>
                                                 
-                                                <td>Jumlah Bab</td>
+                                                <td><h6>Jumlah Bab</h6></td>
                                                 <td>:</td>
                                                 <td>
+
                                                     @if (!empty($pub_detail->n_bab))
-                                                        {{$pub_detail->n_bab}}
-                                                        &nbsp;
+                                                    <div id="n_bab_container">
+                                                        <h6> {{$pub_detail->n_bab}}     &nbsp;
+                                                            <a href="#" id="inputHalBtn" class="btn btn-icon icon-left btn-warning pt-0 pb-0 pl-1 pr-1">
+                                                                <i class="fas fa-edit btn-sm"></i> 
+                                               
+                                                            </a>
+                                                        </h6>
+                                                    </div>
+
+                                                       
+                                                     
+
             
                                                     @else
-                                                    <div class="container" id="">
-                                                        <strong>Belum diinput</strong>
+                                                    <div id="n_bab_container">
+                                                        <strong style="color:red">Belum diinput</strong>
                                                         <a href="#" id="inputHalBtn" class="btn btn-icon icon-left btn-warning pt-0 pb-0 pl-1 pr-1">
                                                             <i class="fas fa-edit btn-sm"></i> 
                                            
@@ -98,6 +109,21 @@
                                             <i class="fas fa-plus"></i>
                                         </a>
                                     </div>
+                                </div>
+                                <div class="card-body">
+                                    <ul class="list-group">
+
+                                        @forelse ($pub_table as $item)
+                                            @if ($item->bab_num== $i+1)
+                                            <li class="list-group-item">
+                                                {{$item->title}}
+                                            </li>
+                                            @endif
+                                        @empty
+                                            
+                                        @endforelse
+                                    </ul>
+
                                 </div>
                                 
     
@@ -171,6 +197,8 @@
             addTableForm.modal('show');
         
         })
+
+        var inputHalBtn=$()
     })
 
     </script>    

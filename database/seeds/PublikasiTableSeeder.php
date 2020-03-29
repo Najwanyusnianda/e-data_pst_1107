@@ -15,8 +15,8 @@ class PublikasiTableSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('kegiatan_pengadaans')->delete();
-        $json= File::get("database/data/kegiatan_pengadaan.json");
+        DB::table('publikasis')->delete();
+        $json= File::get("database/json/pub1107.json");
         $data=json_decode($json);
         $dt=$data->data[1];
         foreach ($dt as $obj) {
@@ -29,6 +29,7 @@ class PublikasiTableSeeder extends Seeder
                 'size'=>$obj->size,
                 'cover'=>$obj->cover,
                 'pdf'=>$obj->pdf,
+                'n_bab'=>'8',
                 'isTableComplete'=>0           
             ));
 

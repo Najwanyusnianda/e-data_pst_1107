@@ -14,7 +14,7 @@
     <div class="container">
         <div class="card">
             <div class="card-header">
-                <button class="btn btn-primary btn-flat ml-auto" id="updatePublicationList">Update</button>
+                <button class="btn btn-primary btn-flat ml-auto disabled" id="updatePublicationList">Load data</button>
             </div>
             <div class="card-body table-responsive">
                 <table class="table table-condensed" id="daftar_publikasi">

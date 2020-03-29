@@ -24,6 +24,9 @@ class PubTableController extends Controller
             'pdf'=>$pdfFile
         ]);
 
+
+        return redirect()->back();
+
     }
     
 }

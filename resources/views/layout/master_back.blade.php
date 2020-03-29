@@ -10,16 +10,16 @@
     <title>Document</title>
     <!-- General CSS Files -->
 
-    <link rel="stylesheet" href="{{asset('vendor/bootstrap/css/bootstrap.min.css',true)}}">
-    <link rel="stylesheet" href="{{asset('vendor/fontawesome/css/all.min.css',true)}}">
+    <link rel="stylesheet" href="{{asset('vendor/bootstrap/css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{asset('vendor/fontawesome/css/all.min.css')}}">
 
     <!-- CSS Libraries -->
 
     <!-- Template CSS -->
 
-    <link rel="stylesheet" href="{{asset('vendor/stisla/css/style.css',true)}}">
-    <link rel="stylesheet" href="{{asset('vendor/stisla/css/components.css',true)}}">
-    <link rel="stylesheet" href="{{asset('vendor/datatables/datatables.min.css',true)}}">
+    <link rel="stylesheet" href="{{asset('vendor/stisla/css/style.css')}}">
+    <link rel="stylesheet" href="{{asset('vendor/stisla/css/components.css')}}">
+    <link rel="stylesheet" href="{{asset('vendor/datatables/datatables.min.css')}}">
     @yield('style')
 </head>
 
@@ -56,11 +56,11 @@
     @yield('modals')
 
     <!-- General JS Scripts -->
-    <script src="{{asset('vendor/jquery-3.4.1.min.js',true)}}"></script>
-    <script src="{{asset('vendor/jquery.nicescroll.min.js',true)}}"></script>
-    <script src="{{asset('vendor/bootstrap/js/bootstrap.min.js',true)}}"></script>
+    <script src="{{asset('vendor/jquery-3.4.1.min.js')}}"></script>
+    <script src="{{asset('vendor/jquery.nicescroll.min.js')}}"></script>
+    <script src="{{asset('vendor/bootstrap/js/bootstrap.min.js')}}"></script>
 
-    <!--<script src="{{asset('vendor/popper.js',true)}}"></script>-->
+     <script src="{{asset('vendor/popper.js')}}"></script>
 
     <script src="{{asset('vendor/stisla/js/stisla.js',true)}}"></script>
   
@@ -71,10 +71,10 @@
 
     <!-- Template JS File -->
 
-    <script src="{{asset('vendor/stisla/js/scripts.js',true)}}"></script>
-    <script src="{{asset('vendor/stisla/js/custom.js',true)}}"></script>
+    <script src="{{asset('vendor/stisla/js/scripts.js')}}"></script>
+    <script src="{{asset('vendor/stisla/js/custom.js')}}"></script>
     
-    <script src="{{asset('vendor/datatables/datatables.min.js',true)}}"></script>
+    <script src="{{asset('vendor/datatables/datatables.min.js')}}"></script>
 
     <div id="ascrail2000" class="nicescroll-rails nicescroll-rails-vr"
         style="width: 8px; z-index: 892; cursor: default; position: fixed; top: 0px; left: -8px; height: 576px; opacity: 0; display: block;">

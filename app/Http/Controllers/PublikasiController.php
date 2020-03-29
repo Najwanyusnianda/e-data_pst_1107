@@ -61,7 +61,7 @@ class PublikasiController extends Controller
         ->addColumn('action',function($publikasi){
          
             $detail_link=route('admin.pubTable.detail',[$publikasi->pub_id]);
-            $detail='<a href="'.$detail_link.'" class="btn btn-icon icon-left btn-info"><i class="fas fa-table"></i>Detail Tabel </a>';
+            $detail='<a href="'.$detail_link.'" class="btn btn-icon icon-left btn-light"><i class="fas fa-table"></i>Detail Tabel </a>';
             return($detail);
         })
         ->addIndexColumn()

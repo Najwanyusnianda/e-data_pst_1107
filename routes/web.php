@@ -16,12 +16,18 @@ use Illuminate\Support\Facades\Auth;
 
 
 
+
 Auth::routes();
 
+
 Route::group(['middleware' => ['auth']], function () {
-    //
+
+    Route::get('backend', function () {
+        return redirect()->route('admin.dashboard_index');
+    });
     Route::name('admin.')->group(function () {
         //Publikasi
+
         Route::get('backend/dashboard','DashboardController@index')->name('dashboard_index');
         Route::get('backend/publikasi','PublikasiController@index')->name('publikasi_index');
         Route::get('backend/publikasi/publikasi_table_detail/{id}','PublikasiController@publicationTableDetail')->name('pubTable.detail');
@@ -40,7 +46,7 @@ Route::group(['middleware' => ['auth']], function () {
     return view('welcome');
 });*/
 Route::name('home.')->group(function () {
-    Route::get('/','HomeController@index')->name('home');
+    Route::get('/','HomeController@index')->name('home')->middleware('guest');
 });
 
 

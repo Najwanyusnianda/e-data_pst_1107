@@ -36,46 +36,104 @@
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td>Tanggal Rilis</td>
-                                                <td>:</td>
+                                                <td width=40%>Tanggal Rilis</td>
+                                                <td width=10%>:</td>
                                                 <td>{{$pub_detail->release_date}}</td>
                                             </tr>
                                             <tr>
                                                 <td>Tanggal Update</td>
                                                 <td>:</td>
-                                            <td>{{$pub_detail->update_date}}</td>
+                                            <td>{{$pub_detail->update_date ?? 'tidak ada'}}</td>
                                             </tr>
                                             <tr>
-                                                
-                                                <td><h6>Jumlah Bab</h6></td>
-                                                <td>:</td>
-                                                <td>
-
-                                                    @if (!empty($pub_detail->n_bab))
-                                                    <div id="n_bab_container">
-                                                        <h6> {{$pub_detail->n_bab}}     &nbsp;
-                                                            <a href="#" id="inputHalBtn" class="btn btn-icon icon-left btn-warning pt-0 pb-0 pl-1 pr-1">
-                                                                <i class="fas fa-edit btn-sm"></i> 
-                                               
+                                                <form action="" method="POST">
+                                                    <td>Jumlah Bab</td>
+                                                    <td>:</td>
+                                                    <td>
+    
+                                                        @if (!empty($pub_detail->n_bab))
+    
+                                                        <div class="n_bab_container">
+                             
+                                                               {{$pub_detail->n_bab}} 
+    
+                                                        </div>
+                                                        <div class="n_bab_form_container" style="display:none">
+                                                      
+                                                                <input type="text" class="form-control" id="n_bab"
+                                                                    value="{{$pub_detail->n_bab}}" name="n_bab">
+    
+                                                            </td>
+                                                            <td width=10%>
+    
+                                                            </td>
+                                                        </div>
+    
+    
+    
+                                                           
+                                                         
+    
+                
+                                                        @else
+                                                        <div class="n_bab_container">
+                                                            <strong style="color:red">Belum diinput</strong>
+                                                            <a href="#" id="inputHalBtn"
+                                                                class="btn btn-icon icon-left btn-warning pt-0 pb-0 pl-1 pr-1">
+                                                                <i class="fas fa-edit btn-sm"></i>
+    
                                                             </a>
-                                                        </h6>
-                                                    </div>
-
-                                                       
-                                                     
-
-            
-                                                    @else
-                                                    <div id="n_bab_container">
-                                                        <strong style="color:red">Belum diinput</strong>
-                                                        <a href="#" id="inputHalBtn" class="btn btn-icon icon-left btn-warning pt-0 pb-0 pl-1 pr-1">
-                                                            <i class="fas fa-edit btn-sm"></i> 
-                                           
+                                                        </div>
+                                                        <div class="n_bab_form_container" style="display:none">
+    
+                                                            <input type="text" class="form-control" id="n_bab" value=""
+                                                                name="n_bab">
+    
+                                                            </td>
+                                                            <td width=10%>
+    
+                                                            </td>
+                                                        </div>
+                                                        @endif
+                                                    </td>
+                                                    <td>
+                                                        @if (!empty($pub_detail->n_bab))
+                                                        <div class="n_bab_container" >
+                                                            <a href="#" id="inputHalBtn"
+                                                            class="btn btn-icon icon-left btn-warning pt-0 pb-0 pl-1 pr-1">
+                                                            <i class="fas fa-edit btn-sm"></i>
+    
+                                                            </a>
+                                                        </div>
+                                                        <div class="n_bab_form_container" style="display:none">
+                                                        <a href="#" id="submitHalBtn"
+                                                            class="btn btn-icon icon-left btn-warning pt-0 pb-0 pl-1 pr-1">
+                                                            submit
+    
                                                         </a>
-                                                    </div>
-            
-                                                    @endif
-                                                </td>
+                                                        </div> 
+    
+                                                        @else
+    
+                                                        <div class="n_bab_container">
+                                                            <a href="#" id="inputHalBtn"
+                                                                class="btn btn-icon icon-left btn-warning pt-0 pb-0 pl-1 pr-1">
+                                                                <i class="fas fa-edit btn-sm"></i>
+    
+                                                            </a>
+                                                        </div>
+                                                        <div class="n_bab_form_container" style="display:none">
+                                                            <a href="#" id="submitHalBtn"
+                                                                class="btn btn-icon icon-left btn-warning pt-0 pb-0 pl-1 pr-1">
+                                                                submit
+    
+                                                            </a>
+                                                        </div>
+                                                        @endif
+    
+                                                    </td>
+                                                </form>
+
                                             </tr>
                                         </tbody>
                                       </table>
@@ -198,7 +256,29 @@
         
         })
 
-        var inputHalBtn=$()
+
+        //ju,lah bab event
+        var inputHalBtn=$('#inputHalBtn');
+        var submitHalBtn=$('#submitHalBtn');
+        var n_bab_container=$('.n_bab_container');
+        var n_bab_form_container=$('.n_bab_form_container');
+        
+        inputHalBtn.click(function(e){
+            e.preventDefault();
+            n_bab_container.css('display','none');
+            n_bab_form_container.css('display','inline');
+
+        })
+       
+        submitHalBtn.click(function(e){
+            e.preventDefault();
+            n_bab_container.css('display','inline');
+            n_bab_form_container.css('display','none');
+
+  
+
+        });
+
     })
 
     </script>    

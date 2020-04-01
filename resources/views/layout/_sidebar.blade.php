@@ -17,7 +17,7 @@
             <li class="dropdown {{Request::is('backend/publikasi/*') || Request::is('backend/publikasi') ? 'active' : ''}}">
                 <a href="#" class="nav-link has-dropdown " data-toggle="dropdown"><i
                         class="fas fa-columns"></i> <span>Input Daata</span></a>
-                <ul class="dropdown-menu" style="" >
+                <ul class="dropdown-menu"  >
                 <li class="{{Request::is('backend/publikasi/*') || Request::is('backend/publikasi') ? 'active' : ''}}"><a class="nav-link " href="{{route('admin.publikasi_index')}}">Tabel Publikasi</a></li>
                    <!-- <li><a class="nav-link" href="#">Transparent Sidebar</a></li>
                     <li><a class="nav-link" href="#">Top Navigation</a></li>-->

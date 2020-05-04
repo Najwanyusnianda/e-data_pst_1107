@@ -9,17 +9,22 @@
         
     </style>
 @endsection
+@section('section_header')
+    <h1>Detail Publikasi</h1>
+    <div class="section-header-breadcrumb">
+      <div class="breadcrumb-item active"><a href="#">Input Data</a></div>
+      <div class="breadcrumb-item"><a href="#">Publikasi</a></div>
+      <div class="breadcrumb-item">Detail Publikasi</div>
+    </div>
+@endsection
 
 @section('content')
+<h2 class="section-title">Detail Publikasi</h2>
+<p class="section-lead">
+    Detail Publikasi
+</p>
     <div class="container">
         <div class="row-12">
-
-            <div class="section-body">
-                <h2 class="section-title">Detail Publikasi</h2>
-                <p class="section-lead">
-                    Detail Publikasi
-                </p>
-  
                 <div class="card ">
                     <div class="card-header">
                         <h5>{{$pub_detail->title}}</h5>   
@@ -143,7 +148,7 @@
     
                     </div>
                 </div>
-            </div>
+           
 
             <div class="section-body">
                 <h2 class="section-title">Daftar Tabel</h2>
@@ -176,43 +181,48 @@
                                     </div>
                                 </div>
                             <div class="collapse" id="bab{{$i+1}}" style="">
-                                    <div class="card-body">
+                                    <div class="card-body table-responsive">
                                         <table class="table">
                                             <thead>
                                                 <tr>
-                                                    <th>
+
+                                                    <th width="70%">
                                                         Judul
                                                     </th>
-                                                    <th>
+                                                    <!--<th>
                                                         Data
-                                                    </th>
-                                                    <th>
+                                                    </th>-->
+                                                    <th width="30%">
                                                         Aksi
                                                     </th>
+                                                
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                            @forelse ($pub_table as $item)
+                                            @forelse ($pub_table as $key=>$item)
                                                 @if ($item->bab_num== $i+1)
                                                     <tr>
-                                                        <td>{{$item->title}}</td>
-                                                        <td>
+                                                 
+                                                        <td><small class="font-weight-light"><span href="#" class="">{{$item->title}}</span></small> </td>
+                                                        <!--<td>
                                                             <a href="{{url('/'.$item->filepath)}}" class="btn btn-danger btn-sm btn-icon">
                                                                 <i class="fa fa-file-pdf"></i>
                                                             <small>pdf</small>
                                                             </a>
     
-                                                        </td>
+                                                        </td>-->
                                                         <td>
                                                             <div class="buttons">
-                                                            <a href="#" class="edit_table_form" data-id="{{$item->id}}">
+                                                            <a href="#" class="edit_table_form text-decoration-none text-warning" data-id="{{$item->id}}">
                                                                     <i class="far fa-edit"></i>
                                                                 </a>
-                                                                <a href="#" class="">
+                                                                <a href="#" class="text-decoration-none text-danger">
                                                                     <i class="fas fa-trash-alt"></i>
                                                                 </a>
+                                                                <a href="#" class="text-decoration-none text-info text-bold"><i class="fas fa-chevron-right fa-lg"></i></a>
                                                             </div>
                                                         </td>
+                               
                                                     </tr>
                                                 @endif
                                             @empty
@@ -234,10 +244,10 @@
                     </div>
 
                     @else
-                    <div class="alert alert-warning" role="alert">
-                        <p>
+                    <div class="alert alert-info" role="alert">
+                        <h5>
                             Jumlah bab belum didefinisikan
-                        </p>
+                        </h5>
                       </div>
                     @endif
 
@@ -314,7 +324,7 @@ function handleFileInput(){
         var files = [];
         for (var i = 0; i < $(this)[0].files.length; i++) {
             var filename=$(this)[0].files[i].name;
-            filename=(filename).replace(/(.{8})..+/, "$1…");
+            filename=(filename).replace(/(.{20})..+/, "$1…");
 
             files.push('<span class="badge badge-info">'+filename+'</span>');
         }
@@ -347,7 +357,7 @@ function handleFileInput(){
 
             var babNumber=tableListheaderComponent.find('#Bab-title').attr('bab-data');
             console.log(babNumber);
-            var judulModal="Form Tambah Indeks Tabel Baru - "+tableListheaderComponent.find('#Bab-title').html();
+            var judulModal="Form Tambah Tabel Publikasi - "+tableListheaderComponent.find('#Bab-title').html();
             $('#addTableFormModal .modal-title').html(judulModal);
             //$('#babNumberForm').val(babNumber);
 

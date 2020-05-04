@@ -1,6 +1,7 @@
 <?php
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Artisan;
 
 
 /*
@@ -56,6 +57,17 @@ Route::group(['middleware' => ['auth']], function () {
 });*/
 Route::name('home.')->group(function () {
     Route::get('/','HomeController@index')->name('home');
+    Route::get('/faq','HomeController@faqIndex')->name('faq');
+
+    #### search data $$$
+
+    Route::get('/{subject_id}/subject_index','SearchEngineController@subject_detail')->name('subject_detail');
+    Route::get('/result?={keyword}','SearchEngineController@search_result_index')->name('seach_index');
+    Route::post('/search/post','SearchEngineController@post_search')->name('seach_post');
+
+    #---services--
+    Route::get('/table/keyword={keyword}','SearchEngineController@searchTable')->name('seach_result.table');
+    
 });
 
 

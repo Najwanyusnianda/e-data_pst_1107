@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Publikasi;
 use App\PubTable;
 use App\PubTableFiles;
+use App\SubjectTable;
 
 use Yajra\DataTables\Facades\DataTables as DataTables;
 
@@ -16,7 +17,7 @@ class PublikasiController extends Controller
     public function index(Request $request){
         if($request->has("data")){
             if($request->data == "success"){
-                $request->session()->flash('pub_add_success', 'Task was successful!');
+                $request->session()->flash('pub_add_success', 'Publikasi berhasil ditambahkan');
                 //Session::flash('message', "Publikasi Berhasil Ditambahkan");
                 return redirect()->route('admin.publikasi_index');
             }
@@ -28,9 +29,23 @@ class PublikasiController extends Controller
 
     public function publicationTableDetail($id){
         $id_pub=$id;
-
+        $pubTableGroup=[];
+        $daftar_subject=SubjectTable::all();
         $publikasi_detail=Publikasi::where('pub_id',$id_pub)->first();
-        $publikasi_table=PubTable::where('pub_id',$id_pub)
+
+        $n_bab=(int)$publikasi_detail->n_bab;
+        for ($i=0; $i <$n_bab ; $i++) { 
+            # code...
+            $pubTableGroup[$i]=PubTable::where('pub_tables.type','publikasi')
+            ->where('bab_num',$i+1)
+            ->where('pub_tables.type_id',$id_pub)
+            ->leftJoin('pub_table_files','pub_tables.id','=','pub_table_files.pub_table_id')
+            ->select('pub_tables.*','pub_table_files.*','pub_tables.id AS id','pub_table_files.id AS file_id')
+            ->simplePaginate(5);
+        }
+
+        $publikasi_table=PubTable::where('pub_tables.type','publikasi')
+        ->where('pub_tables.type_id',$id_pub)
         ->leftJoin('pub_table_files','pub_tables.id','=','pub_table_files.pub_table_id')
         ->select('pub_tables.*','pub_table_files.*','pub_tables.id AS id','pub_table_files.id AS file_id')
         ->get();
@@ -39,13 +54,16 @@ class PublikasiController extends Controller
        // $publikasi_table_files=PubTableFiles::where('type','pdf')->get();
 
         return view('publikasi.pub_table.publikasi_listTable')
+        ->with('daftar_subject',$daftar_subject)
         ->with('pub_table',$publikasi_table)
         ->with('pub_detail',$publikasi_detail)
         ->with('id',$id);
     }
 
  //post ------------------------------------------------------------------------------>
-    public function postPublikasi(Request $request){
+    
+            ////get FROM API______________________
+        public function postPublikasi(Request $request){
         
         $collection=$request->pubCollection;
       
@@ -73,7 +91,10 @@ class PublikasiController extends Controller
                 'cover'=>$collection['cover'],
                 'pdf'=>$collection['pdf'],
                 'release_date'=>$collection['sch_date'] ?? \Carbon\Carbon::now(),
-                'update_date'=>$collection['rl_date'], 
+                'update_date'=>$collection['rl_date'],
+                'abstract'=>$collection['abstract'],
+                'kat_no'=>$collection['kat_no'],
+                'pub_no'=>$collection['pub_no'] 
             ]);
             return response()->json(['url'=>url('/backend/publikasi')]);
         }
@@ -88,7 +109,7 @@ class PublikasiController extends Controller
         $publikasi->update([
             'n_bab'=>$request->n_bab_value
         ]);
-        dd($publikasi);
+        //dd($publikasi);
     }
 
 
@@ -119,7 +140,7 @@ class PublikasiController extends Controller
         ->addColumn('action',function($publikasi){
          
             $detail_link=route('admin.pubTable.detail',[$publikasi->pub_id]);
-            $detail='<a href="'.$detail_link.'" class="btn btn-icon icon-left btn-secondary"><i class="fas fa-table"></i>Detail Tabel </a>';
+            $detail='<a href="'.$detail_link.'" class="btn btn-icon icon-left btn-info"><i class="fas fa-table"></i>Detail Tabel </a>';
             return($detail);
         })
         ->addIndexColumn()

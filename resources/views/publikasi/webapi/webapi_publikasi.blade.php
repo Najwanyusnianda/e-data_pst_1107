@@ -56,7 +56,7 @@
 
 @section('modals')
     <!-- loading modal-->
-<div class="modal fade loadingModal" tabindex="-1" role="dialog" id="loadingModal">
+<div class="modal fade loadingModal" tabindex="-1" role="dialog" id="loadingModal" data-backdrop="static" data-keyboard="false">
     <div class="modal-dialog modal-dialog modal-md modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-header">
@@ -64,7 +64,7 @@
             </div>
             <div class="modal-body text-center">
                 @include('misc.loadingBootstrap')
-                <h3>Mengambil data dari Web API...</h3>
+                <h3 id="loading_text_api">Mengambil data dari Web API...</h3>
                 <p><small class="text-muted ">Mohon Bersabar</small></p>
                 
                 
@@ -74,7 +74,7 @@
 </div>
 
 
-<div class="modal fade loadingModalSubmit" tabindex="-1" role="dialog" id="loadingModalSubmit">
+<div class="modal fade loadingModalSubmit" tabindex="-1" role="dialog" id="loadingModalSubmit" data-backdrop="static" data-keyboard="false">
     <div class="modal-dialog modal-dialog modal-md modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-header">
@@ -94,7 +94,7 @@
 
 @section('script')
 <script>
-     var $loading = $('#loadingModal')
+     /*var $loading = $('#loadingModal')
         //Attach the event handler to any element
         $loading.modal('hide')
     $(document)
@@ -105,20 +105,25 @@
         .ajaxStop(function () {
             //got response so hide the loading image
             $loading.modal('hide')
-        });
+        });*/
       
 </script>
 <script>
     $(document).ready(function () {
 
 
+        var $loading = $('#loadingModal')
 
+        //Attach the event handler to any element
+        $loading.modal('hide')
 
         var pub_collection=[];
         var page_link=$('#page_link');
         var year_select=$('#year_select');
         
-        var pub_ids={!!$pub_ids !!};
+        var pub_ids=@json($pub_ids ?? '', JSON_PRETTY_PRINT);
+        console.log(pub_ids);
+        
       
         
         //function getAllData() {
@@ -126,21 +131,35 @@
        
            
 
-        function getPubApiCollection(page="1") {
+        function getPubApiCollection(page=1) {
             var year="{{$year}}";
             console.log(year);
+            var $loading = $('#loadingModal');
                 
-            
+                var paged=page.toString();
                 var domain = "1107";
                 var api_key = "9728004fed484ca5b90eb484730032ea";
-                var api_url = 'https://webapi.bps.go.id/v1/api/list/?model=publication&domain=' + domain +'&year=' + year + '&key=' + api_key; 
-                $.get(api_url, function (result) {
-                        // do something
-                        pub_collection=pub_collection.concat(result.data[1])
-                        if (page < result.data[0].pages) {
-                            console.log("page:"+page);
+                var api_url = 'https://webapi.bps.go.id/v1/api/list/?model=publication&domain=' + domain +'&year=' + year + '&key=' + api_key+'&page='+paged; 
+                
+                $.ajax({
+                    url: api_url,
+                    type: "GET",
+                    dataType: "json",
+                    beforeSend: function(){
+                        $loading.modal('show');
+                        
+                    },
+                    success: function (result) {
+
+                        pub_collection = pub_collection.concat(result.data[1])
+                        console.log(pub_collection);
+                        if (page < (parseInt(result.data[0].pages))) {
+                            console.log("page:" + page);
                             getPubApiCollection(page + 1)
-                        }else{
+                        } else {
+                            $loading.modal('hide');
+                            var loading_text=$('#loading_text_api');
+                            
                             var pubDataTable = $("#pub_api")
 
                             pubDataTable.DataTable({
@@ -148,20 +167,33 @@
                                 "processing": true,
                                 "data": pub_collection,
                                 "columns": [
-                          
-                                    {data: "title"},
-                                    {data: "pub_id",render: function (dataField) { 
-                                        if(pub_ids.includes(dataField)){
-                                            return '<div class="badge badge-success" >Sudah ditambahkan</div>'; 
+
+                                    {
+                                        data: "title"
+                                    },
+                                    {
+                                        data: "pub_id",
+                                        render: function (dataField) {
+                                            if (pub_ids) {
+                                                if (pub_ids.includes(dataField)) {
+                                                    return '<div class="badge badge-success" >Sudah ditambahkan</div>';
+                                                }
+                                                return '<a class="btn btn-info pilih" href="https://webapi.bps.go.id/v1/view/1107/publication/ind/' + dataField + '"/ >Pilih</a>';
+                                            }
+                                            return '<a class="btn btn-info pilih" href="https://webapi.bps.go.id/v1/view/1107/publication/ind/' + dataField + '"/ >Pilih</a>';
                                         }
-                                        return '<a class="btn btn-info pilih" href="https://webapi.bps.go.id/v1/view/1107/publication/ind/' + dataField + '"/ >Pilih</a>'; 
-                                        }
+
                                     },
 
                                 ]
-                    });
+                            });
                         }
+                    },
+                    error: function(xhr){
+                        console.log('err:'+xhr.status);
+                    }
                 });
+
        
 
         }
@@ -169,198 +201,6 @@
   
 
         getPubApiCollection();
-
-
-
-
-
-
-
-
-
-
-
-            /*const getPublikasis = async function (pageNo = 1) {
-
-                let actualUrl = api_url + `&page=${pageNo}`;
-                var apiResults = await fetch(actualUrl)
-                    .then(resp => {
-                    
-                        return resp.json();
-
-                    });
-                
-    
-              
-                //return apiResults.data[1];
-                return apiResults.data[1];
-
-           
-
-            }
-
-            const getEntirePublikasiList = async function (pageNo = 1) {
-                
-                    const results = await getPublikasis(pageNo);
-
-                                 
-                    console.log("Retreiving data from API for page : " + pageNo);
-
-                    if (!results) {
-                        return results;
-                    } else {
-
-                        if(results.length >0){
-                            return results.concat(await getEntirePublikasiList(pageNo + 1));
-                         
-                        }else{
-                            return results;
-                            console.log("tes")
-                        }
-                        //return results.concat(await getEntirePublikasiList(pageNo + 1));
-                        //console.log(results);
-
-                        
-                 
-                    }
-            
-                
-                //var data=results.data[1]
-               // var pages=results.data[0].pages;
-                //console.log("res"+pageNo+results);
-                //var pub_api_collection='';
-                //pages=parseInt(pages)
-                //results=results.data[1];
-            };
-
-
-            (async () => {
-           
-                           
-            })
-            ();
-            async function runCollected () {
-                try {
-                    const entireList = await getEntirePublikasiList();
-                  
-                    return entireList;
-                } catch (err) {
-                    console.log('All errors are welcomed here! From promises or not, this catch is your catch.')
-                }
-            }
-
-     //   }
-
-           runCollected().then(
-            result => {
-                    var collectedzz=new Array();
-                    var jsonCollected=JSON.stringify(result);//42
-
-                    var pubDataTable = $("#pub_api")
-                    console.log(result.length);
-                    for (let index = 0; index < (result.length-1); index++) {
-                        collectedzz=collectedzz.push(index);
-                    
-                        
-                    }
-                    console.log(collected);
-                    pubDataTable.DataTable({
-                        "data": collected,
-                        "columns": [
-                            {data: "pub_id"},
-                            {data: "title"}
-                        ]
-                    });
-                }
-           )*/
-       //get data from
-
-
-        /*
-        function collectionToHtmlTable(collection){
-            var pub_collection=collection;
-            for (let index = 0; index < pub_collection.length; index++) {
-            const data = pub_collection[index];
-
-            var judul_column="<td>"+data.title+"</td>";
-            var aksi_column="<td><a class='btn btn-info' id="+data.pub_id+" href='#'>Pilih</a>"
-            var row_wrapper="<tr>"+judul_column+aksi_column+"</tr>"
-            record=record+row_wrapper;
-            
-            }
-
-            return(record);
-        }
-
-        //initial table
-
-        var api_pub_url = 'https://webapi.bps.go.id/v1/api/list/?model=publication&domain=' + domain +
-            '&year=' + year + '&key=' + api_key + '&page=' + page;
-        console.log(api_pub_url);
-
-        $.getJSON(api_pub_url, function (collection) {}).done(function (collection) {
-            //console.log(collection);
-            var listPubData = collection.data;
-            pub_collection = listPubData[1];
-            //console.log(pub_collection[0].title)
-            pages = listPubData[0].pages;
-            console.log("total halaman:" + pages);
-
-
-            //table
-            var htmlTableString=collectionToHtmlTable(pub_collection)
-            $('#pub_api_table_body').html(htmlTableString);
-            
-
-            var page_link_string='';
-            //page number
-            if(page=="1"){
-                var page_int=parseInt(page);
-                isDisabled='disabled'
-                var first_arrow='<li class="page-item'+isDisabled+'"><a class="page-link" href="#" tabindex="-1"><i class="fas fa-chevron-left"></i></a></li>'
-
-                for (let index = 0; index < 3; index++) {
-                    var page link_item='<li class="page-item"><a class="page-link" href="#">2</a></li>'
-
-                    
-                }
-                page_link.html('');
-            }
-
-
-        });
-
-        //onchange year
-        year_select.change(function(){
-            year=this.value;
-            page=1
-            
-
-            var api_pub_url = 'https://webapi.bps.go.id/v1/api/list/?model=publication&domain=' + domain +
-            '&year=' + year + '&key=' + api_key + '&page=' + page;
-            console.log(api_pub_url);
-
-        $.getJSON(api_pub_url, function (collection) {}).done(function (collection) {
-            //console.log(collection);
-            var listPubData = collection.data;
-            pub_collection = listPubData[1];
-            //console.log(pub_collection[0].title)
-            pages = listPubData[0].pages;
-            console.log("total halaman:" + pages);
-
-            var htmlTableString=collectionToHtmlTable(pub_collection)
-            $('#pub_api_table_body').html(htmlTableString);
-
-        });
-
-        })*/
-
-
-
-
-
-    
-
 
 
 
@@ -424,6 +264,9 @@
                         }
 
                     });
+                },
+                error:function(xhr){
+                    console.log('err:'+xhr.status);
                 }
             });
            /* $.getJSON(api_pub_detail,function(collection){  

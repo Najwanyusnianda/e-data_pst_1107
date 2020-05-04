@@ -19,7 +19,7 @@ class WebApiPublikasiController extends Controller
         $year='2020';
         $years_select=['2020','2019','2018'];
 
-        //dd($publikasi_added[0]->pub_id);
+        //dd(!$publikasi_added->isEmpty());
 
 
         if(!$publikasi_added->isEmpty()){
@@ -41,19 +41,23 @@ class WebApiPublikasiController extends Controller
             ->with('pub_ids',$pub_id_array)
             ->with('year',$year)
             ->with('year_select',$years_select);
-        }
-  
-        if($request->has('year')){
+        }else{
+            if($request->has('year')){
        
-            $year=$request->year;
-        
+                $year=$request->year;
+            
+                return view('publikasi.webapi.webapi_publikasi')
+                //->with('pub_ids',$pub_id_array)
+                ->with('year',$year)
+                ->with('year_select',$years_select);
+            }
             return view('publikasi.webapi.webapi_publikasi')
+            //->with('pub_ids',$pub_id_array)
             ->with('year',$year)
             ->with('year_select',$years_select);
         }
-        return view('publikasi.webapi.webapi_publikasi')
-        ->with('year',$year)
-        ->with('year_select',$years_select);
+  
+
     }
 
     public function select_pub_from_api(Request $request){

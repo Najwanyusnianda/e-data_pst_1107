@@ -14,6 +14,14 @@
                 <label for="title">Judul Tabel</label>
             <input type="text" class="form-control" id="title" placeholder="..." id="tableTitle" name="tableTitle" value="{{$pubTable->title}}">
             </div>
+            <div class="form-group">
+                <label>Subject<code>*</code></label>
+                <select class="form-control form-control-lg" id="subject_id" name="subject_id">
+                    @foreach ($daftar_subject as $subject)
+                        <option value="{{$subject->subject_id}}" {{$subject->subject_id==$pubTable->subject_id ? 'selected'  : ''}}>{{$subject->subject}}</option>
+                    @endforeach
+                </select>
+            </div>
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label for="inputHalamanFirst">Dari Halaman</label>
@@ -58,8 +66,16 @@
                 <input type="hidden" class="form-control" placeholder="" id="babNumberForm" name="babNumberForm">
             </div>
             <div class="form-group">
-                <label for="title">Judul Tabel</label>
+                <label for="title">Judul Tabel<code>*</code></label>
                 <input type="text" class="form-control" id="title" placeholder="..." id="tableTitle" name="tableTitle">
+            </div>
+            <div class="form-group">
+                <label>Subject<code>*</code></label>
+                <select class="form-control form-control-lg" id="subject_id" name="subject_id">
+                    @foreach ($daftar_subject as $subject)
+                        <option value="{{$subject->subject_id}}">{{$subject->subject}}</option>
+                    @endforeach
+                </select>
             </div>
             <div class="form-row">
                 <div class="form-group col-md-6">
@@ -75,14 +91,16 @@
             </div>
             <br>
             <div class="form-group">
+                <label for="inputHalamanLast">File <small class="text-sm text-muted">(format: *pdf )file</small></label>
                 <div class="custom-file">
                     <input type="file" class="custom-file-input" id="PdfFileTable" name="PdfFileTable">
-                    <label class="custom-file-label" for="PdfFileTable">Pilih File</label>
+                    <label class="custom-file-label" for="PdfFileTable">Browse..</label>
                 </div>
             </div>
             <div class="current-label">
                 File Terpilih:
             </div>
+            <br>
             <div class="pdf_file_placeholder">
               
             </div>

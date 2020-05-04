@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>E-Data BPS Kab. Aceh Barat</title>
     <!-- General CSS Files -->
 
     <link rel="stylesheet" href="{{asset('vendor/bootstrap/css/bootstrap.min.css')}}">
@@ -17,6 +17,7 @@
 
     <link rel="stylesheet" href="{{asset('vendor/stisla/css/style.css')}}">
     <link rel="stylesheet" href="{{asset('vendor/stisla/css/components.css')}}">
+    <link rel="stylesheet" href="{{asset('vendor/datatables/datatables.min.css')}}">
 </head>
 <style>
     html {
@@ -61,8 +62,11 @@
                     <li class="nav-item"><a href="index.html" class="nav-link">Ecommerce Dashboard</a></li>
                   </ul>
                 </li>-->
-                <li class="nav-item active">
-                  <a href="#" class="nav-link"><i class="fas fa-fire"></i><span>Beranda</span></a>
+              <li class="nav-item {{Request::is('/') ? 'active' : ''}}">
+                <a href="{{route('home.home')}}" class="nav-link"><i class="fas fa-fire"></i><span>Beranda</span></a>
+                </li>
+                <li class="nav-item {{Request::is('faq') ? 'active' : ''}} ">
+                  <a href="{{route('home.faq')}}" class="nav-link"><i class="fas fa-question-circle"></i><span>Faq</span></a>
                 </li>
                 <!--<li class="nav-item dropdown">
                   <a href="#" data-toggle="dropdown" class="nav-link has-dropdown"><i class="far fa-clone"></i><span>Multiple Dropdown</span></a>
@@ -100,12 +104,7 @@
               </div>-->
 
               <div class="section-header">
-                <h1>Beranda</h1>
-                <div class="section-header-breadcrumb">
-                  <div class="breadcrumb-item active"><a href="#"></a></div>
-                  <div class="breadcrumb-item"><a href="#"></a></div>
-                  <div class="breadcrumb-item"></div>
-                </div>
+@yield('section_header')
               </div>
     
               <div class="section-body">
@@ -130,9 +129,10 @@
     <!-- General JS Scripts -->
     <script src="{{asset('vendor/jquery-3.4.1.min.js')}}"></script>
     <script src="{{asset('vendor/jquery.nicescroll.min.js')}}"></script>
+    <script src="{{asset('vendor/popper.min.js')}}"></script>
     <script src="{{asset('vendor/bootstrap/js/bootstrap.min.js')}}"></script>
 
-    <script src="{{asset('vendor/popper.js')}}"></script>
+ 
 
     <script src="{{asset('vendor/stisla/js/stisla.js')}}"></script>
 
@@ -146,6 +146,8 @@
     <script src="{{asset('vendor/stisla/js/scripts.js')}}"></script>
     <script src="{{asset('vendor/stisla/js/custom.js')}}"></script>
 
+    <script src="{{asset('vendor/datatables/datatables.min.js')}}"></script>
+    @yield('script')
 </body>
 
 </html>

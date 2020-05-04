@@ -17,20 +17,33 @@ class PubDataTableSeeder extends Seeder
         DB::table('pub_tables')->delete();
         $json= File::get("database/json/pub_dda_2020_table.json");
         $data=json_decode($json);
+        
         $dt=$data;
         foreach ($dt as $obj) {
-            Publikasi::create(array(
-                'pub_id'=> "befa1d8befa185c2ea101b75",
-                'title'=>$obj->title,
+           
+            PubTable::create(array(
+                'type'=>"publikasi",
+                'type_id'=>"befa1d8befa185c2ea101b75",
+                'title'=>$obj->judul_table,
                 'bab_num'=>$obj->bab,
                 'hal_pdf_first'=>$obj->dari_halaman,
                 'hal_pdf_last'=>$obj->sampai_halaman,
-                'subject'=>$obj->subject
-
-
+                'subject_id'=>$obj->subject_id
             ));
 
-        
         }
+        
+        /*for ($i=0; $i <5 ; $i++) { 
+            # code...
+            PubTable::create(array(
+                'type'=>"publikasi",
+                'type_id'=>"befa1d8befa185c2ea101b75",
+                'title'=>"obj->judul_table",
+                'bab_num'=>2,
+                'hal_pdf_first'=>2,
+                'hal_pdf_last'=>3,
+                'subject_id'=>12
+            ));
+        }*/
     }
 }

@@ -38,7 +38,7 @@
                     Load data
                 </button>-->
                 <a class="btn btn-primary ml-auto btn-icon " id="getPublicationFromApi" href="{{route('admin.pubApi.list')}}" >
-                    <i class="fas fa-sync"></i>
+                    <i class="fas fa-search-plus"></i>
                     Tambah Publikasi 
                 </a>
             </div>

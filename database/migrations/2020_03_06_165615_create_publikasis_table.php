@@ -16,13 +16,16 @@ class CreatePublikasisTable extends Migration
         Schema::create('publikasis', function (Blueprint $table) {
             $table->string('pub_id')->primary();
             $table->text('title');
+            $table->string('kat_no');
+            $table->string('pub_no');
             $table->string('issn')->nullable();
             $table->date('release_date')->nullable();
             $table->date('update_date')->nullable();
             $table->string('size');
             $table->unsignedInteger('n_bab')->nullable();
             $table->text('cover');
-            $table->text('pdf');
+            $table->text('pdf')->nullable();
+            $table->longText('abstract')->nullable();
             $table->boolean('isTableComplete')->default(0);
 
 

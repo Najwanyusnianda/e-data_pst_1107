@@ -202,8 +202,15 @@
                                             @forelse ($pub_table as $key=>$item)
                                                 @if ($item->bab_num== $i+1)
                                                     <tr>
-                                                 
-                                                        <td><small class="font-weight-light"><span href="#" class="">{{$item->title}}</span></small> </td>
+
+                                                        <td>
+                                                            @if ($item->filepath != null)
+                                                            <small class="font-weight-light"><a href="{{url('/'.$item->filepath)}}" class="">{{$item->title}}</a></small>
+                                                            @else
+                                                            <small class="font-weight-light"><span class="">{{$item->title}}</span></small>
+                                                            @endif
+                                                            
+                                                         </td>
                                                         <!--<td>
                                                             <a href="{{url('/'.$item->filepath)}}" class="btn btn-danger btn-sm btn-icon">
                                                                 <i class="fa fa-file-pdf"></i>

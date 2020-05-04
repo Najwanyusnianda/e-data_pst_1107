@@ -1,0 +1,113 @@
+{
+    "status": "OK",
+    "data-availability": "available",
+    "data": [{
+            "page": 1,
+            "pages": 30,
+            "per_page": 10,
+            "count": 10,
+            "total": 291
+        },
+        [{
+            "pub_id": "befa1d8befa185c2ea101b75",
+            "title": "Kabupaten Aceh Barat Dalam Angka 2020, Penyediaan Data Untuk Perencanaan Pembangunan",
+            "issn": "978-602-6389-22-0",
+            "sch_date": "2020-02-28",
+            "rl_date": "2020-02-28",
+            "updt_date": null,
+            "cover": "https:\/\/acehbaratkab.bps.go.id\/publication\/getImageCover.html?url=MjAyMC0wMy0yNSMjaHR0cHM6Ly9wb3J0YWxwdWJsaWthc2kuYnBzLmdvLmlkL2FwaS9nZXRLb3Zlci5waHA%2Fc2VsZWN0b3I9YmVmYTFkOGJlZmExODVjMmVhMTAxYjc1",
+            "pdf": "https:\/\/acehbaratkab.bps.go.id\/publication\/downloadapi.html?data=VCj%2B7BcTe6Ys3Nk1GgBdr5afwVfHyUTrfp9CV1YUX4HUikij8v2p9qz3%2Fhrt%2FscXAlNkQk6JMci544mvkX%2BbxpAmLdHYB8iLh6QZsXIot8M%3D&tokenuser=",
+            "size": "16.06 MB"
+        }, {
+            "pub_id": "058e4d4e7c08f9f89cb674cc",
+            "title": "Statistik Kesejahteraan Rakyat Kabupaten Aceh Barat 2019",
+            "issn": "2599-2074",
+            "sch_date": "2019-12-27",
+            "rl_date": "2019-12-27",
+            "updt_date": null,
+            "cover": "https:\/\/acehbaratkab.bps.go.id\/publication\/getImageCover.html?url=MjAyMC0wMy0yNSMjaHR0cHM6Ly9wb3J0YWxwdWJsaWthc2kuYnBzLmdvLmlkL2FwaS9nZXRLb3Zlci5waHA%2Fc2VsZWN0b3I9MDU4ZTRkNGU3YzA4ZjlmODljYjY3NGNj",
+            "pdf": "https:\/\/acehbaratkab.bps.go.id\/publication\/downloadapi.html?data=bGVwvN01KzSDBLe4vmHE6o6yKQHO2Bn4YYDv2oXSsf8%2Bm1Umg47gLkuOh71xllb7%2B5FeiiZvsh3h%2Bm3gUg4HQ0sL%2FkUethieCd81%2Fh8ai0E%3D&tokenuser=",
+            "size": "18.76 MB"
+        }, {
+            "pub_id": "43c8b01eeece696fab161ad2",
+            "title": "Statistik Daerah Kabupaten Aceh Barat 2019",
+            "issn": "2540-8682",
+            "sch_date": null,
+            "rl_date": "2019-12-26",
+            "updt_date": null,
+            "cover": "https:\/\/acehbaratkab.bps.go.id\/publication\/getImageCover.html?url=MjAyMC0wMy0yNSMjaHR0cHM6Ly9wb3J0YWxwdWJsaWthc2kuYnBzLmdvLmlkL2FwaS9nZXRLb3Zlci5waHA%2Fc2VsZWN0b3I9NDNjOGIwMWVlZWNlNjk2ZmFiMTYxYWQy",
+            "pdf": "https:\/\/acehbaratkab.bps.go.id\/publication\/downloadapi.html?data=LyMnRM3%2BReDmMWVABIdmzqwUWCJhw6H%2BVNtB7H93uIKh8JhKUvm6fThgrRq77IKBp%2FAZNIK5WJvkJID%2Fc9P1hA4BEdqH7tyQ6ul23srYvAM%3D&tokenuser=",
+            "size": "5.91 MB"
+        }, {
+            "pub_id": "eb1d85c7f0964ca9e489369c",
+            "title": "Laju Inflasi Kota Meulaboh 2018",
+            "issn": "2540-8631",
+            "sch_date": "2019-10-04",
+            "rl_date": "2019-10-04",
+            "updt_date": null,
+            "cover": "https:\/\/acehbaratkab.bps.go.id\/publication\/getImageCover.html?url=MjAyMC0wMy0yNSMjaHR0cHM6Ly9wb3J0YWxwdWJsaWthc2kuYnBzLmdvLmlkL2FwaS9nZXRLb3Zlci5waHA%2Fc2VsZWN0b3I9ZWIxZDg1YzdmMDk2NGNhOWU0ODkzNjlj",
+            "pdf": "https:\/\/acehbaratkab.bps.go.id\/publication\/downloadapi.html?data=n0i30NpRXx5yKvI%2Bpu6F7AaBjQqA2LDjFqtwp%2F1EN8FjzI0v2gDFeGGPdOT5VmwH7fjmEajbM48rcGR%2BRO%2BwhZM4LOjX9GCeKNd5ENjAmz4%3D&tokenuser=",
+            "size": "2.12 MB"
+        }, {
+            "pub_id": "f2c29fab077d7e128fce3761",
+            "title": "Kecamatan Panton Reu Dalam Angka 2019",
+            "issn": "2580-152X",
+            "sch_date": "2019-09-26",
+            "rl_date": "2019-09-26",
+            "updt_date": null,
+            "cover": "https:\/\/acehbaratkab.bps.go.id\/publication\/getImageCover.html?url=MjAyMC0wMy0yNSMjaHR0cHM6Ly9wb3J0YWxwdWJsaWthc2kuYnBzLmdvLmlkL2FwaS9nZXRLb3Zlci5waHA%2Fc2VsZWN0b3I9ZjJjMjlmYWIwNzdkN2UxMjhmY2UzNzYx",
+            "pdf": "https:\/\/acehbaratkab.bps.go.id\/publication\/downloadapi.html?data=W5ALbmDmRhwYR9U2X6TQHoqzw9cqdf3KT66F%2FM3IazFQZPNfvw8unt5uAOQtUKbNS0uljgLKZDQ8YVSoUMfAUxL89rIlpXu3Y%2FV9nlKPO0I%3D&tokenuser=",
+            "size": "2.91 MB"
+        }, {
+            "pub_id": "c32409caf3e100e3b05825a5",
+            "title": "Kecamatan Meureubo Dalam Angka 2019",
+            "issn": "2580-1546",
+            "sch_date": "2019-09-26",
+            "rl_date": "2019-09-26",
+            "updt_date": null,
+            "cover": "https:\/\/acehbaratkab.bps.go.id\/publication\/getImageCover.html?url=MjAyMC0wMy0yNSMjaHR0cHM6Ly9wb3J0YWxwdWJsaWthc2kuYnBzLmdvLmlkL2FwaS9nZXRLb3Zlci5waHA%2Fc2VsZWN0b3I9YzMyNDA5Y2FmM2UxMDBlM2IwNTgyNWE1",
+            "pdf": "https:\/\/acehbaratkab.bps.go.id\/publication\/downloadapi.html?data=av21S15sk4yRQixyzgJ%2FkI13S8XNGMSKcd8%2Fpb6L0G%2BEwSFL%2Bwts4LsCslwKpqht9iJAoQswbjbBzMpge4YQmXqfOljRwclU77%2Ft%2BW1BP2Y%3D&tokenuser=",
+            "size": "4.43 MB"
+        }, {
+            "pub_id": "be08679805288b373e79f110",
+            "title": "Kecamatan Sungai Mas Dalam Angka 2019",
+            "issn": "2580-1511",
+            "sch_date": "2019-09-26",
+            "rl_date": "2019-09-26",
+            "updt_date": null,
+            "cover": "https:\/\/acehbaratkab.bps.go.id\/publication\/getImageCover.html?url=MjAyMC0wMy0yNSMjaHR0cHM6Ly9wb3J0YWxwdWJsaWthc2kuYnBzLmdvLmlkL2FwaS9nZXRLb3Zlci5waHA%2Fc2VsZWN0b3I9YmUwODY3OTgwNTI4OGIzNzNlNzlmMTEw",
+            "pdf": "https:\/\/acehbaratkab.bps.go.id\/publication\/downloadapi.html?data=WiKHyMb2vVeV1hF5vcmjh6lNBs5VVE86lfAmSjUwCh6FMi3PPuyacZuDJDA5%2F0U9ohYs9JL4GIj8XYSJL0fsutDSgMlnmft3mKfS7E2IGEw%3D&tokenuser=",
+            "size": "3.04 MB"
+        }, {
+            "pub_id": "bb8508e3ff4112ffa4a5076e",
+            "title": "Kecamatan Arongan Lambalek Dalam Angka 2019",
+            "issn": "",
+            "sch_date": "2019-09-26",
+            "rl_date": "2019-09-26",
+            "updt_date": null,
+            "cover": "https:\/\/acehbaratkab.bps.go.id\/publication\/getImageCover.html?url=MjAyMC0wMy0yNSMjaHR0cHM6Ly9wb3J0YWxwdWJsaWthc2kuYnBzLmdvLmlkL2FwaS9nZXRLb3Zlci5waHA%2Fc2VsZWN0b3I9YmI4NTA4ZTNmZjQxMTJmZmE0YTUwNzZl",
+            "pdf": "https:\/\/acehbaratkab.bps.go.id\/publication\/downloadapi.html?data=t7c8ME09egHeDWxReikkCPJQVa4hD8VUFFFELhkDWPADAvEX0r7ck4IY%2BblHJ55RzGTGfJhkPgqsLx9ibtgGA%2BPN13%2BNXLMRXsI5re0hdYs%3D&tokenuser=",
+            "size": "3.19 MB"
+        }, {
+            "pub_id": "b8fee79a88d66a557d1f4411",
+            "title": "Kecamatan Bubon Dalam Angka 2019",
+            "issn": "",
+            "sch_date": "2019-09-26",
+            "rl_date": "2019-09-26",
+            "updt_date": null,
+            "cover": "https:\/\/acehbaratkab.bps.go.id\/publication\/getImageCover.html?url=MjAyMC0wMy0yNSMjaHR0cHM6Ly9wb3J0YWxwdWJsaWthc2kuYnBzLmdvLmlkL2FwaS9nZXRLb3Zlci5waHA%2Fc2VsZWN0b3I9YjhmZWU3OWE4OGQ2NmE1NTdkMWY0NDEx",
+            "pdf": "https:\/\/acehbaratkab.bps.go.id\/publication\/downloadapi.html?data=eDDVcNWz5wzs8E2UWnaC39mxPa7nV35c6IdBJMEmeaAmL8sRva4VMZoyvHfIF%2BOyHyx8QLIVKpg2FoZ0150s2yOAuFGdWA9b%2BNEX%2BocEQnk%3D&tokenuser=",
+            "size": "2.79 MB"
+        }, {
+            "pub_id": "9ab6f1bbb957fad7fcdea14a",
+            "title": "Kecamatan Johan Pahlawan Dalam Angka 2019",
+            "issn": "2580-1627",
+            "sch_date": "2019-09-26",
+            "rl_date": "2019-09-26",
+            "updt_date": null,
+            "cover": "https:\/\/acehbaratkab.bps.go.id\/publication\/getImageCover.html?url=MjAyMC0wMy0yNSMjaHR0cHM6Ly9wb3J0YWxwdWJsaWthc2kuYnBzLmdvLmlkL2FwaS9nZXRLb3Zlci5waHA%2Fc2VsZWN0b3I9OWFiNmYxYmJiOTU3ZmFkN2ZjZGVhMTRh",
+            "pdf": "https:\/\/acehbaratkab.bps.go.id\/publication\/downloadapi.html?data=hmXOpqwWanvILAHGTfNa%2BvYUzgmglQEIsb6V5cx%2FI2TxmXfku7rUIs%2FaTlNvumZ20o4Vq3brjOlbp%2FPMoK7iOW3b%2BpBlw%2B%2B7YkXYNcG8PNk%3D&tokenuser=",
+            "size": "3.57 MB"
+        }]
+    ]
+}

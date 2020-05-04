@@ -1,0 +1,122 @@
+[
+  {
+    "subject": "Energi",
+    "id": 1
+  },
+  {
+    "subject": "Geografi",
+    "id": 2
+  },
+  {
+    "subject": "Harga Eceran",
+    "id": 3
+  },
+  {
+    "subject": "Holtikultura",
+    "id": 4
+  },
+  {
+    "subject": "Hotel",
+    "id": 5
+  },
+  {
+    "subject": "Iklim",
+    "id": 6
+  },
+  {
+    "subject": "Indeks Pembangunan Manusia",
+    "id": 7
+  },
+  {
+    "subject": "Industri",
+    "id": 8
+  },
+  {
+    "subject": "Inflasi",
+    "id": 9
+  },
+  {
+    "subject": "Kemiskinan",
+    "id": 10
+  },
+  {
+    "subject": "Kesehatan",
+    "id": 11
+  },
+  {
+    "subject": "Ketenagakerjaan",
+    "id": 12
+  },
+  {
+    "subject": "Keuangan",
+    "id": 13
+  },
+  {
+    "subject": "Komunikasi",
+    "id": 14
+  },
+  {
+    "subject": "Konsumsi dan Pengeluaran",
+    "id": 15
+  },
+  {
+    "subject": "Kriminalitas",
+    "id": 16
+  },
+  {
+    "subject": "Pariwisata",
+    "id": 17
+  },
+  {
+    "subject": "Pemerintahan",
+    "id": 18
+  },
+  {
+    "subject": "Pendidikan",
+    "id": 19
+  },
+  {
+    "subject": "Kependudukan",
+    "id": 20
+  },
+  {
+    "subject": "Perdagangan",
+    "id": 21
+  },
+  {
+    "subject": "Perikanan",
+    "id": 22
+  },
+  {
+    "subject": "Perkebunan",
+    "id": 23
+  },
+  {
+    "subject": "Peternakan",
+    "id": 24
+  },
+  {
+    "subject": "Potensi Desa",
+    "id": 25
+  },
+  {
+    "subject": "Produk Domestik Regional Bruto (Lapangan Usaha)",
+    "id": 26
+  },
+  {
+    "subject": "Produk Domestik Regional Bruto (Pengeluaran)",
+    "id": 27
+  },
+  {
+    "subject": "Sosial  Budaya",
+    "id": 28
+  },
+  {
+    "subject": "Tanaman Pangan",
+    "id": 29
+  },
+  {
+    "subject": "Transportasi",
+    "id": 30
+  }
+]

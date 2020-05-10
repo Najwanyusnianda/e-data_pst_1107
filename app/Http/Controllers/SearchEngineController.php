@@ -60,7 +60,8 @@ class SearchEngineController extends Controller
     public function subject_detail($subject_id){
         $data=PubTable::where('pub_tables.subject_id',$subject_id)
         ->join('subject_tables','pub_tables.subject_id','=','subject_tables.subject_id')
-        ->get();
+        ->simplePaginate(10);
+        //dd($data);
         $subject=SubjectTable::find($subject_id);
         return view('search.search_subject',compact('data','subject'));
     }

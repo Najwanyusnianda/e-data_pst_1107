@@ -34,7 +34,7 @@ Route::group(['middleware' => ['auth']], function () {
         Route::post('backend/publikasi/post','PublikasiController@postPublikasi')->name('pubCollection.store');
         Route::get('backend/table/publikasi','PublikasiController@publicationListTable')->name('pubCollection.table');
         Route::post('backend/publikasi/{id}/post/n_bab','PublikasiController@storeJumlahBab')->name('pubCollection.n_bab.store');
-
+        Route::post('backend/delete/publikasi','PublikasiController@deletePublikasi')->name('publikasi.delete');
         //api publikasi
         Route::get('backend/publikasi/pub_api','WebApiPublikasiController@publicationListApi')->name('pubApi.list');
         Route::post('backend/publikasi/pub_api','WebApiPublikasiController@publicationListApi')->name('pubApi.list.post');
@@ -70,6 +70,9 @@ Route::name('home.')->group(function () {
     
 });
 
+Route::get('temp', function () {
+    return view('layout.master_front_2');
+});
 
 //Clear configurations:
 Route::get('/config-clear', function() {

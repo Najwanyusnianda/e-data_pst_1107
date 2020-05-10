@@ -13,7 +13,7 @@ class HomeController extends Controller
     {
         $subject=SubjectTable::all();
         if($subject->isNotEmpty()){
-       
+            
             return view('home.home',compact('subject'));
         }else{
             return view('home.home');

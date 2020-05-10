@@ -1,4 +1,4 @@
-@extends('layout.master_front')
+@extends('layout.master_front_2')
 
 
 @section('section_header')

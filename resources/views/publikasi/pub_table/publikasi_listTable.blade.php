@@ -33,7 +33,7 @@
                         <div class="media">
                             <img class="mr-3 img-thumbnail border-dark" src="{{$pub_detail->cover}}" alt="cover" >
                             <div class="media-body">
-                                <div class="table-responsive table-sm">
+                                <div class="table-responsive ">
                                     <table class="table table-borderless" style="font-size:smaller"
                                         id="detailPublikasi">
                                         <thead>
@@ -138,6 +138,29 @@
 
 
 
+
+                                            </tr>
+                                            <!--<tr>
+                                                <td><strong>Abstrak :</strong> </td>
+                                                <td></td>
+                                                <td>
+                                                </td>
+                                            </tr>-->
+                                            <tr>
+
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td>.</td>
+                                            </tr>
+                                            
+                                            <tr class="">
+                                                <td colspan="4">
+                                                    <div class="alert alert-info">
+                                                       <span class="" style="font-size:13px;">{{$pub_detail->abstract}}</span> 
+                                                    </div>
+                                                    </td>
                                             </tr>
                                         </tbody>
                                     </table>

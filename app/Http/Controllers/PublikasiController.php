@@ -63,7 +63,7 @@ class PublikasiController extends Controller
  //post ------------------------------------------------------------------------------>
     
             ////get FROM API______________________
-        public function postPublikasi(Request $request){
+    public function postPublikasi(Request $request){
         
         $collection=$request->pubCollection;
       
@@ -112,6 +112,14 @@ class PublikasiController extends Controller
         //dd($publikasi);
     }
 
+    public function deletePublikasi(Request $request){
+        $pub_id=$request->pub_id;
+
+        $publikasi=Publikasi::find($pub_id)->delete();
+
+
+    }
+
 
  //service ------------------------------------------------------------------------------>    
     public function publicationListTable(){
@@ -138,10 +146,12 @@ class PublikasiController extends Controller
             return($raw_progress);
         })
         ->addColumn('action',function($publikasi){
-         
+            $delete_link=route('admin.publikasi.delete');
             $detail_link=route('admin.pubTable.detail',[$publikasi->pub_id]);
-            $detail='<a href="'.$detail_link.'" class="btn btn-icon icon-left btn-info"><i class="fas fa-table"></i>Detail Tabel </a>';
-            return($detail);
+            $pub_id=$publikasi->pub_id;
+            $detail='<a href="'.$detail_link.'" class="btn btn-icon icon-left btn-info"><i class="fas fa-table"></i>Detail  </a>';
+            $delete='<a href="'.$delete_link.'" class="btn btn-icon icon-left btn-danger ml-2 deletePub" data-id="'.$pub_id.'"><i class="fas fa-trash-alt"></i>Delete </a>';
+            return($detail.$delete);
         })
         ->addIndexColumn()
         ->rawColumns(['cover_image','pdf_link','table_progress','action'])

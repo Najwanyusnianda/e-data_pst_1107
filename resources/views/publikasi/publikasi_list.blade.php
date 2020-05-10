@@ -137,6 +137,37 @@
         })
     })
 
+    $('.container').on('click','.deletePub',function(e){
+        e.preventDefault();
+        var pubId=$(this).attr('data-id');
+        var deleteUrl=$(this).attr('href');
+
+        $.ajax({
+                type: "post",
+
+                url: deleteUrl,
+                data: {
+                    // change data to this object
+                    _token: $('meta[name="csrf-token"]').attr('content'),
+                    pub_id: pubId
+
+                },
+                success: function (result) {
+                    //console.log(result);
+                    console.log('success');
+                    //permintaanTable.ajax.reload();
+                    $('#daftar_publikasi').DataTable().ajax.reload();
+                    //$("#close").trigger("click");
+                },
+                error: function (error) {
+                    alert('error');
+                    console.log(error);
+                }
+
+            });
+
+    })
+
 
     $('#daftar_publikasi').DataTable({
             responsive:true,

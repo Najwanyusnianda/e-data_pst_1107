@@ -22,7 +22,8 @@ class SubjectTableSeeder extends Seeder
         foreach ($dt as $obj) {
             SubjectTable::create(array(
                 'subject_id'=>$obj->id,
-                'subject'=>$obj->subject
+                'subject'=>$obj->subject,
+                'subject_group_id'=>$obj->id_subject_group
             ));
 
         }

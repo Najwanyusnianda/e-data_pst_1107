@@ -25,6 +25,7 @@ class CreatePublikasisTable extends Migration
             $table->unsignedInteger('n_bab')->nullable();
             $table->text('cover');
             $table->text('pdf')->nullable();
+            $table->text('pub_link')->nullable();
             $table->longText('abstract')->nullable();
             $table->boolean('isTableComplete')->default(0);
 

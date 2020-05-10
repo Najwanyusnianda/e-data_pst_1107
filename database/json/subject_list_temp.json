@@ -1,152 +1,122 @@
 [
   {
     "subject": "Energi",
-    "id": 1,
-    "id_subject_group": 2
+    "id": 1
   },
   {
     "subject": "Geografi",
-    "id": 2,
-    "id_subject_group": 1
+    "id": 2
   },
   {
     "subject": "Harga Eceran",
-    "id": 3,
-    "id_subject_group": 2
+    "id": 3
   },
   {
     "subject": "Holtikultura",
-    "id": 4,
-    "id_subject_group": 3
+    "id": 4
   },
   {
     "subject": "Hotel",
-    "id": 5,
-    "id_subject_group": 2
+    "id": 5
   },
   {
     "subject": "Iklim",
-    "id": 6,
-    "id_subject_group": 1
+    "id": 6
   },
   {
     "subject": "Indeks Pembangunan Manusia",
-    "id": 7,
-    "id_subject_group": 1
+    "id": 7
   },
   {
     "subject": "Industri",
-    "id": 8,
-    "id_subject_group": 2
+    "id": 8
   },
   {
     "subject": "Inflasi",
-    "id": 9,
-    "id_subject_group": 2
+    "id": 9
   },
   {
     "subject": "Kemiskinan",
-    "id": 10,
-    "id_subject_group": 1
+    "id": 10
   },
   {
     "subject": "Kesehatan",
-    "id": 11,
-    "id_subject_group": 1
+    "id": 11
   },
   {
     "subject": "Ketenagakerjaan",
-    "id": 12,
-    "id_subject_group": 1
+    "id": 12
   },
   {
     "subject": "Keuangan",
-    "id": 13,
-    "id_subject_group": 2
+    "id": 13
   },
   {
     "subject": "Komunikasi",
-    "id": 14,
-    "id_subject_group": 2
+    "id": 14
   },
   {
     "subject": "Konsumsi dan Pengeluaran",
-    "id": 15,
-    "id_subject_group": 2
+    "id": 15
   },
   {
     "subject": "Kriminalitas",
-    "id": 16,
-    "id_subject_group": 1
+    "id": 16
   },
   {
     "subject": "Pariwisata",
-    "id": 17,
-    "id_subject_group": 2
+    "id": 17
   },
   {
     "subject": "Pemerintahan",
-    "id": 18,
-    "id_subject_group": 1
+    "id": 18
   },
   {
     "subject": "Pendidikan",
-    "id": 19,
-    "id_subject_group": 1
+    "id": 19
   },
   {
     "subject": "Kependudukan",
-    "id": 20,
-    "id_subject_group": 1
+    "id": 20
   },
   {
     "subject": "Perdagangan",
-    "id": 21,
-    "id_subject_group": 2
+    "id": 21
   },
   {
     "subject": "Perikanan",
-    "id": 22,
-    "id_subject_group": 3
+    "id": 22
   },
   {
     "subject": "Perkebunan",
-    "id": 23,
-    "id_subject_group": 3
+    "id": 23
   },
   {
     "subject": "Peternakan",
-    "id": 24,
-    "id_subject_group": 3
+    "id": 24
   },
   {
     "subject": "Potensi Desa",
-    "id": 25,
-    "id_subject_group": 1
+    "id": 25
   },
   {
     "subject": "Produk Domestik Regional Bruto (Lapangan Usaha)",
-    "id": 26,
-    "id_subject_group": 2
+    "id": 26
   },
   {
     "subject": "Produk Domestik Regional Bruto (Pengeluaran)",
-    "id": 27,
-    "id_subject_group": 2
+    "id": 27
   },
   {
     "subject": "Sosial  Budaya",
-    "id": 28,
-    "id_subject_group": 1
+    "id": 28
   },
   {
     "subject": "Tanaman Pangan",
-    "id": 29,
-    "id_subject_group": 3
+    "id": 29
   },
   {
     "subject": "Transportasi",
-    "id": 30,
-    "id_subject_group": 2
+    "id": 30
   }
 ]

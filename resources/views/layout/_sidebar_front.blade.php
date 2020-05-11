@@ -63,14 +63,35 @@
             </li>
 
             <li class="menu-header">Sosial Media </li>
-            <li class="dropdown">
-                <a href="#" class="nav-link has-dropdown">
-                    <i class="fas fa-fire"></i><span>Dashboard</span></a>
-                <ul class="dropdown-menu">
-                    <li><a class="nav-link" href="index-0.html"><i class="fas fa-fire"></i>Facebook</a></li>
-                    <li><a class="nav-link" href="index.html"><i class="fas fa-fire"></i>Twitter</a></li>
-                </ul>
+            <li>
+                <div class="col">
+                    <div class="row">
+                        <div class="col">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        </div>
+                        <div class="col">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <a href="#">><i class="fab fa-instagram"></i></a>
+                        </div>
+                        <div class="col">
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+
             </li>
+            <!--<li>
+                <a class="nav-link" href="index-0.html"><i class="fab fa-facebook-f"></i>Facebook</a>
+        
+            </li>
+            
+            <li><a class="nav-link" href="index.html"><i class="fab fa-twitter"></i>Twitter</a></li>
+            <li><a class="nav-link" href="index.html"><i class="fab fa-instagram"></i>Instagram</a></li>
+            <li><a class="nav-link" href="index.html"><i class="fab fa-youtube"></i>youtube</a></li>-->
 
         </ul>
 

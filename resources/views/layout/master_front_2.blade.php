@@ -46,13 +46,18 @@
                 </section>
             </div>
             <footer class="main-footer">
-                <div class="footer-left">
-                    Copyright © 2018 <div class="bullet"></div> Design By <a href="https://nauval.in/">Muhamad Nauval
-                        Azhar</a>
+                <div class="text-center">
+                    <p style="margin-bottom: 0px;">Badan Pusat Statistik Kabupaten Aceh Barat (Statistics Aceh Barat)</p>
+                    <p style="margin-bottom: 0px;">Jl. Sisingamangaraja No. 2 Meulaboh 23617 Aceh Barat, Telp/Faks (62-655) 7553330, Mailbox : pst1107@bps.go.id</p>
+                    <p style="margin-bottom: 0px;">Hak Cipta © 2020 Badan Pusat Statistik</p>
+                    <p style="margin-bottom: 0px;">Semua Hak Dilindungi</p>
+                </div>
+                <!--<div class="footer-left">
+
                 </div>
                 <div class="footer-right">
 
-                </div>
+                </div>-->
             </footer>
         </div>
     </div>

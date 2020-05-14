@@ -46,9 +46,23 @@ class SearchEngineController extends Controller
         ->select('pub_tables.*','pub_table_files.*',
         'pub_tables.id AS id','pub_tables.type AS type','pub_table_files.id AS file_id', 'pub_table_files.type AS filetype')
         ->get();
-
+        dd($search_result);
         $dt=DataTables::of($search_result)
         ->addIndexColumn()
+        ->addColumn('action',function($search_result){
+            if(!empty($search_result->filepath)){
+                $pdf_link=url('/'.$search_result->filepath);
+                $pdf='<a href="'.$pdf_link.'" class="btn btn-icon icon-left btn-info"><i class="fas fa-table"></i>lihat  </a>';
+                return($pdf);
+            }else{
+                $pdf='<span class="badge badge-warning"><small>tidak tersedia</small>  </span>';
+                return($pdf);
+            }
+
+        })
+        ->addColumn('judul',function($search_result){
+            
+        })
         ->make(true);
         return $dt;
 

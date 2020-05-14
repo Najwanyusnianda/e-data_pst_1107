@@ -149,6 +149,9 @@
                         $loading.modal('show');
                         
                     },
+                    complete:function(){
+                        $loading.modal('hide');
+                    },
                     success: function (result) {
 
                         pub_collection = pub_collection.concat(result.data[1])
@@ -187,9 +190,11 @@
 
                                 ]
                             });
+                            $loading.modal('hide');
                         }
                     },
                     error: function(xhr){
+                        $loading.modal('hide');
                         console.log('err:'+xhr.status);
                     }
                 });
@@ -201,7 +206,7 @@
   
 
         getPubApiCollection();
-
+        $loading.modal('hide');
 
 
 })
@@ -252,6 +257,7 @@
                         success: function (result) {
                             //console.log(result);
                             window.location = result.url + "?data=success";
+                            
                             //permintaanTable.ajax.reload();
                             //$('#daftar_publikasi').DataTable().ajax.reload();
                             //$("#close").trigger("click");

@@ -23,7 +23,62 @@ class PubDataTableSeeder extends Seeder
            
             PubTable::create(array(
                 'type'=>"publikasi",
-                'type_id'=>"befa1d8befa185c2ea101b75",
+                'type_id'=>"6c00e3f71268959e0222c69f",
+                'title'=>$obj->judul_table,
+                'bab_num'=>$obj->bab,
+                'hal_pdf_first'=>$obj->dari_halaman,
+                'hal_pdf_last'=>$obj->sampai_halaman,
+                'subject_id'=>$obj->subject_id
+            ));
+
+        }
+
+
+        $json= File::get("database/json/pub_dda_2019_table.json");
+        $data=json_decode($json);
+        
+        $dt=$data;
+        foreach ($dt as $obj) {
+           
+            PubTable::create(array(
+                'type'=>"publikasi",
+                'type_id'=>"6c00e3f71268959e0222c69f",
+                'title'=>$obj->judul_table,
+                'bab_num'=>$obj->bab,
+                'hal_pdf_first'=>$obj->dari_halaman,
+                'hal_pdf_last'=>$obj->sampai_halaman,
+                'subject_id'=>$obj->subject_id
+            ));
+
+        }
+
+        $json= File::get("database/json/pub_dda_2018_table.json");
+        $data=json_decode($json);
+        
+        $dt=$data;
+        foreach ($dt as $obj) {
+           
+            PubTable::create(array(
+                'type'=>"publikasi",
+                'type_id'=>"6c00e3f71268959e0222c69f",
+                'title'=>$obj->judul_table,
+                'bab_num'=>$obj->bab,
+                'hal_pdf_first'=>$obj->dari_halaman,
+                'hal_pdf_last'=>$obj->sampai_halaman,
+                'subject_id'=>$obj->subject_id
+            ));
+
+        }
+
+        $json= File::get("database/json/pub_dda_2017_table.json");
+        $data=json_decode($json);
+        
+        $dt=$data;
+        foreach ($dt as $obj) {
+           
+            PubTable::create(array(
+                'type'=>"publikasi",
+                'type_id'=>"6c00e3f71268959e0222c69f",
                 'title'=>$obj->judul_table,
                 'bab_num'=>$obj->bab,
                 'hal_pdf_first'=>$obj->dari_halaman,

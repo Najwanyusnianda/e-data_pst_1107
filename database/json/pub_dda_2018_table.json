@@ -1,0 +1,1690 @@
+[
+  {
+    "judul_table": "Luas Wilayah Menurut Kecamatan di Kabupaten Aceh Barat, 2017",
+    "bab": 1,
+    "dari_halaman": 13,
+    "sampai_halaman": 14,
+    "subject": "Geografi",
+    "subject_id": 2
+  },
+  {
+    "judul_table": "Tinggi Wilayah di Atas Permukaan Laut (DPL) Menurut Kecamatan di Kabupaten Aceh Barat,2017",
+    "bab": 1,
+    "dari_halaman": 14,
+    "sampai_halaman": 14,
+    "subject": "Geografi",
+    "subject_id": 2
+  },
+  {
+    "judul_table": "Jarak dari Ibukota Kecamatan ke Ibukota Kabupaten di Kabupaten Aceh Barat (km), 2017",
+    "bab": 1,
+    "dari_halaman": 15,
+    "sampai_halaman": 15,
+    "subject": "Geografi",
+    "subject_id": 2
+  },
+  {
+    "judul_table": "Jumlah Permohonan Hak Tanah Yang Diterima Di Kabupaten Aceh Barat Per Bulan Tahun 2017",
+    "bab": 1,
+    "dari_halaman": 16,
+    "sampai_halaman": 16,
+    "subject": "Geografi",
+    "subject_id": 2
+  },
+  {
+    "judul_table": "Rata-rata Suhu dan Kelembaban Udara Menurut Bulan di Kabupaten Aceh Barat, 2017",
+    "bab": 1,
+    "dari_halaman": 17,
+    "sampai_halaman": 17,
+    "subject": "Iklim",
+    "subject_id": 6
+  },
+  {
+    "judul_table": "Rata-rata Suhu dan Kelembaban Udara Menurut Bulan di Kabupaten Aceh Barat , 2017",
+    "bab": 1,
+    "dari_halaman": 18,
+    "sampai_halaman": 18,
+    "subject": "Iklim",
+    "subject_id": 6
+  },
+  {
+    "judul_table": "Rata-Rata Tekanan Udara, Kecepatan Angin dan Penyinaran Matahari Menurut Bulan di Kabupaten Aceh Barat, 2017",
+    "bab": 1,
+    "dari_halaman": 19,
+    "sampai_halaman": 19,
+    "subject": "Iklim",
+    "subject_id": 6
+  },
+  {
+    "judul_table": "Jumlah Curah Hujan dan Hari Hujan Menurut Bulan di Kabupaten Aceh Barat, 2017",
+    "bab": 1,
+    "dari_halaman": 20,
+    "sampai_halaman": 20,
+    "subject": "Iklim",
+    "subject_id": 6
+  },
+  {
+    "judul_table": "Jumlah Desa/Kelurahan Menurut Kecamatan di Kabupaten Aceh Barat, 2017",
+    "bab": 2,
+    "dari_halaman": 31,
+    "sampai_halaman": 31,
+    "subject": "Pemerintahan",
+    "subject_id": 18
+  },
+  {
+    "judul_table": "Jumlah Anggota Dewan Perwakilan Rakyat Kabupaten Menurut Partai Politik dan Jenis Kelamin di Kabupaten Aceh Barat, 2017",
+    "bab": 2,
+    "dari_halaman": 32,
+    "sampai_halaman": 32,
+    "subject": "Pemerintahan",
+    "subject_id": 18
+  },
+  {
+    "judul_table": "Jumlah Anggota Dewan Perwakilan Rakyat Kabupaten Menurut Kelompok Umur di Kabupaten Aceh Barat, 2017",
+    "bab": 2,
+    "dari_halaman": 33,
+    "sampai_halaman": 33,
+    "subject": "Pemerintahan",
+    "subject_id": 18
+  },
+  {
+    "judul_table": "Jumlah Anggota Dewan Perwakilan Rakyat Kabupaten Menurut Pendidikan di Kabupaten Aceh Barat, 2017",
+    "bab": 2,
+    "dari_halaman": 34,
+    "sampai_halaman": 34,
+    "subject": "Pemerintahan",
+    "subject_id": 18
+  },
+  {
+    "judul_table": "Jumlah Pegawai Negeri Sipil Menurut Dinas/Instansi Pemerintah dan Jenis Kelamin di Kabupaten Aceh Barat, 2017",
+    "bab": 2,
+    "dari_halaman": 35,
+    "sampai_halaman": 39,
+    "subject": "Pemerintahan",
+    "subject_id": 18
+  },
+  {
+    "judul_table": "Jumlah Keputusan DPRK Aceh Barat Tahun 2014 – 2017 Menurut Jenis Sidang",
+    "bab": 2,
+    "dari_halaman": 40,
+    "sampai_halaman": 40,
+    "subject": "Pemerintahan",
+    "subject_id": 18
+  },
+  {
+    "judul_table": "Jumlah Sidang / Rapat DPRK Aceh Barat Tahun 2014 - 2017 Menurut Jenis Sidang",
+    "bab": 2,
+    "dari_halaman": 41,
+    "sampai_halaman": 41,
+    "subject": "Pemerintahan",
+    "subject_id": 18
+  },
+  {
+    "judul_table": "Jumlah Pegawai Negeri Sipil Menurut Pendidikan Tertinggi yang Ditamatkan dan Jenis Kelamin di Kabupaten Aceh Barat, 2017",
+    "bab": 2,
+    "dari_halaman": 42,
+    "sampai_halaman": 42,
+    "subject": "Pemerintahan",
+    "subject_id": 18
+  },
+  {
+    "judul_table": "Jumlah Pegawai Negeri Sipil Menurut Golongan Kepangkatan dan Jenis Kelamin di Kabupaten Aceh Barat, 2017",
+    "bab": 2,
+    "dari_halaman": 43,
+    "sampai_halaman": 43,
+    "subject": "Pemerintahan",
+    "subject_id": 18
+  },
+  {
+    "judul_table": "Jumlah Penerbitan Akta Kelahiran Standar Nasional Per Kecamatan Di Kabupaten Aceh Barat, 2014 - 2017",
+    "bab": 2,
+    "dari_halaman": 44,
+    "sampai_halaman": 44,
+    "subject": "Pemerintahan",
+    "subject_id": 18
+  },
+  {
+    "judul_table": "Jumlah Penerbitan Akta Kematian Per Kecamatan Di Kabupaten Aceh Barat, 2014 – 2017",
+    "bab": 2,
+    "dari_halaman": 45,
+    "sampai_halaman": 45,
+    "subject": "Pemerintahan",
+    "subject_id": 18
+  },
+  {
+    "judul_table": "Jumlah Penerbitan KTP Standar Nasional Per Kecamatan Di Kabupaten Aceh Barat, 2014 – 2017",
+    "bab": 2,
+    "dari_halaman": 46,
+    "sampai_halaman": 46,
+    "subject": "Pemerintahan",
+    "subject_id": 18
+  },
+  {
+    "judul_table": "Jumlah Penduduk dan Laju Pertumbuhan Penduduk Menurut Kecamatan di Kabupaten Aceh Barat, 2010, 2016, dan 2017",
+    "bab": 3,
+    "dari_halaman": 63,
+    "sampai_halaman": 63,
+    "subject": "Kependudukan",
+    "subject_id": 20
+  },
+  {
+    "judul_table": "Jumlah Rumah Tangga, Penduduk dan Rasio Jenis Kelamin Menurut Kecamatan di Kabupaten Aceh Barat, 2017",
+    "bab": 3,
+    "dari_halaman": 64,
+    "sampai_halaman": 64,
+    "subject": "Kependudukan",
+    "subject_id": 20
+  },
+  {
+    "judul_table": "Distribusi dan Kepadatan Penduduk Menurut Kecamatan di Kabupaten Aceh Barat, 2017",
+    "bab": 3,
+    "dari_halaman": 65,
+    "sampai_halaman": 65,
+    "subject": "Kependudukan",
+    "subject_id": 20
+  },
+  {
+    "judul_table": "Jumlah Penduduk Menurut Kelompok Umur dan Jenis Kelamin di Kabupaten Aceh Barat, 2017",
+    "bab": 3,
+    "dari_halaman": 66,
+    "sampai_halaman": 66,
+    "subject": "Kependudukan",
+    "subject_id": 20
+  },
+  {
+    "judul_table": "Jumlah Penduduk Laki-Laki Menurut Kecamatan Dan Kelompok Usia Sekolah Di Kabupaten Aceh Barat , 2017",
+    "bab": 3,
+    "dari_halaman": 67,
+    "sampai_halaman": 67,
+    "subject": "Kependudukan",
+    "subject_id": 20
+  },
+  {
+    "judul_table": "Jumlah Penduduk Perempuan Menurut Kecamatan Dan Kelompok Usia Sekolah Di Kabupaten Aceh Barat , 2017",
+    "bab": 3,
+    "dari_halaman": 68,
+    "sampai_halaman": 68,
+    "subject": "Kependudukan",
+    "subject_id": 20
+  },
+  {
+    "judul_table": "Jumlah Penyandang Cacat Dalam Kabupaten Aceh Barat Menurut Kecamatan, 2016",
+    "bab": 3,
+    "dari_halaman": 69,
+    "sampai_halaman": 69,
+    "subject": "Kependudukan",
+    "subject_id": 20
+  },
+  {
+    "judul_table": "Jumlah Penyandang Masalah Sosial Dalam Kabupaten Aceh Barat Menurut Kecamatan, 2016",
+    "bab": 3,
+    "dari_halaman": 70,
+    "sampai_halaman": 70,
+    "subject": "Kependudukan",
+    "subject_id": 20
+  },
+  {
+    "judul_table": "Jumlah Penduduk Berumur 15 Tahun Keatas Menurut Jenis Kegiatan Selama Seminggu yang Lalu dan Jenis Kelamin di Kabupaten Aceh Barat, 2017",
+    "bab": 3,
+    "dari_halaman": 71,
+    "sampai_halaman": 71,
+    "subject": "Ketenagakerjaan",
+    "subject_id": 12
+  },
+  {
+    "judul_table": "Jumlah Penduduk Berumur 15 Tahun Ke Atas Menurut Pendidikan Tertinggi yang Ditamatkan dan Jenis Kegiatan Selama Seminggu yang Lalu di Kabupaten Aceh Barat, 2017",
+    "bab": 3,
+    "dari_halaman": 72,
+    "sampai_halaman": 72,
+    "subject": "Ketenagakerjaan",
+    "subject_id": 12
+  },
+  {
+    "judul_table": "Jumlah Penduduk Berumur 15 Tahun Keatas yang Bekerja Selama Seminggu yang Lalu Menurut Kelompok Umur dan Jenis Kelamin di Kabupaten Aceh Barat, 2017",
+    "bab": 3,
+    "dari_halaman": 73,
+    "sampai_halaman": 73,
+    "subject": "Ketenagakerjaan",
+    "subject_id": 12
+  },
+  {
+    "judul_table": "Jumlah Penduduk Berumur 15 Tahun Ke Atas yang Bekerja Selama Seminggu yang Lalu Menurut Lapangan Pekerjaan Utama dan Jenis Kelamin di Kabupaten Aceh Barat, 2017",
+    "bab": 3,
+    "dari_halaman": 74,
+    "sampai_halaman": 74,
+    "subject": "Ketenagakerjaan",
+    "subject_id": 12
+  },
+  {
+    "judul_table": "Jumlah Penduduk Berumur 15 Tahun Ke Atas yang Bekerja Selama Seminggu yang Lalu Menurut Status Pekerjaan Utama dan Jenis Kelamin di Kabupaten Aceh Barat, 2017",
+    "bab": 3,
+    "dari_halaman": 75,
+    "sampai_halaman": 75,
+    "subject": "Ketenagakerjaan",
+    "subject_id": 12
+  },
+  {
+    "judul_table": "Jumlah Pencari Kerja Terdaftar Menurut Tingkat Pendidikan Tertinggi yang Ditamatkan dan Jenis Kelamin di Kabupaten Aceh Barat, 2017",
+    "bab": 3,
+    "dari_halaman": 76,
+    "sampai_halaman": 76,
+    "subject": "Ketenagakerjaan",
+    "subject_id": 12
+  },
+  {
+    "judul_table": "Jumlah Perusahaan Dan Buruh Menurut Lapangan Usaha Di Kabupaten Aceh Barat, 2016 - 2017",
+    "bab": 3,
+    "dari_halaman": 77,
+    "sampai_halaman": 77,
+    "subject": "Ketenagakerjaan",
+    "subject_id": 12
+  },
+  {
+    "judul_table": "Persentase Penduduk Usia 7–24 Tahun Menurut Jenis Kelamin, Kelompok Umur Sekolah, dan Partisipasi Sekolah di Kabupaten Aceh Barat, 2017",
+    "bab": 4,
+    "dari_halaman": 110,
+    "sampai_halaman": 110,
+    "subject": "Pendidikan",
+    "subject_id": 19
+  },
+  {
+    "judul_table": "Angka Partisipasi Murni (APM) dan Angka Partisipasi Kasar (APK) Menurut Jenjang Pendidikan di Kabupaten Aceh Barat, 2017",
+    "bab": 4,
+    "dari_halaman": 111,
+    "sampai_halaman": 111,
+    "subject": "Pendidikan",
+    "subject_id": 19
+  },
+  {
+    "judul_table": "Jumlah Sekolah, Murid, Guru, dan Rasio Murid-Guru Sekolah Dasar (SD) Menurut Kecamatan di Kabupaten Aceh Barat, 2017",
+    "bab": 4,
+    "dari_halaman": 112,
+    "sampai_halaman": 112,
+    "subject": "Pendidikan",
+    "subject_id": 19
+  },
+  {
+    "judul_table": "Jumlah Sekolah, Murid, Guru, dan Rasio Murid-Guru Madrasah Ibtidaiyah (MI) Menurut Kecamatan di Kabupaten Aceh Barat, 2017",
+    "bab": 4,
+    "dari_halaman": 113,
+    "sampai_halaman": 113,
+    "subject": "Pendidikan",
+    "subject_id": 19
+  },
+  {
+    "judul_table": "Jumlah Sekolah, Murid, Guru, dan Rasio Murid-Guru Sekolah Menengah Pertama Menurut Kecamatan di Kabupaten Aceh Barat, 2017",
+    "bab": 4,
+    "dari_halaman": 114,
+    "sampai_halaman": 114,
+    "subject": "Pendidikan",
+    "subject_id": 19
+  },
+  {
+    "judul_table": "Jumlah Sekolah, Murid, Guru, dan Rasio Murid-Guru Madrasah Tsanawiyah (MTs) Menurut Kecamatan di Kabupaten Aceh Barat, 2017",
+    "bab": 4,
+    "dari_halaman": 115,
+    "sampai_halaman": 115,
+    "subject": "Pendidikan",
+    "subject_id": 19
+  },
+  {
+    "judul_table": "Jumlah Sekolah, Murid, Guru, dan Rasio Murid-Guru Sekolah Menengah Atas Menurut Kecamatan di Kabupaten Aceh Barat, 2017",
+    "bab": 4,
+    "dari_halaman": 116,
+    "sampai_halaman": 116,
+    "subject": "Pendidikan",
+    "subject_id": 19
+  },
+  {
+    "judul_table": "Jumlah Sekolah, Murid, Guru, dan Rasio Murid-Guru Madrasah Aliyah Menurut Kecamatan di Kabupaten Aceh Barat, 2017",
+    "bab": 4,
+    "dari_halaman": 117,
+    "sampai_halaman": 117,
+    "subject": "Pendidikan",
+    "subject_id": 19
+  },
+  {
+    "judul_table": "Jumlah Sekolah, Murid, Guru, dan Rasio Murid-Guru Sekolah Menengah Kejuruan Menurut Kecamatan di Kabupaten Aceh Barat, 2017",
+    "bab": 4,
+    "dari_halaman": 118,
+    "sampai_halaman": 118,
+    "subject": "Pendidikan",
+    "subject_id": 19
+  },
+  {
+    "judul_table": "Jumlah Murid / Siswa Yang Lulus Pada Sekolah Dasar Dalam Kabupaten Aceh Barat, 2016/2017",
+    "bab": 4,
+    "dari_halaman": 119,
+    "sampai_halaman": 119,
+    "subject": "Pendidikan",
+    "subject_id": 19
+  },
+  {
+    "judul_table": "Jumlah Murid / Siswa Yang Lulus Pada SLTP Negeri Dan Swasta Dalam Kabupaten Aceh Barat, 2016/2017",
+    "bab": 4,
+    "dari_halaman": 120,
+    "sampai_halaman": 120,
+    "subject": "Pendidikan",
+    "subject_id": 19
+  },
+  {
+    "judul_table": "Jumlah Murid / Siswa Yang Lulus Pada SLTA Negeri Dan Swasta dalam Kabupaten Aceh Barat Tahun 2016/2017",
+    "bab": 4,
+    "dari_halaman": 121,
+    "sampai_halaman": 121,
+    "subject": "Pendidikan",
+    "subject_id": 19
+  },
+  {
+    "judul_table": "Jumlah Murid / Siswa Yang Lulus Pada SMK Negeri Dan Swasta dalam Kabupaten Aceh Barat Tahun 2016/2017",
+    "bab": 4,
+    "dari_halaman": 122,
+    "sampai_halaman": 122,
+    "subject": "Pendidikan",
+    "subject_id": 19
+  },
+  {
+    "judul_table": "Jumlah Murid / Siswa Yang Lulus Pada MIN Dan MIS Dalam Kabupaten Aceh Barat Tahun 2016/2017",
+    "bab": 4,
+    "dari_halaman": 123,
+    "sampai_halaman": 123,
+    "subject": "Pendidikan",
+    "subject_id": 19
+  },
+  {
+    "judul_table": "Jumlah Murid / Siswa Yang Lulus Pada MTs Negeri Dan Swasta Dalam Kabupaten Aceh Barat Tahun 2016/2017",
+    "bab": 4,
+    "dari_halaman": 124,
+    "sampai_halaman": 124,
+    "subject": "Pendidikan",
+    "subject_id": 19
+  },
+  {
+    "judul_table": "Jumlah Murid / Siswa Yang Lulus Pada Madrasah Aliyah Negeri Dan Swasta Dalam Kabupaten Aceh Barat Tahun 2016/2017",
+    "bab": 4,
+    "dari_halaman": 125,
+    "sampai_halaman": 125,
+    "subject": "Pendidikan",
+    "subject_id": 19
+  },
+  {
+    "judul_table": "Jumlah Mahasiswa Dan Dosen Di Universitas Teuku Umar (UTU) Menurut Program Studi, Kabupaten Aceh Barat Tahun 2016/2017",
+    "bab": 4,
+    "dari_halaman": 126,
+    "sampai_halaman": 126,
+    "subject": "Pendidikan",
+    "subject_id": 19
+  },
+  {
+    "judul_table": "Jumlah Mahasiswa Yang Menamatkan Pendidikan Di Universitas Teuku Umar (UTU) Menurut Program Studi, Kabupaten Aceh Barat Tahun 2016-2017",
+    "bab": 4,
+    "dari_halaman": 127,
+    "sampai_halaman": 127,
+    "subject": "Pendidikan",
+    "subject_id": 19
+  },
+  {
+    "judul_table": "Jumlah Mahasiswa Dan Dosen Di Sekolah Tinggi Agama Islam Negeri (STAIN) Menurut Program Studi, Kabupaten Aceh Barat Tahun 2016/2017",
+    "bab": 4,
+    "dari_halaman": 128,
+    "sampai_halaman": 128,
+    "subject": "Pendidikan",
+    "subject_id": 19
+  },
+  {
+    "judul_table": "Jumlah Mahasiswa Yang Menamatkan Pendidikan Di Sekolah Tinggi Agama Islam (STAIN) Menurut Program Studi, Kabupaten Aceh Barat Tahun 2016-2017",
+    "bab": 4,
+    "dari_halaman": 129,
+    "sampai_halaman": 129,
+    "subject": "Pendidikan",
+    "subject_id": 19
+  },
+  {
+    "judul_table": "Jumlah TKQ/TPQ Dan Santri Di Kabupaten Aceh Barat Tahun 2017",
+    "bab": 4,
+    "dari_halaman": 130,
+    "sampai_halaman": 130,
+    "subject": "Pendidikan",
+    "subject_id": 19
+  },
+  {
+    "judul_table": "Jumlah Pondok Pesantren, Santri Dan Teungku Menurut Kecamatan Di Kabupaten Aceh Barat, 2017",
+    "bab": 4,
+    "dari_halaman": 131,
+    "sampai_halaman": 131,
+    "subject": "Pendidikan",
+    "subject_id": 19
+  },
+  {
+    "judul_table": "Jumlah Pengunjung (K), Peminjam (P) Dan Penukaran (T) Buku Oleh Pelajar/Siswa Dan Mahasiswa Pada Perpustakaan Umum Meulaboh Per Bulan, 2017",
+    "bab": 4,
+    "dari_halaman": 132,
+    "sampai_halaman": 132,
+    "subject": "Pendidikan",
+    "subject_id": 19
+  },
+  {
+    "judul_table": "Jumlah Pengunjung (K), Peminjam (P) Dan Penukaran (T) Buku Oleh PNS Dan Swasta/Umum Pada Perpustakaan Umum Meulaboh Per Bulan, 2017",
+    "bab": 4,
+    "dari_halaman": 133,
+    "sampai_halaman": 133,
+    "subject": "Pendidikan",
+    "subject_id": 19
+  },
+  {
+    "judul_table": "Jumlah Penerima Kartu Indonesia Pintar (KIP) di Kabupaten Aceh Barat, 2016-2017",
+    "bab": 4,
+    "dari_halaman": 134,
+    "sampai_halaman": 134,
+    "subject": "Pendidikan",
+    "subject_id": 19
+  },
+  {
+    "judul_table": "Jumlah Fasilitas Kesehatan Menurut Kecamatan di Kabupaten Aceh Barat, 2017",
+    "bab": 4,
+    "dari_halaman": 135,
+    "sampai_halaman": 135,
+    "subject": "Kesehatan",
+    "subject_id": 11
+  },
+  {
+    "judul_table": "Jumlah Tenaga Kesehatan Menurut Kecamatan di Kabupaten Aceh Barat, 2017",
+    "bab": 4,
+    "dari_halaman": 136,
+    "sampai_halaman": 136,
+    "subject": "Kesehatan",
+    "subject_id": 11
+  },
+  {
+    "judul_table": "Jumlah Dokter Spesialis, Dokter Umum, dan Dokter Gigi Menurut Sarana Pelayanan Kesehatan di Kabupaten Aceh Barat, 2017",
+    "bab": 4,
+    "dari_halaman": 137,
+    "sampai_halaman": 137,
+    "subject": "Kesehatan",
+    "subject_id": 11
+  },
+  {
+    "judul_table": "Jumlah Tenaga Kesehatan Menurut Jenis Dan Status Kepegawaian Pada RSU Cut Nyak Dhien Meulaboh, 2017",
+    "bab": 4,
+    "dari_halaman": 138,
+    "sampai_halaman": 139,
+    "subject": "Kesehatan",
+    "subject_id": 11
+  },
+  {
+    "judul_table": "Jumlah Sarana Kesehatan Dan Tenaga Medis Puskesmas Menurut Kecamatan Di Kabupaten Aceh Barat, 2017",
+    "bab": 4,
+    "dari_halaman": 140,
+    "sampai_halaman": 140,
+    "subject": "Kesehatan",
+    "subject_id": 11
+  },
+  {
+    "judul_table": "Jumlah Tenaga Kesehatan Menurut Unit Kerja Dalam Kabupaten Aceh Barat, 2017",
+    "bab": 4,
+    "dari_halaman": 141,
+    "sampai_halaman": 141,
+    "subject": "Kesehatan",
+    "subject_id": 11
+  },
+  {
+    "judul_table": "Persentase Balita Yang Pernah Mendapat Imunisasi Menurut Jenis Imunisasi di Kabupaten Aceh Barat, 2014‒2017",
+    "bab": 4,
+    "dari_halaman": 142,
+    "sampai_halaman": 142,
+    "subject": "Kesehatan",
+    "subject_id": 11
+  },
+  {
+    "judul_table": "Jumlah Bayi Yang Diimunisasi Di Puskesmas Menurut Kecamatan Dalam Kabupaten Aceh Barat Tahun 2017",
+    "bab": 4,
+    "dari_halaman": 143,
+    "sampai_halaman": 143,
+    "subject": "Kesehatan",
+    "subject_id": 11
+  },
+  {
+    "judul_table": "Jumlah Kasus 10 Penyakit Terbanyak di Kabupaten Aceh Barat, 2017",
+    "bab": 4,
+    "dari_halaman": 144,
+    "sampai_halaman": 144,
+    "subject": "Kesehatan",
+    "subject_id": 11
+  },
+  {
+    "judul_table": "Jumlah Bayi Lahir, Bayi Berat Badan Lahir Rendah (BBLR), BBLR Dirujuk, dan Bergizi Buruk di Kabupaten Aceh Barat, 2013-2017",
+    "bab": 4,
+    "dari_halaman": 145,
+    "sampai_halaman": 145,
+    "subject": "Kesehatan",
+    "subject_id": 11
+  },
+  {
+    "judul_table": "Jumlah dan persentase BBLR yang ditangani puskesmas dalam kabupaten aceh barat, 2017",
+    "bab": 4,
+    "dari_halaman": 146,
+    "sampai_halaman": 145,
+    "subject": "Kesehatan",
+    "subject_id": 11
+  },
+  {
+    "judul_table": "Jumlah Dan Persentase BBLR Yang Ditangani RSUD Cut Nyak Dhien Dalam Kabupaten Aceh Barat, 2017",
+    "bab": 4,
+    "dari_halaman": 147,
+    "sampai_halaman": 147,
+    "subject": "Kesehatan",
+    "subject_id": 11
+  },
+  {
+    "judul_table": "Jumlah Kelahiran, Bayi Dan Balita Yang Ditangani Puskesmas Dalam Kabupaten Aceh Barat 2017",
+    "bab": 4,
+    "dari_halaman": 148,
+    "sampai_halaman": 148,
+    "subject": "Kesehatan",
+    "subject_id": 11
+  },
+  {
+    "judul_table": "Jumlah Kelahiran Bayi Dengan Operasi Caesar Yang Ditangani Rsud Cut Nyak Dhien Dalam Kabupaten Aceh Barat 2015-2017",
+    "bab": 4,
+    "dari_halaman": 149,
+    "sampai_halaman": 149,
+    "subject": "Kesehatan",
+    "subject_id": 11
+  },
+  {
+    "judul_table": "Jumlah Ibu Hamil, Melakukan Kunjungan K1, Melakukan Kunjungan K4, Kurang Energi Kronis (KEK), dan Mendapat Tablet Zat Besi (Fe) di Kabupaten Aceh Barat, 2012‒2017",
+    "bab": 4,
+    "dari_halaman": 150,
+    "sampai_halaman": 150,
+    "subject": "Kesehatan",
+    "subject_id": 11
+  },
+  {
+    "judul_table": "Jumlah Kasus HIV/AIDS, IMS, DBD, Diare, TB, dan Malaria Menurut Kecamatan di Kabupaten Aceh Barat, 2017",
+    "bab": 4,
+    "dari_halaman": 151,
+    "sampai_halaman": 151,
+    "subject": "Kesehatan",
+    "subject_id": 11
+  },
+  {
+    "judul_table": "Jumlah Pasangan Usia Subur dan Peserta KB Aktif Menurut Kecamatan di Kabupaten Aceh Barat, 2017",
+    "bab": 4,
+    "dari_halaman": 152,
+    "sampai_halaman": 153,
+    "subject": "Kesehatan",
+    "subject_id": 11
+  },
+  {
+    "judul_table": "Jumlah Kematian Ibu Dan Bayi Yang Dilaporkan Menurut Kecamatan Di Kabupaten Aceh Barat, 2015 - 2017",
+    "bab": 4,
+    "dari_halaman": 154,
+    "sampai_halaman": 154,
+    "subject": "Kesehatan",
+    "subject_id": 11
+  },
+  {
+    "judul_table": "Jumlah Kematian Ibu Dan Bayi Pada RSUD Cut Nyak Dhien Menurut Kecamatan Di Kabupaten Aceh Barat, 2017",
+    "bab": 4,
+    "dari_halaman": 155,
+    "sampai_halaman": 155,
+    "subject": "Kesehatan",
+    "subject_id": 11
+  },
+  {
+    "judul_table": "Jumlah Balita Yang Menderita Gizi Buruk Menurut Kecamatan Dalam Kabupaten Aceh Barat Tahun 2017",
+    "bab": 4,
+    "dari_halaman": 156,
+    "sampai_halaman": 156,
+    "subject": "Kesehatan",
+    "subject_id": 11
+  },
+  {
+    "judul_table": "Jumlah Penerima Kartu Indonesia Sehat (KIS) di Kabupaten Aceh Barat, 2015-2017",
+    "bab": 4,
+    "dari_halaman": 157,
+    "sampai_halaman": 157,
+    "subject": "Kesehatan",
+    "subject_id": 11
+  },
+  {
+    "judul_table": "Jumlah Remaja Usia 15-24 Tahun yang Mendapat Penyuluhan Tentang Kesehatan Reproduksi (Kespro), HIV/AIDS, dan Keluarga Berencana (KB) Menurut Kecamatan di Kabupaten Aceh Barat, 2017",
+    "bab": 4,
+    "dari_halaman": 158,
+    "sampai_halaman": 158,
+    "subject": "Kesehatan",
+    "subject_id": 11
+  },
+  {
+    "judul_table": "Jumlah Klinik Keluarga Berencana (KKB) dan Pos Pelayanan Keluarga Berencana Desa (PPKBD) Menurut Kecamatan di Kabupaten Aceh Barat, 2017",
+    "bab": 4,
+    "dari_halaman": 159,
+    "sampai_halaman": 159,
+    "subject": "Kesehatan",
+    "subject_id": 11
+  },
+  {
+    "judul_table": "Realisasi Penyaluran Zakat, Infaq Dan Sadaqah Menurut Kecamatan Dan Penerima Pada Badan Baitul Mal Kabupaten Aceh Barat, 2017",
+    "bab": 4,
+    "dari_halaman": 160,
+    "sampai_halaman": 162,
+    "subject": "Sosial  Budaya",
+    "subject_id": 28
+  },
+  {
+    "judul_table": "Jumlah Tempat Peribadatan Menurut Kecamatan di Kabupaten Aceh Barat, 2017",
+    "bab": 4,
+    "dari_halaman": 163,
+    "sampai_halaman": 163,
+    "subject": "Sosial  Budaya",
+    "subject_id": 28
+  },
+  {
+    "judul_table": "Jumlah Penghuni UPT Pa/Pk Suci Hati Meulaboh Per Bulan 2017",
+    "bab": 4,
+    "dari_halaman": 164,
+    "sampai_halaman": 164,
+    "subject": "Sosial  Budaya",
+    "subject_id": 28
+  },
+  {
+    "judul_table": "Jumlah Pelanggaran Syariat Islam Menurut Jenis Qanun Per Bulan Di Kabupaten Acen Barat, 2017",
+    "bab": 4,
+    "dari_halaman": 165,
+    "sampai_halaman": 165,
+    "subject": "Sosial  Budaya",
+    "subject_id": 28
+  },
+  {
+    "judul_table": "Jumlah Tindak Pidana Menurut Kepolisian Sektor di Kabupaten Aceh Barat, 2014‒2017",
+    "bab": 4,
+    "dari_halaman": 166,
+    "sampai_halaman": 166,
+    "subject": "Kriminalitas",
+    "subject_id": 16
+  },
+  {
+    "judul_table": "Jumlah Kasus Pelanggaran/Tindak Kekerasan Yang Diterima Menurut Jenis Kasus Dalam Kabupaten Aceh Barat, 2017",
+    "bab": 4,
+    "dari_halaman": 167,
+    "sampai_halaman": 170,
+    "subject": "Kriminalitas",
+    "subject_id": 16
+  },
+  {
+    "judul_table": "Persentase Penyelesaian Tindak Pidana Menurut Kepolisian Resort di Kabupaten Aceh Barat, 2016-2017",
+    "bab": 4,
+    "dari_halaman": 171,
+    "sampai_halaman": 171,
+    "subject": "Kriminalitas",
+    "subject_id": 16
+  },
+  {
+    "judul_table": "Jumlah Kasus Pelanggaran/Tindak Kekerasan Yang Diselesaikan Menurut Jenis Kasus Dalam Kabupaten Aceh Barat, 2017",
+    "bab": 4,
+    "dari_halaman": 172,
+    "sampai_halaman": 175,
+    "subject": "Kriminalitas",
+    "subject_id": 16
+  },
+  {
+    "judul_table": "Jumlah Kasus Kekerasan Dalam Rumah Tangga (KDRT) Menurut Kecamatan Di Kabupaten Aceh Barat, 2015–2017",
+    "bab": 4,
+    "dari_halaman": 176,
+    "sampai_halaman": 176,
+    "subject": "Kriminalitas",
+    "subject_id": 16
+  },
+  {
+    "judul_table": "Jumlah Perkara Dan Terdakwa Dalam Perkara Pidana Termasuk Pelanggaran Lalu Lintas Yang Diterima Dan Diputuskan Pada Pengadilan Negeri Meulaboh, 2017",
+    "bab": 4,
+    "dari_halaman": 177,
+    "sampai_halaman": 177,
+    "subject": "Kriminalitas",
+    "subject_id": 16
+  },
+  {
+    "judul_table": "Jumlah Perkara Dan Terdakwa Pidana Biasa, Termasuk Pelanggaran Lalu Lintas Yang Diterima Dan Diputuskan Pada Pengadilan Negeri Meulaboh Per Bulan, 2017",
+    "bab": 4,
+    "dari_halaman": 178,
+    "sampai_halaman": 178,
+    "subject": "Kriminalitas",
+    "subject_id": 16
+  },
+  {
+    "judul_table": "Jumlah Perkara Dan Terdakwa Pidana Sumir, Termasuk Pelanggaran Lalu Lintas Yang Diterima Dan Diputuskan Pada Pengadilan Negeri Meulaboh Per Bulan, 2017",
+    "bab": 4,
+    "dari_halaman": 179,
+    "sampai_halaman": 179,
+    "subject": "Kriminalitas",
+    "subject_id": 16
+  },
+  {
+    "judul_table": "Jumlah Perkara Dan Terdakwa Pidana Pelanggaran, Termasuk Pelanggaran Lalu Lintas Yang Diterima Dan Diputuskan Pada Pengadilan Negeri Meulaboh Per Bulan, 2017",
+    "bab": 4,
+    "dari_halaman": 180,
+    "sampai_halaman": 180,
+    "subject": "Kriminalitas",
+    "subject_id": 16
+  },
+  {
+    "judul_table": "Jumlah Perkara (P) Dan Terdakwa (T), Termasuk Pelanggaran Lalu Lintas Yang Diterima Dan Diputuskan Pada Pengadilan Negeri Meulaboh Per Bulan Tahun 2017",
+    "bab": 4,
+    "dari_halaman": 181,
+    "sampai_halaman": 181,
+    "subject": "Kriminalitas",
+    "subject_id": 16
+  },
+  {
+    "judul_table": "Jumlah Perkara Yang Diterima Dan Diselesaikan Oleh Mahkamah Syari’ah Meulaboh Per Bulan, 2017",
+    "bab": 4,
+    "dari_halaman": 182,
+    "sampai_halaman": 182,
+    "subject": "Kriminalitas",
+    "subject_id": 16
+  },
+  {
+    "judul_table": "Jumlah Perkara Menurut Jenis Yang Diterima Oleh Mahkamah Syari’ah Meulaboh Per Bulan, 2017",
+    "bab": 4,
+    "dari_halaman": 183,
+    "sampai_halaman": 183,
+    "subject": "Kriminalitas",
+    "subject_id": 16
+  },
+  {
+    "judul_table": "Jumlah Perkara Menurut Jenis Yang Diselesaikan Oleh Mahkamah Syari’ah Meulaboh Per Bulan, 2017",
+    "bab": 4,
+    "dari_halaman": 184,
+    "sampai_halaman": 184,
+    "subject": "Kriminalitas",
+    "subject_id": 16
+  },
+  {
+    "judul_table": "Jumlah Penghuni Lembaga Pemasyarakatan (LP) Meulaboh Menurut Jenis Kejahatan Dan Jenis Kelamin, 2017",
+    "bab": 4,
+    "dari_halaman": 185,
+    "sampai_halaman": 185,
+    "subject": "Kriminalitas",
+    "subject_id": 16
+  },
+  {
+    "judul_table": "Perkembangan Tambahan Narapidana Dari Keputusan Pengadilan Negeri Meulaboh Pada Lembaga Pemasyarakatan (LP) Meulaboh Perbulan Tahun 2017",
+    "bab": 4,
+    "dari_halaman": 186,
+    "sampai_halaman": 186,
+    "subject": "Kriminalitas",
+    "subject_id": 16
+  },
+  {
+    "judul_table": "Jumlah Tahanan Pidana Menurut Jenis Perkara Di Daerah Hukum Kejaksaan Negeri Meulaboh Tahun 2017",
+    "bab": 4,
+    "dari_halaman": 187,
+    "sampai_halaman": 187,
+    "subject": "Kriminalitas",
+    "subject_id": 16
+  },
+  {
+    "judul_table": "Garis Kemiskinan dan Penduduk Miskin di Kabupaten Aceh Barat, 2012‒2017",
+    "bab": 4,
+    "dari_halaman": 188,
+    "sampai_halaman": 188,
+    "subject": "Kemiskinan",
+    "subject_id": 10
+  },
+  {
+    "judul_table": "Jumlah Keluarga Menurut Kecamatan dan Klasifikasi Keluarga di Kabupaten Aceh Barat, 2017",
+    "bab": 4,
+    "dari_halaman": 189,
+    "sampai_halaman": 189,
+    "subject": "Kemiskinan",
+    "subject_id": 10
+  },
+  {
+    "judul_table": "Luas Lahan Sawah Menurut Kecamatan dan Jenis Pengairan di Kabupaten Aceh Barat (Hektar), 2017",
+    "bab": 5,
+    "dari_halaman": 219,
+    "sampai_halaman": 219,
+    "subject": "Tanaman Pangan",
+    "subject_id": 29
+  },
+  {
+    "judul_table": "Luas Lahan Tegal/Kebun, Ladang/Huma, Perkebunan dan Lahan yang Sementara Tidak Diusahakan Menurut Kecamatan di Kabupaten Aceh Barat (Hektar), 2017",
+    "bab": 5,
+    "dari_halaman": 220,
+    "sampai_halaman": 220,
+    "subject": "Tanaman Pangan",
+    "subject_id": 29
+  },
+  {
+    "judul_table": "Luas Panen Padi Sawah dan Padi Ladang Menurut Kecamatan di Kabupaten Aceh Barat (Hektar), 2017",
+    "bab": 5,
+    "dari_halaman": 221,
+    "sampai_halaman": 221,
+    "subject": "Tanaman Pangan",
+    "subject_id": 29
+  },
+  {
+    "judul_table": "Luas Tanam Padi Sawah dan Padi Ladang Menurut Kecamatan di Kabupaten Aceh Barat (Ha), 2017",
+    "bab": 5,
+    "dari_halaman": 222,
+    "sampai_halaman": 222,
+    "subject": "Tanaman Pangan",
+    "subject_id": 29
+  },
+  {
+    "judul_table": "Produksi Padi Sawah dan Padi Ladang Menurut Kecamatan di Kabupaten Aceh Barat (Ton), 2017",
+    "bab": 5,
+    "dari_halaman": 223,
+    "sampai_halaman": 223,
+    "subject": "Tanaman Pangan",
+    "subject_id": 29
+  },
+  {
+    "judul_table": "Rata-Rata Produksi Padi Sawah dan Padi Ladang Menurut Kecamatan di Kabupaten Aceh Barat (Ton/Ha), 2017",
+    "bab": 5,
+    "dari_halaman": 224,
+    "sampai_halaman": 224,
+    "subject": "Tanaman Pangan",
+    "subject_id": 29
+  },
+  {
+    "judul_table": "Luas Panen Jagung, Kedelai, Kacang Tanah, Kacang Hijau, Ubi Kayu, Ubi Jalar Menurut Kecamatan di Kabupaten Aceh Barat (Ha), 2017",
+    "bab": 5,
+    "dari_halaman": 225,
+    "sampai_halaman": 225,
+    "subject": "Tanaman Pangan",
+    "subject_id": 29
+  },
+  {
+    "judul_table": "Luas Tanam Jagung, Kedelai, Kacang Tanah, Kacang Hijau, Ubi Kayu, Ubi Jalar Menurut Kecamatan di Kabupaten Aceh Barat (Ha), 2017",
+    "bab": 5,
+    "dari_halaman": 226,
+    "sampai_halaman": 226,
+    "subject": "Tanaman Pangan",
+    "subject_id": 29
+  },
+  {
+    "judul_table": "Produksi Jagung, Kedelai, Kacang Tanah, Kacang Hijau, Ubi Kayu, Ubi Jalar Menurut Kecamatan di Kabupaten Aceh Barat (Ton), 2017",
+    "bab": 5,
+    "dari_halaman": 227,
+    "sampai_halaman": 227,
+    "subject": "Tanaman Pangan",
+    "subject_id": 29
+  },
+  {
+    "judul_table": "Rata-Rata Produksi Jagung, Kedelai, Kacang Tanah, Kacang Hijau, Ubi Kayu, Ubi Jalar Menurut Kecamatan di Kabupaten Aceh Barat (Ton/Hektar), 2017",
+    "bab": 5,
+    "dari_halaman": 228,
+    "sampai_halaman": 228,
+    "subject": "Tanaman Pangan",
+    "subject_id": 29
+  },
+  {
+    "judul_table": "Luas Panen Tanaman Sayuran Menurut Kecamatan dan Jenis Sayuran di Kabupaten Aceh Barat (Ha), 2017",
+    "bab": 5,
+    "dari_halaman": 229,
+    "sampai_halaman": 229,
+    "subject": "Holtikura",
+    "subject_id": 4
+  },
+  {
+    "judul_table": "Luas Tanam Tanaman Sayuran Menurut Kecamatan dan Jenis Sayuran di Kabupaten Aceh Barat (Ha), 2017",
+    "bab": 5,
+    "dari_halaman": 230,
+    "sampai_halaman": 230,
+    "subject": "Holtikura",
+    "subject_id": 4
+  },
+  {
+    "judul_table": "Produksi Tanaman Sayuran Menurut Kecamatan dan Jenis Sayuran di Kabupaten Aceh Barat (Ton), 2017",
+    "bab": 5,
+    "dari_halaman": 231,
+    "sampai_halaman": 231,
+    "subject": "Holtikura",
+    "subject_id": 4
+  },
+  {
+    "judul_table": "Rata-Rata Produksi Tanaman Sayuran Menurut Kecamatan dan Jenis Sayuran di Kabupaten Aceh Barat (Ton/Ha), 2017",
+    "bab": 5,
+    "dari_halaman": 232,
+    "sampai_halaman": 232,
+    "subject": "Holtikura",
+    "subject_id": 4
+  },
+  {
+    "judul_table": "Produksi Buah-buahan Menurut Kecamatan dan Jenis Buah di Kabupaten Aceh Barat (Ton), 2017",
+    "bab": 5,
+    "dari_halaman": 233,
+    "sampai_halaman": 234,
+    "subject": "Holtikura",
+    "subject_id": 4
+  },
+  {
+    "judul_table": "Rata-Rata Produksi Buah-buahan Menurut Kecamatan dan Jenis Buah di Kabupaten Aceh Barat (Kuintal/Pohon), 2017",
+    "bab": 5,
+    "dari_halaman": 235,
+    "sampai_halaman": 236,
+    "subject": "Holtikura",
+    "subject_id": 4
+  },
+  {
+    "judul_table": "Luas Panen Buah-buahan Menurut Kecamatan dan Jenis Buah di Kabupaten Aceh Barat (Pohon/Rumpun), 2017",
+    "bab": 5,
+    "dari_halaman": 237,
+    "sampai_halaman": 238,
+    "subject": "Holtikura",
+    "subject_id": 4
+  },
+  {
+    "judul_table": "Luas Tanam Buah-buahan Menurut Kecamatan dan Jenis Buah di Kabupaten Aceh Barat (Pohon/Rumpun), 2017",
+    "bab": 5,
+    "dari_halaman": 239,
+    "sampai_halaman": 240,
+    "subject": "Holtikura",
+    "subject_id": 4
+  },
+  {
+    "judul_table": "Luas Tanaman Perkebunan Menurut Kecamatan dan Jenis Tanaman di Kabupaten Aceh Barat (hektar), 2017",
+    "bab": 5,
+    "dari_halaman": 241,
+    "sampai_halaman": 241,
+    "subject": "Perkebunan",
+    "subject_id": 23
+  },
+  {
+    "judul_table": "Produksi Tanaman Perkebunan Menurut Kecamatan dan Jenis Tanaman di Kabupaten Aceh Barat (ton), 2017",
+    "bab": 5,
+    "dari_halaman": 242,
+    "sampai_halaman": 242,
+    "subject": "Perkebunan",
+    "subject_id": 23
+  },
+  {
+    "judul_table": "Populasi Ternak Menurut Kecamatan dan Jenis Ternak di Kabupaten Aceh Barat, 2017",
+    "bab": 5,
+    "dari_halaman": 243,
+    "sampai_halaman": 243,
+    "subject": "Peternakan",
+    "subject_id": 24
+  },
+  {
+    "judul_table": "Populasi Unggas Menurut Kecamatan dan Jenis Unggas di Kabupaten Aceh Barat, 2017",
+    "bab": 5,
+    "dari_halaman": 244,
+    "sampai_halaman": 244,
+    "subject": "Peternakan",
+    "subject_id": 24
+  },
+  {
+    "judul_table": "Jumlah Ternak yang Dipotong Menurut Kecamatan dan Jenis Ternak di Kabupaten Aceh Barat, 2017",
+    "bab": 5,
+    "dari_halaman": 245,
+    "sampai_halaman": 245,
+    "subject": "Peternakan",
+    "subject_id": 24
+  },
+  {
+    "judul_table": "Jumlah Rumah Tangga Perikanan Tangkap Menurut Kecamatan dan Subsektor di Kabupaten Aceh Barat, 2016 dan 2017",
+    "bab": 5,
+    "dari_halaman": 246,
+    "sampai_halaman": 246,
+    "subject": "Perikanan",
+    "subject_id": 22
+  },
+  {
+    "judul_table": "Produksi Perikanan Tangkap Menurut Kecamatan dan Subsektor di Kabupaten Aceh Barat (ton), 2016 dan 2017",
+    "bab": 5,
+    "dari_halaman": 247,
+    "sampai_halaman": 247,
+    "subject": "Perikanan",
+    "subject_id": 22
+  },
+  {
+    "judul_table": "Produksi Budidaya Perikanan Menurut Jenis Budidaya Dan Kecamatan Di Kabupaten Aceh Barat, 2017",
+    "bab": 5,
+    "dari_halaman": 248,
+    "sampai_halaman": 248,
+    "subject": "Perikanan",
+    "subject_id": 22
+  },
+  {
+    "judul_table": "Produksi Dan Nilai Produksi Perikanan Laut Menurut Jenis Produksi Di Kabupaten Aceh Barat Tahun 2017",
+    "bab": 5,
+    "dari_halaman": 249,
+    "sampai_halaman": 249,
+    "subject": "Perikanan",
+    "subject_id": 22
+  },
+  {
+    "judul_table": "Jumlah Rumah Tangga Perikanan Budidaya Menurut Kecamatan dan Jenis Budidaya di Kabupaten Aceh Barat, 2017",
+    "bab": 5,
+    "dari_halaman": 250,
+    "sampai_halaman": 250,
+    "subject": "Perikanan",
+    "subject_id": 22
+  },
+  {
+    "judul_table": "Produksi Perikanan Budidaya Menurut Kecamatan dan Subsektor di Kabupaten Aceh Barat (ton), 2017",
+    "bab": 5,
+    "dari_halaman": 251,
+    "sampai_halaman": 251,
+    "subject": "Perikanan",
+    "subject_id": 22
+  },
+  {
+    "judul_table": "Produksi Budidaya Tambak Menurut Jenis Ikan/Udang Dan Kecamatan Di Kabupaten Aceh Barat, 2017",
+    "bab": 5,
+    "dari_halaman": 252,
+    "sampai_halaman": 252,
+    "subject": "Perikanan",
+    "subject_id": 22
+  },
+  {
+    "judul_table": "Produksi Budidaya Kolam Menurut Jenis Ikan Dan Kecamatan Di Kabupaten Aceh Barat, 2017",
+    "bab": 5,
+    "dari_halaman": 253,
+    "sampai_halaman": 253,
+    "subject": "Perikanan",
+    "subject_id": 22
+  },
+  {
+    "judul_table": "Luas Areal Dan Produksi Budidaya Ikan Menurut Kecamatan Di Kabupaten Aceh Barat, 2017",
+    "bab": 5,
+    "dari_halaman": 254,
+    "sampai_halaman": 254,
+    "subject": "Perikanan",
+    "subject_id": 22
+  },
+  {
+    "judul_table": "Jumlah Perahu/Kapal Menurut Kecamatan dan Jenis Kapal di Kabupaten Aceh Barat, 2017",
+    "bab": 5,
+    "dari_halaman": 255,
+    "sampai_halaman": 255,
+    "subject": "Perikanan",
+    "subject_id": 22
+  },
+  {
+    "judul_table": "Jumlah Alat Penangkap Ikan Menurut Jenis Alat Dan Kecamatan Di Kabupaten Aceh Barat, 2017",
+    "bab": 5,
+    "dari_halaman": 256,
+    "sampai_halaman": 257,
+    "subject": "Perikanan",
+    "subject_id": 22
+  },
+  {
+    "judul_table": "Luas Kawasan Hutan dan Perairan Menurut Kecamatan di Kabupaten Aceh Barat (hektar), 2017",
+    "bab": 5,
+    "dari_halaman": 258,
+    "sampai_halaman": 258,
+    "subject": "Kehutanan",
+    "subject_id": "jgn di tampilkan"
+  },
+  {
+    "judul_table": "Produksi Kayu Hutan Menurut Jenis Produksi di Kabupaten Aceh Barat (m3), 2012‒2017",
+    "bab": 5,
+    "dari_halaman": 259,
+    "sampai_halaman": 259,
+    "subject": "Kehutanan",
+    "subject_id": "jgn di tampilkan"
+  },
+  {
+    "judul_table": "Jumlah Perusahaan Dan Buruh Menurut Lapangan Usaha Di Kabupaten Aceh Barat, 2016 - 2017",
+    "bab": 6,
+    "dari_halaman": 270,
+    "sampai_halaman": 270,
+    "subject": "Industri",
+    "subject_id": 8
+  },
+  {
+    "judul_table": "Jumlah Industri Tradisional Menurut Jenis Industri Di Kabupaten Aceh Barat, 2017",
+    "bab": 6,
+    "dari_halaman": 271,
+    "sampai_halaman": 272,
+    "subject": "Industri",
+    "subject_id": 8
+  },
+  {
+    "judul_table": "Jumlah Industri Makanan Dan Minuman Menurut Jenis Industri Di Kabupaten Aceh Barat, 2017",
+    "bab": 6,
+    "dari_halaman": 273,
+    "sampai_halaman": 274,
+    "subject": "Industri",
+    "subject_id": 8
+  },
+  {
+    "judul_table": "Jumlah Industri Jasa Menurut Jenis Industri Di Kabupaten Aceh Barat, 2017",
+    "bab": 6,
+    "dari_halaman": 275,
+    "sampai_halaman": 277,
+    "subject": "Industri",
+    "subject_id": 8
+  },
+  {
+    "judul_table": "Jumlah Industri Bangunan/Bahan Konstruksi Menurut Jenis Industri Di Kabupaten Aceh Barat, 2017",
+    "bab": 6,
+    "dari_halaman": 278,
+    "sampai_halaman": 278,
+    "subject": "Industri",
+    "subject_id": 8
+  },
+  {
+    "judul_table": "Jumlah Tenaga Kerja Industri Tradisional Menurut Jenis Industri Di Kabupaten Aceh Barat, 2017",
+    "bab": 6,
+    "dari_halaman": 279,
+    "sampai_halaman": 280,
+    "subject": "Industri",
+    "subject_id": 8
+  },
+  {
+    "judul_table": "Jumlah Tenaga Kerja Industri Makanan Dan Minuman Menurut Jenis Industri Di Kabupaten Aceh Barat, 2017",
+    "bab": 6,
+    "dari_halaman": 281,
+    "sampai_halaman": 282,
+    "subject": "Industri",
+    "subject_id": 8
+  },
+  {
+    "judul_table": "Jumlah Tenaga Kerja Industri Jasa Menurut Jenis Industri Di Kabupaten Aceh Barat, 2017",
+    "bab": 6,
+    "dari_halaman": 283,
+    "sampai_halaman": 285,
+    "subject": "Industri",
+    "subject_id": 8
+  },
+  {
+    "judul_table": "Jumlah Tenaga Kerja Industri Bangunan/Bahan Konstruksi Menurut Jenis Industri Di Kabupaten Aceh Barat, 2017",
+    "bab": 6,
+    "dari_halaman": 286,
+    "sampai_halaman": 286,
+    "subject": "Industri",
+    "subject_id": 8
+  },
+  {
+    "judul_table": "Jumlah Industri Dan Tenaga Kerjanya Per Kecamatan Di Kabupaten Aceh Barat Tahun 2017",
+    "bab": 6,
+    "dari_halaman": 287,
+    "sampai_halaman": 287,
+    "subject": "Industri",
+    "subject_id": 8
+  },
+  {
+    "judul_table": "Daya Terpasang, Produksi, dan Distribusi Listrik PT PLN (Persero) pada Cabang/Ranting PLN di Kabupaten Aceh Barat, 2012‒2017",
+    "bab": 6,
+    "dari_halaman": 288,
+    "sampai_halaman": 288,
+    "subject": "Energi",
+    "subject_id": 1
+  },
+  {
+    "judul_table": "Jumlah Desa Yang Sudah Dan Belum Mendapatkan Aliran Listrik PLN Menurut Kecamatan Di Kabupaten Aceh Barat , 2017",
+    "bab": 6,
+    "dari_halaman": 289,
+    "sampai_halaman": 289,
+    "subject": "Energi",
+    "subject_id": 1
+  },
+  {
+    "judul_table": "Jumlah Kwh Terjual Pada PT PLN (Persero) Wilayah – I, 2017/The Number of KWh Sold by State Electrical Company 2017",
+    "bab": 6,
+    "dari_halaman": 290,
+    "sampai_halaman": 290,
+    "subject": "Energi",
+    "subject_id": 1
+  },
+  {
+    "judul_table": "Perkembangan Jumlah Pelanggan Pada PT PLN (Persero) Wilayah – I Cabang Meulaboh Dan Unit-Unitnyatahun 2017",
+    "bab": 6,
+    "dari_halaman": 291,
+    "sampai_halaman": 291,
+    "subject": "Energi",
+    "subject_id": 1
+  },
+  {
+    "judul_table": "Jumlah Pelanggan Rumah Tangga Pada PT PLN (Persero) Wilayah I Cabang Meulaboh Tahun 2017",
+    "bab": 6,
+    "dari_halaman": 292,
+    "sampai_halaman": 292,
+    "subject": "Energi",
+    "subject_id": 1
+  },
+  {
+    "judul_table": "Laporan Pengusahaan Pembangkit Pada PT PLN (Persero) Wilayah I Cabang Meulaboh Tahun 2017",
+    "bab": 6,
+    "dari_halaman": 293,
+    "sampai_halaman": 295,
+    "subject": "Energi",
+    "subject_id": 1
+  },
+  {
+    "judul_table": "Jumlah Pelanggan dan Air yang Disalurkan Menurut Pelanggan di Kabupaten Aceh Barat, 2017",
+    "bab": 6,
+    "dari_halaman": 296,
+    "sampai_halaman": 296,
+    "subject": "Energi",
+    "subject_id": 1
+  },
+  {
+    "judul_table": "Jumlah Perusahaan Menurut Bentuk Badan Hukum di Kabupaten Aceh Barat, 2013‒2017",
+    "bab": 7,
+    "dari_halaman": 305,
+    "sampai_halaman": 305,
+    "subject": "Perdagangan",
+    "subject_id": 21
+  },
+  {
+    "judul_table": "Jumlah Pedagang Menurut Kecamatan di Kabupaten Aceh Barat, 2016",
+    "bab": 7,
+    "dari_halaman": 306,
+    "sampai_halaman": 306,
+    "subject": "Perdagangan",
+    "subject_id": 21
+  },
+  {
+    "judul_table": "Jumlah Sarana Perdagangan Menurut Jenisnya di Kabupaten Aceh Barat, 2013‒2017",
+    "bab": 7,
+    "dari_halaman": 307,
+    "sampai_halaman": 307,
+    "subject": "Perdagangan",
+    "subject_id": 21
+  },
+  {
+    "judul_table": "Jumlah Koperasi Menurut Jenis Koperasi dan Kecamatan di Kabupaten Aceh Barat, 2016",
+    "bab": 7,
+    "dari_halaman": 308,
+    "sampai_halaman": 308,
+    "subject": "Keuangan",
+    "subject_id": 13
+  },
+  {
+    "judul_table": "Jumlah Koperasi Menurut Jenisnya Per Kecamatan di Kabupaten Aceh Barat Tahun 2016",
+    "bab": 7,
+    "dari_halaman": 309,
+    "sampai_halaman": 311,
+    "subject": "Keuangan",
+    "subject_id": 13
+  },
+  {
+    "judul_table": "Jumlah Usaha Perdagangan Dan Tenaga Kerjanya Per Kecamatan Di Kabupaten Aceh Barat Tahun 2015-2017",
+    "bab": 7,
+    "dari_halaman": 312,
+    "sampai_halaman": 312,
+    "subject": "Perdagangan",
+    "subject_id": 21
+  },
+  {
+    "judul_table": "Banyaknya Pengeluaran Beras Bulog Untuk Program Rastra Menurut Bulan Di Kabupaten Aceh Barat Tahun 2017",
+    "bab": 7,
+    "dari_halaman": 313,
+    "sampai_halaman": 313,
+    "subject": "Perdagangan",
+    "subject_id": 21
+  },
+  {
+    "judul_table": "Banyaknya Pengeluaran Beras Bulog Untuk Program Rastra Menurut Kecamatan Dalam Kabupaten Aceh Barat Tahun 2017",
+    "bab": 7,
+    "dari_halaman": 314,
+    "sampai_halaman": 314,
+    "subject": "Perdagangan",
+    "subject_id": 21
+  },
+  {
+    "judul_table": "Jumlah Akomodasi Hotel Menurut Kecamatan di Kabupaten Aceh Barat, 2016 - 2017",
+    "bab": 8,
+    "dari_halaman": 323,
+    "sampai_halaman": 323,
+    "subject": "Hotel",
+    "subject_id": 5
+  },
+  {
+    "judul_table": "Jumlah Hotel dan Akomodasi Lainnya Menurut Klasifikasi di Kabupaten Aceh Barat, 2011‒2017",
+    "bab": 8,
+    "dari_halaman": 324,
+    "sampai_halaman": 324,
+    "subject": "Hotel",
+    "subject_id": 5
+  },
+  {
+    "judul_table": "Jumlah Restoran/Rumah Makan Menurut Kecamatan di Kabupaten Aceh Barat, 2015 - 2017",
+    "bab": 8,
+    "dari_halaman": 325,
+    "sampai_halaman": 325,
+    "subject": "Pariwisata",
+    "subject_id": 17
+  },
+  {
+    "judul_table": "Jumlah Wisatawan Mancanegara dan Domestik di Kabupaten Aceh Barat 2013-2017",
+    "bab": 8,
+    "dari_halaman": 326,
+    "sampai_halaman": 326,
+    "subject": "Pariwisata",
+    "subject_id": 17
+  },
+  {
+    "judul_table": "Panjang Jalan dan Pemerintahan yang Berwenang Mengelolanya di Kabupaten Aceh Barat (km), 2012-2017",
+    "bab": 9,
+    "dari_halaman": 342,
+    "sampai_halaman": 342,
+    "subject": "Transportasi",
+    "subject_id": 30
+  },
+  {
+    "judul_table": "Panjang Jalan dan Jenis Permukaan Jalan di Kabupaten Aceh Barat (km), 2012-2017",
+    "bab": 9,
+    "dari_halaman": 343,
+    "sampai_halaman": 343,
+    "subject": "Transportasi",
+    "subject_id": 30
+  },
+  {
+    "judul_table": "Panjang Jalan dan Kondisi Jalan di Kabupaten Aceh Barat (km), 2012-2017",
+    "bab": 9,
+    "dari_halaman": 344,
+    "sampai_halaman": 344,
+    "subject": "Transportasi",
+    "subject_id": 30
+  },
+  {
+    "judul_table": "Jumlah Kendaraan Umum Penumpang Menurut Nama Perusahaan Dan Trayek Di Kabupaten Aceh Barat, 2017",
+    "bab": 9,
+    "dari_halaman": 345,
+    "sampai_halaman": 345,
+    "subject": "Transportasi",
+    "subject_id": 30
+  },
+  {
+    "judul_table": "Jumlah Truk Menurut Nama Perusahaan Di Kabupaten Aceh Barat, 2017",
+    "bab": 9,
+    "dari_halaman": 346,
+    "sampai_halaman": 347,
+    "subject": "Transportasi",
+    "subject_id": 30
+  },
+  {
+    "judul_table": "Jumlah Kantor Pos Pembantu Menurut Kecamatan di Kabupaten Aceh Barat, 2013‒2017",
+    "bab": 9,
+    "dari_halaman": 348,
+    "sampai_halaman": 348,
+    "subject": "Transportasi",
+    "subject_id": 30
+  },
+  {
+    "judul_table": "Jumlah Pengiriman Dan Pemasukan Dokumen Melalui Kantor Pos Meulaboh Di Kabupaten Aceh Barat Tahun 2017",
+    "bab": 9,
+    "dari_halaman": 349,
+    "sampai_halaman": 349,
+    "subject": "Komunikasi",
+    "subject_id": 14
+  },
+  {
+    "judul_table": "Jumlah Pemasangan Baru Sambungan Indihome Tahun 2014-2017",
+    "bab": 9,
+    "dari_halaman": 350,
+    "sampai_halaman": 350,
+    "subject": "Komunikasi",
+    "subject_id": 14
+  },
+  {
+    "judul_table": "Realisasi Pendapatan Pemerintah Kabupaten Aceh Barat Menurut Jenis Pendapatan (ribu rupiah), 2014−2017",
+    "bab": 10,
+    "dari_halaman": 359,
+    "sampai_halaman": 359,
+    "subject": "Pemerintahan",
+    "subject_id": 18
+  },
+  {
+    "judul_table": "Realisasi Belanja Pemerintah Kabupaten Aceh Barat Menurut Jenis Belanja (ribu rupiah), 2014−2017",
+    "bab": 10,
+    "dari_halaman": 360,
+    "sampai_halaman": 360,
+    "subject": "Pemerintahan",
+    "subject_id": 18
+  },
+  {
+    "judul_table": "Banyaknya Kredit Menurut Barang Jaminan Dan Uang Pinjaman Pada Kantor Perum Pegadaian Cabang Meulaboh Dirinci Per Bulan, 2017",
+    "bab": 10,
+    "dari_halaman": 361,
+    "sampai_halaman": 361,
+    "subject": "Keuangan",
+    "subject_id": 13
+  },
+  {
+    "judul_table": "Banyaknya Pelunasan Kredit Menurut Barang Jaminan Dan Uang Pinjaman Pada Kantor Perum Pegadaian Cabang Meulaboh Dirinci Per Bulan, 2017",
+    "bab": 10,
+    "dari_halaman": 362,
+    "sampai_halaman": 362,
+    "subject": "Keuangan",
+    "subject_id": 13
+  },
+  {
+    "judul_table": "Jumlah Kasus Jaminan Yang Dibayarkan Oleh BPJS Ketenagakerjaan Cabang Meulaboh Menurut Jenis Kasus Perbulan, 2017",
+    "bab": 10,
+    "dari_halaman": 363,
+    "sampai_halaman": 364,
+    "subject": "Keuangan",
+    "subject_id": 13
+  },
+  {
+    "judul_table": "Jumlah Peserta BPJS Kesehatan Kabupaten Aceh Barat Menurut Puskesmas Dan Jenis Peserta, 2017",
+    "bab": 10,
+    "dari_halaman": 365,
+    "sampai_halaman": 365,
+    "subject": "Keuangan",
+    "subject_id": 13
+  },
+  {
+    "judul_table": "Indeks Harga Konsumen per bulan Menurut Kelompok Pengeluaran di Kabupaten Aceh Barat (2012=100), 2017",
+    "bab": 10,
+    "dari_halaman": 366,
+    "sampai_halaman": 367,
+    "subject": "Inflasi",
+    "subject_id": 9
+  },
+  {
+    "judul_table": "Perkembangan Harga Bahan Pokok Di Meulaboh Periode Minggu Keempat Januari 2017",
+    "bab": 10,
+    "dari_halaman": 368,
+    "sampai_halaman": 368,
+    "subject": "Harga Eceran",
+    "subject_id": 3
+  },
+  {
+    "judul_table": "Perkembangan Harga Bahan Pokok Di Meulaboh Periode Minggu Keempat Februari 2017",
+    "bab": 10,
+    "dari_halaman": 369,
+    "sampai_halaman": 369,
+    "subject": "Harga Eceran",
+    "subject_id": 3
+  },
+  {
+    "judul_table": "Perkembangan Harga Bahan Pokok Di Meulaboh Periode Minggu Keempat Maret 2017",
+    "bab": 10,
+    "dari_halaman": 370,
+    "sampai_halaman": 370,
+    "subject": "Harga Eceran",
+    "subject_id": 3
+  },
+  {
+    "judul_table": "Perkembangan Harga Bahan Pokok Di Meulaboh Periode Minggu Keempat April 2017",
+    "bab": 10,
+    "dari_halaman": 371,
+    "sampai_halaman": 371,
+    "subject": "Harga Eceran",
+    "subject_id": 3
+  },
+  {
+    "judul_table": "Perkembangan Harga Bahan Pokok Di Meulaboh Periode Minggu Keempat Mei 2017",
+    "bab": 10,
+    "dari_halaman": 372,
+    "sampai_halaman": 372,
+    "subject": "Harga Eceran",
+    "subject_id": 3
+  },
+  {
+    "judul_table": "Perkembangan Harga Bahan Pokok Di Meulaboh Periode Minggu Keempat Juni 2017",
+    "bab": 10,
+    "dari_halaman": 373,
+    "sampai_halaman": 373,
+    "subject": "Harga Eceran",
+    "subject_id": 3
+  },
+  {
+    "judul_table": "Perkembangan Harga Bahan Pokok Di Meulaboh Periode Minggu Keempat Juli 2017",
+    "bab": 10,
+    "dari_halaman": 374,
+    "sampai_halaman": 374,
+    "subject": "Harga Eceran",
+    "subject_id": 3
+  },
+  {
+    "judul_table": "Perkembangan Harga Bahan Pokok Di Meulaboh Periode Minggu Keempat Agustus 2017",
+    "bab": 10,
+    "dari_halaman": 375,
+    "sampai_halaman": 375,
+    "subject": "Harga Eceran",
+    "subject_id": 3
+  },
+  {
+    "judul_table": "Perkembangan Harga Bahan Pokok Di Meulaboh Periode Minggu Keempat September 2017",
+    "bab": 10,
+    "dari_halaman": 376,
+    "sampai_halaman": 376,
+    "subject": "Harga Eceran",
+    "subject_id": 3
+  },
+  {
+    "judul_table": "Perkembangan Harga Bahan Pokok Di Meulaboh Periode Minggu Keempat Oktober 2017",
+    "bab": 10,
+    "dari_halaman": 377,
+    "sampai_halaman": 377,
+    "subject": "Harga Eceran",
+    "subject_id": 3
+  },
+  {
+    "judul_table": "Perkembangan Harga Bahan Pokok Di Meulaboh Periode Minggu Keempat November 2017",
+    "bab": 10,
+    "dari_halaman": 378,
+    "sampai_halaman": 378,
+    "subject": "Harga Eceran",
+    "subject_id": 3
+  },
+  {
+    "judul_table": "Perkembangan Harga Bahan Pokok Di Meulaboh Periode Minggu Keempat Desember 2017",
+    "bab": 10,
+    "dari_halaman": 379,
+    "sampai_halaman": 379,
+    "subject": "Harga Eceran",
+    "subject_id": 3
+  },
+  {
+    "judul_table": "Persentase Penduduk Menurut Golongan Pengeluaran Per Kapita Sebulan di Kabupaten Aceh Barat, 2017",
+    "bab": 11,
+    "dari_halaman": 386,
+    "sampai_halaman": 386,
+    "subject": "Konsumsi dan Pengeluaran",
+    "subject_id": 15
+  },
+  {
+    "judul_table": "Rata-rata Pengeluaran dan Persentase Rata-rata Pengeluaran Per Kapita Sebulan Menurut Kelompok Makanan di Kabupaten Aceh Barat, 2017",
+    "bab": 11,
+    "dari_halaman": 387,
+    "sampai_halaman": 387,
+    "subject": "Konsumsi dan Pengeluaran",
+    "subject_id": 15
+  },
+  {
+    "judul_table": "Rata-rata Pengeluaran dan Persentase Rata-rata Pengeluaran Per Kapita Sebulan Menurut Kelompok Bukan Makanan di Kabupaten Aceh Barat, 2017",
+    "bab": 11,
+    "dari_halaman": 388,
+    "sampai_halaman": 388,
+    "subject": "Konsumsi dan Pengeluaran",
+    "subject_id": 15
+  },
+  {
+    "judul_table": "Produk Domestik Regional Bruto Atas Dasar Harga Berlaku Menurut Lapangan Usaha di Kabupaten Aceh Barat (Juta rupiah), 2014−2017",
+    "bab": 12,
+    "dari_halaman": 404,
+    "sampai_halaman": 404,
+    "subject": "Produk Domestik Regional Bruto (Lapangan Usaha)",
+    "subject_id": 26
+  },
+  {
+    "judul_table": "Produk Domestik Regional Bruto Atas Dasar Harga Konstan 2010 Menurut Lapangan Usaha di Kabupaten Aceh Barat (Juta rupiah), 2014−2017",
+    "bab": 12,
+    "dari_halaman": 405,
+    "sampai_halaman": 405,
+    "subject": "Produk Domestik Regional Bruto (Lapangan Usaha)",
+    "subject_id": 26
+  },
+  {
+    "judul_table": "Distribusi Persentase Produk Domestik Regional Bruto Atas Dasar Harga Berlaku Menurut Lapangan Usaha di Kabupaten Aceh Barat (persen), 2014−2017",
+    "bab": 12,
+    "dari_halaman": 406,
+    "sampai_halaman": 406,
+    "subject": "Produk Domestik Regional Bruto (Lapangan Usaha)",
+    "subject_id": 26
+  },
+  {
+    "judul_table": "Distribusi Persentase Produk Domestik Regional Bruto Atas Dasar Harga Konstan Menurut Lapangan Usaha di Kabupaten Aceh Barat (persen), 2014−2017",
+    "bab": 12,
+    "dari_halaman": 407,
+    "sampai_halaman": 407,
+    "subject": "Produk Domestik Regional Bruto (Lapangan Usaha)",
+    "subject_id": 26
+  },
+  {
+    "judul_table": "Laju Pertumbuhan Produk Domestik Regional Bruto Atas Dasar Harga Konstan 2010 Menurut Lapangan Usaha di Kabupaten Aceh Barat (persen), 2014−2017",
+    "bab": 12,
+    "dari_halaman": 408,
+    "sampai_halaman": 408,
+    "subject": "Produk Domestik Regional Bruto (Lapangan Usaha)",
+    "subject_id": 26
+  },
+  {
+    "judul_table": "Laju Pertumbuhan Produk Domestik Regional Bruto Atas Dasar Harga Berlaku Menurut Lapangan Usaha di Kabupaten Aceh Barat (persen), 2014−2017",
+    "bab": 12,
+    "dari_halaman": 409,
+    "sampai_halaman": 409,
+    "subject": "Produk Domestik Regional Bruto (Lapangan Usaha)",
+    "subject_id": 26
+  },
+  {
+    "judul_table": "Laju Implisit Produk Domestik Regional Bruto Menurut Lapangan Usaha di Kabupaten Aceh Barat, 2014−2017",
+    "bab": 12,
+    "dari_halaman": 410,
+    "sampai_halaman": 410,
+    "subject": "Produk Domestik Regional Bruto (Lapangan Usaha)",
+    "subject_id": 26
+  },
+  {
+    "judul_table": "Jumlah Penduduk Menurut Kabupaten/Kota di Provinsi Aceh, 2015‒2017",
+    "bab": 13,
+    "dari_halaman": 420,
+    "sampai_halaman": 420,
+    "subject": "Kependudukan",
+    "subject_id": 20
+  },
+  {
+    "judul_table": "Laju Pertumbuhan Produk Domestik Regional Bruto Atas Dasar Harga Konstan 2010 Menurut Kabupaten/Kota di Provinsi Aceh (persen), 2013‒2017",
+    "bab": 13,
+    "dari_halaman": 421,
+    "sampai_halaman": 421,
+    "subject": "Produk Domestik Regional Bruto (Lapangan Usaha)",
+    "subject_id": 26
+  },
+  {
+    "judul_table": "Jumlah Penduduk Miskin Menurut Kabupaten/Kota di Provinsi Aceh, 2013‒2017",
+    "bab": 13,
+    "dari_halaman": 422,
+    "sampai_halaman": 422,
+    "subject": "Kemiskinan",
+    "subject_id": 10
+  },
+  {
+    "judul_table": "Indeks Pembangunan Manusia Menurut Kabupaten/Kota Di Provinsi Aceh, 2013-2017",
+    "bab": 13,
+    "dari_halaman": 423,
+    "sampai_halaman": 423,
+    "subject": "Indeks Pembangunan Manusia",
+    "subject_id": 7
+  }
+]

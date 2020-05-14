@@ -249,8 +249,7 @@
                                                                 <a href="#" class="text-decoration-none text-danger">
                                                                     <i class="fas fa-trash-alt"></i>
                                                                 </a>
-                                                                <a href="#" class="text-decoration-none text-info text-bold"><i class="fas fa-chevron-right fa-lg"></i></a>
-                                                            </div>
+                                                             </div>
                                                         </td>
                                
                                                     </tr>

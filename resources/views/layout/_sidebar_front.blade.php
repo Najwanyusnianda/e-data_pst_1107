@@ -13,8 +13,9 @@
             </li>
             <li class="menu-header">Subject</li>
             <li class="dropdown ">
-                <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i
-                        class="fas fa-columns"></i> <span>Sosial Kependudukan</span></a>
+                <a href="#" class="nav-link has-dropdown" data-toggle="dropdown">
+                            Sosial dan Kependudukan
+                    </a>
                 <ul class="dropdown-menu" style="display: none;">
                     <li><a class="nav-link" href="{{route('home.subject_detail',['subject_id' =>2])}}">Geografi</a></li>
                     <li><a class="nav-link" href="{{route('home.subject_detail',['subject_id' =>6])}}">Iklim</a></li>
@@ -32,7 +33,7 @@
             </li>
 
             <li class="dropdown">
-                <a href="#" class="nav-link has-dropdown"><i class="fas fa-th"></i>
+                <a href="#" class="nav-link has-dropdown">
                     <span>Ekonomi & Perdagangan</span></a>
                 <ul class="dropdown-menu">
                     <li><a class="nav-link" href="{{route('home.subject_detail',['subject_id' =>1])}}">Energi</a></li>
@@ -51,8 +52,8 @@
                 </ul>
             </li>
             <li class="dropdown">
-                <a href="#" class="nav-link has-dropdown"><i class="fas fa-th-large"></i>
-                    <span>Pertanian & Kehutanan</span></a>
+                <a href="#" class="nav-link has-dropdown">
+                    <span>Pertanian dan Kehutanan</span></a>
                 <ul class="dropdown-menu">
                     <li><a class="nav-link" href="{{route('home.subject_detail',['subject_id' =>4])}}">Holtikultura</a></li>
                     <li><a class="nav-link" href="{{route('home.subject_detail',['subject_id' =>22])}}">Perikanan</a></li>
@@ -75,7 +76,7 @@
                     </div>
                     <div class="row">
                         <div class="col">
-                            <a href="#">><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
                         </div>
                         <div class="col">
                             <a href="#"><i class="fab fa-youtube"></i></a>

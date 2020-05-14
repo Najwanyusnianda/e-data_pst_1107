@@ -24,6 +24,12 @@
       
         gtag('config', 'UA-94034622-3');
       </script>
+
+      <style>
+          .fab{
+font-size: 20px;
+          }
+      </style>
 </head>
 
 <body class="layout-2" style="position: relative;">

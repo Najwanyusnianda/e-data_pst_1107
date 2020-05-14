@@ -141,7 +141,16 @@
         e.preventDefault();
         var pubId=$(this).attr('data-id');
         var deleteUrl=$(this).attr('href');
-
+        Swal.fire({
+            title: 'Hapus Publikasi?',
+            text: "Semua tabel terkait akan ikut terhapus",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Ya, hapus!'
+        }).then((result) => {
+            if (result.value) {
         $.ajax({
                 type: "post",
 
@@ -154,7 +163,11 @@
                 },
                 success: function (result) {
                     //console.log(result);
-                    console.log('success');
+                    Swal.fire(
+                    'Terhapus!',
+                    'Publikasi Berhasil dihapus.',
+                    'success'
+                    )
                     //permintaanTable.ajax.reload();
                     $('#daftar_publikasi').DataTable().ajax.reload();
                     //$("#close").trigger("click");
@@ -164,7 +177,12 @@
                     console.log(error);
                 }
 
-            });
+        });
+
+            }
+        })
+       
+
 
     })
 

@@ -17,7 +17,7 @@ class WebApiPublikasiController extends Controller
         $publikasi_added=Publikasi::select('pub_id')->get();
         $pub_id_array=[];
         $year='2020';
-        $years_select=['2020','2019','2018'];
+        $years_select=['2020','2019','2018','2017','2016','2015','2014','2013'];
 
         //dd(!$publikasi_added->isEmpty());
 

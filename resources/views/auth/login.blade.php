@@ -55,6 +55,14 @@
               </button>
             </div>
           </form>
+
+          <hr>
+          
+          <div class="form-group text-center">
+            <a href="https://acehbaratkab.bps.go.id/" class="btn btn-secondary btn-dark  " tabindex="4">
+               <strong>Website BPS</strong>
+            </a>
+          </div>
         </div>
       </div>
       <div class="mt-5 text-muted text-center">

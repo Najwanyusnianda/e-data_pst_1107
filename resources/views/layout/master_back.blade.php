@@ -76,7 +76,7 @@
     <script src="{{asset('vendor/stisla/js/custom.js')}}"></script>
     
     <script src="{{asset('vendor/datatables/datatables.min.js')}}"></script>
-
+    <script src="{{asset('vendor/sweetalert2.js')}}"></script>
     <div id="ascrail2000" class="nicescroll-rails nicescroll-rails-vr"
         style="width: 8px; z-index: 892; cursor: default; position: fixed; top: 0px; left: -8px; height: 576px; opacity: 0; display: block;">
         <div class="nicescroll-cursors"

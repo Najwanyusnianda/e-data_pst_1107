@@ -11,14 +11,14 @@ class HomeController extends Controller
 
     public function index()
     {
-        $subject=SubjectTable::all();
-        if($subject->isNotEmpty()){
+        //$subject=SubjectTable::all();
+        /*if($subject->isNotEmpty()){
             
             return view('home.home',compact('subject'));
         }else{
             return view('home.home');
-        }
-        
+        }*/
+        return view('home.home');
     }
 
     public function faqIndex(){

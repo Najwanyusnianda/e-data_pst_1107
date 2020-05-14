@@ -64,21 +64,21 @@
 
             <li class="menu-header">Sosial Media </li>
             <li>
-                <div class="col">
+                <div class="col border" >
                     <div class="row">
                         <div class="col">
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.facebook.com/bpsstatistics/"><i class="fab fa-facebook-f fa-2x"></i></a>
                         </div>
                         <div class="col">
-                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="https://twitter.com/bps_statistics"><i class="fab fa-twitter fa-2x"></i></a>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col">
-                            <a href="#">><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.instagram.com/bps_statistics/"><i class="fab fa-instagram fa-2x"></i></a>
                         </div>
                         <div class="col">
-                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href="https://www.youtube.com/channel/UCn4IaaxHaaP-mAjZzrAtixA"><i class="fab fa-youtube"></i></a>
                         </div>
                     </div>
                 </div>

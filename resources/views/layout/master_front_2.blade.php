@@ -17,6 +17,11 @@
     <link rel="stylesheet" href="{{asset('vendor/stisla/css/style.css')}}">
     <link rel="stylesheet" href="{{asset('vendor/stisla/css/components.css')}}">
     <link rel="stylesheet" href="{{asset('vendor/datatables/datatables.min.css')}}">
+    <style>
+        .fab{
+            font-size:30px;
+        }
+    </style>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
@@ -25,6 +30,7 @@
         gtag('config', 'UA-94034622-3');
       </script>
 </head>
+
 
 <body class="layout-2" style="position: relative;">
     <div id="app">

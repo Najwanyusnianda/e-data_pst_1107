@@ -121,7 +121,8 @@ class PublikasiController extends Controller
     }
 
 
- //service ------------------------------------------------------------------------------>    
+ //service ------------------------------------------------------------------------------>   
+        //get daftar publikasi
     public function publicationListTable(){
         $publikasi =Publikasi::orderBy('release_date', 'desc')->get();
  

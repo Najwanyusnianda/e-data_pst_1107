@@ -6,6 +6,10 @@
         #detailPublikasi td{
             height: 30px !important;
         }
+
+        td{
+            text-align: center;
+        }
         
     </style>
 @endsection
@@ -25,152 +29,7 @@
 </p>
     <div class="container">
         <div class="row-12">
-                <div class="card ">
-                    <div class="card-header">
-                        <h5>{{$pub_detail->title}}</h5>   
-                    </div>
-                    <div class="card-body">
-                        <div class="media">
-                            <img class="mr-3 img-thumbnail border-dark" src="{{$pub_detail->cover}}" alt="cover" >
-                            <div class="media-body">
-                                <div class="table-responsive ">
-                                    <table class="table table-borderless" style="font-size:smaller"
-                                        id="detailPublikasi">
-                                        <thead>
-                                            <tr>
-
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td width=40%>ID Publikasi</td>
-                                                <td width=10%>:</td>
-                                                <td>{{$pub_detail->pub_id }}</td>
-                                            </tr>
-                                            <tr>
-                                                <td width=40%>ISSN</td>
-                                                <td width=10%>:</td>
-                                                <td>{{$pub_detail->issn }}</td>
-                                            </tr>
-                                            <tr>
-                                                <td width=40%>Tanggal Rilis</td>
-                                                <td width=10%>:</td>
-                                                <td>{{\Carbon\Carbon::parse($pub_detail->release_date)->format('j F, Y')}}
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>Tanggal Update</td>
-                                                <td>:</td>
-                                                <td>{{\Carbon\Carbon::parse($pub_detail->update_date)->format('j F, Y')}}
-                                                </td>
-                                            </tr>
-                                            <tr>
-
-
-                                                <td>Jumlah Bab</td>
-                                                <td>:</td>
-                                                <td>
-
-                                                    @if (!empty($pub_detail->n_bab))
-
-                                                    <div class="n_bab_container">
-
-                                                        {{$pub_detail->n_bab}}
-
-                                                    </div>
-                                                    <div class="n_bab_form_container" style="display:none">
-
-                                                        <input type="text" class="form-control" id="n_bab"
-                                                            value="{{$pub_detail->n_bab}}" name="n_bab">
-                                                    </div>
-
-                                                </td>
-
-
-
-
-                                                @else
-                                                <div class="n_bab_container">
-                                                    <span class="badge badge-danger">Belum Diinput</span>
-                                                </div>
-                                                <div class="n_bab_form_container" style="display:none">
-
-                                                    <input type="text" class="form-control" id="n_bab" name="n_bab">
-
-                                                   
-                                                </div>
-                                                @endif
-
-                                                <td>
-                                                    @if (!empty($pub_detail->n_bab))
-                                                    <div class="n_bab_container">
-                                                        <a href="#" id="inputHalBtn"
-                                                            class="btn btn-icon icon-left btn-warning ">
-                                                            <i class="fas fa-edit btn-sm"></i>
-                                                            Edit
-
-                                                        </a>
-                                                    </div>
-                                                    <div class="n_bab_form_container" style="display:none">
-                                                        <a href="#" id="submitHalBtn" class="btn btn-primary">
-                                                            Submit
-
-                                                        </a>
-                                                    </div>
-
-                                                    @else
-
-                                                    <div class="n_bab_container">
-                                                        <a href="#" id="inputHalBtn"
-                                                            class="btn btn-icon icon-left btn-warning ">
-                                                            <i class="fas fa-edit btn-sm"></i> Edit
-
-                                                        </a>
-                                                    </div>
-                                                    <div class="n_bab_form_container" style="display:none">
-                                                        <button id="submitHalBtn" class="btn btn-primary">
-                                                            Submit
-                                                        </button>
-                                                    </div>
-                                                    @endif
-
-                                                </td>
-
-
-
-
-                                            </tr>
-                                            <!--<tr>
-                                                <td><strong>Abstrak :</strong> </td>
-                                                <td></td>
-                                                <td>
-                                                </td>
-                                            </tr>-->
-                                            <tr>
-
-                                            </tr>
-                                            <tr>
-                                                <td></td>
-                                                <td></td>
-                                                <td>.</td>
-                                            </tr>
-                                            
-                                            <tr class="">
-                                                <td colspan="4">
-                                                    <div class="alert alert-info">
-                                                       <span class="" style="font-size:13px;">{{$pub_detail->abstract}}</span> 
-                                                    </div>
-                                                    </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                           </div>
-                          </div>
-
-    
-                    </div>
-                </div>
+@include('publikasi.pub_table._detailPublikasi')
            
 
             <div class="section-body">
@@ -179,108 +38,7 @@
                     daftar tabel yang terdapat dalam publikasi berdasarkan bab
                 </p>
     
-                <div class="" id="babList">
-   
-                    @if (!empty($pub_detail->n_bab))
-                    <div class="row">
-                        @for ($i = 0; $i < $pub_detail->n_bab ; $i++)
-                        <div class="col-md-6">
-                            <div class="card">
-                                <div class="card-header">
-                                    <h6 id="Bab-title" bab-data="{{$i+1}}">Bab <span>{{$i+1}}</span> </h6>
-                                    <div class="ml-auto">
-                                        
-
-                                    </div>
-                                    <div class="card-header-action">
-                                        <div class="btn-group">
-                                            <a href="#" class="btn btn-icon btn-primary addTableButton mr-3" >
-                                                Tambah Baru
-                                            </a>
-                                            <a data-collapse="#bab{{$i+1}}" class="btn btn-icon btn-info" href="#"><i class="fas fa-plus"></i></a>
-                                        </div>
-
-                                       
-                                    </div>
-                                </div>
-                            <div class="collapse" id="bab{{$i+1}}" style="">
-                                    <div class="card-body table-responsive">
-                                        <table class="table">
-                                            <thead>
-                                                <tr>
-
-                                                    <th width="70%">
-                                                        Judul
-                                                    </th>
-                                                    <!--<th>
-                                                        Data
-                                                    </th>-->
-                                                    <th width="30%">
-                                                        Aksi
-                                                    </th>
-                                                
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                            @forelse ($pub_table as $key=>$item)
-                                                @if ($item->bab_num== $i+1)
-                                                    <tr>
-
-                                                        <td>
-                                                            @if ($item->filepath != null)
-                                                            <small class="font-weight-light"><a href="{{url('/'.$item->filepath)}}" class="">{{$item->title}}</a></small>
-                                                            @else
-                                                            <small class="font-weight-light"><span class="">{{$item->title}}</span></small>
-                                                            @endif
-                                                            
-                                                         </td>
-                                                        <!--<td>
-                                                            <a href="{{url('/'.$item->filepath)}}" class="btn btn-danger btn-sm btn-icon">
-                                                                <i class="fa fa-file-pdf"></i>
-                                                            <small>pdf</small>
-                                                            </a>
-    
-                                                        </td>-->
-                                                        <td>
-                                                            <div class="buttons">
-                                                            <a href="#" class="edit_table_form text-decoration-none text-warning" data-id="{{$item->id}}">
-                                                                    <i class="far fa-edit"></i>
-                                                                </a>
-                                                                <a href="#" class="text-decoration-none text-danger">
-                                                                    <i class="fas fa-trash-alt"></i>
-                                                                </a>
-                                                             </div>
-                                                        </td>
-                               
-                                                    </tr>
-                                                @endif
-                                            @empty
-                                                
-                                            
-                                            @endforelse
-                                            </tbody>
-                                        </table>
-    
-                                    </div>
-                                </div>
-
-                                
-    
-                            </div>
-                        </div>
-
-                        @endfor
-                    </div>
-
-                    @else
-                    <div class="alert alert-info" role="alert">
-                        <h5>
-                            Jumlah bab belum didefinisikan
-                        </h5>
-                      </div>
-                    @endif
-
-                </div>
+                @include('publikasi.pub_table._bab_list')
             </div>
         </div>
         
@@ -361,6 +119,41 @@ function handleFileInput(){
       $('.pdf_file_placeholder').html(files.join(' '));
     });
 }
+
+
+
+
+        $('#select_bab').change(function (e) {
+            e.preventDefault();
+            //tableListPubTable.ajax.reload();
+            var bab_val = this.value;
+            var selectBab_url = "{{route('admin.pubTableCollection.pubTableList',['pub_id'=>$pub_detail->pub_id])}}";
+            console.log(selectBab_url)
+            //var selectBab_url='#';
+            $.ajax({
+                type: "post",
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                },
+                url: selectBab_url,
+                data: {
+                    // change data to this object
+                    _token: $('meta[name="csrf-token"]').attr('content'),
+                    n_bab_value: bab_val
+
+                },
+                global:false,
+                success: function (result) {
+
+                    $('#table-by-bab-wrapper').html(result)
+                },
+                error: function (error) {
+                    alert('erroraaa');
+                    console.log(error.toString());
+                }
+
+            });
+        });
 
 //input jumlah bab====================
         var inputHalBtn= $('#inputHalBtn');

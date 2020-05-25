@@ -21,7 +21,7 @@
 
 @section('content')
 
-    <div class="container">
+    <div class="container-fluid">
 
 
         @if (session('pub_add_success'))
@@ -137,7 +137,7 @@
         })
     })
 
-    $('.container').on('click','.deletePub',function(e){
+    $('.container-fluid').on('click','.deletePub',function(e){
         e.preventDefault();
         var pubId=$(this).attr('data-id');
         var deleteUrl=$(this).attr('href');

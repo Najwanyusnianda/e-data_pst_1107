@@ -44,8 +44,18 @@ Route::group(['middleware' => ['auth']], function () {
         Route::get('backend/pub_table/add_table_form/{pub_id}','PubTableController@pubTableForm')->name('pubTable_form');
         Route::get('backend/pub_table/add_table_form/{pub_id}/update/{pubtable_id}','PubTableController@pubTableFormUpdate')->name('pubTable_form_update');
 
-        Route::post('backend/pub_table/{pub_id}','PubTableController@create')->name('pubTable_create');    
-        Route::post('backend/pub_table/{pub_id}/update/{pubtable_id}','PubTableController@update')->name('pubTable_update');   
+
+        ///----create
+        Route::post('backend/pub_table/{pub_id}','PubTableController@create')->name('pubTable_create');
+        ///---update    
+        Route::post('backend/pub_table/{pub_id}/update/{pubtable_id}','PubTableController@update')->name('pubTable_update'); 
+        
+        Route::post('backend/pub_table/getListTableByBab/index/{pub_id}','PubTableController@changeBabPubTableEvent')
+        ->name('pubTableCollection.pubTableList');
+
+        ///--------------service table publikasi---//
+         Route::get('backend/table/pub_table/{pub_id}/{bab_num}','PubTableController@tableDatabyBab')
+         ->name('pubTableCollection.table');
     });
 });
 

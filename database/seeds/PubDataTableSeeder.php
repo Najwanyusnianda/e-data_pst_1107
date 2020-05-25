@@ -42,7 +42,7 @@ class PubDataTableSeeder extends Seeder
            
             PubTable::create(array(
                 'type'=>"publikasi",
-                'type_id'=>"6c00e3f71268959e0222c69f",
+                'type_id'=>"717f37884325c380bc7fc229",
                 'title'=>$obj->judul_table,
                 'bab_num'=>$obj->bab,
                 'hal_pdf_first'=>$obj->dari_halaman,
@@ -60,7 +60,7 @@ class PubDataTableSeeder extends Seeder
            
             PubTable::create(array(
                 'type'=>"publikasi",
-                'type_id'=>"6c00e3f71268959e0222c69f",
+                'type_id'=>"e410b73e929285987f5026a7",
                 'title'=>$obj->judul_table,
                 'bab_num'=>$obj->bab,
                 'hal_pdf_first'=>$obj->dari_halaman,
@@ -78,7 +78,7 @@ class PubDataTableSeeder extends Seeder
            
             PubTable::create(array(
                 'type'=>"publikasi",
-                'type_id'=>"6c00e3f71268959e0222c69f",
+                'type_id'=>"df36e653c5c3ac119e28eed5",
                 'title'=>$obj->judul_table,
                 'bab_num'=>$obj->bab,
                 'hal_pdf_first'=>$obj->dari_halaman,

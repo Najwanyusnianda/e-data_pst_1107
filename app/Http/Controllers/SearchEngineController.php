@@ -32,7 +32,7 @@ class SearchEngineController extends Controller
            if($search_result->isNotEmpty()){
             return view('search.search_result',compact('search_result','keyword'));
            }else{
-               return redirect()->back();
+            return view('search.search_result',compact('search_result','keyword'));
            }
 
            
@@ -46,7 +46,6 @@ class SearchEngineController extends Controller
         ->select('pub_tables.*','pub_table_files.*',
         'pub_tables.id AS id','pub_tables.type AS type','pub_table_files.id AS file_id', 'pub_table_files.type AS filetype')
         ->get();
-        dd($search_result);
         $dt=DataTables::of($search_result)
         ->addIndexColumn()
         ->addColumn('action',function($search_result){

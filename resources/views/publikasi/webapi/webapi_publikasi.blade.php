@@ -143,10 +143,13 @@
                 
                 $.ajax({
                     url: api_url,
+                    cache: false,
                     type: "GET",
                     dataType: "json",
                     beforeSend: function(){
+                     
                         $loading.modal('show');
+                  
                         
                     },
                     complete:function(){

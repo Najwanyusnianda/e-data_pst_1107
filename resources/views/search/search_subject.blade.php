@@ -1,4 +1,4 @@
-@extends('layout.master_front')
+@extends('layout.master_front_2')
 
 
 
@@ -45,7 +45,6 @@
       </div>
     </div>
     <div class="card-footer">
-      tess
       {{$data->links()}}
     </div>
 

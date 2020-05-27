@@ -1,6 +1,11 @@
-<div class="main-sidebar" tabindex="1" style="overflow: hidden; outline: none;">
+<div class="main-sidebar sidebar-style-2" tabindex="1" style="overflow: hidden; outline: none;">
     <aside id="sidebar-wrapper" class="" style="">
-        <div class="sidebar-brand sidebar-gone-show"><a href="index.html">Stisla</a></div>
+        <div class="sidebar-brand ">
+            <a href="index.html">E-Data BPS Aceh Barat</a>
+        </div>
+        <div class="sidebar-brand sidebar-brand-sm">
+            <a href="index.html">E-D</a>
+          </div>
         <ul class="sidebar-menu">
             <li class="menu-header">Dashboard</li>
             <li class="dropdown">
@@ -13,7 +18,8 @@
             <li class="menu-header">Subject</li>
             <li class="dropdown ">
                 <a href="#" class="nav-link has-dropdown" data-toggle="dropdown">
-                            Sosial dan Kependudukan
+                    <i class="fas fa-circle fa-sm"></i>
+                            <span><small>Sosial & Kependudukan</small></span>
                     </a>
                 <ul class="dropdown-menu" style="display: none;">
                     <li><a class="nav-link" href="{{route('home.subject_detail',['subject_id' =>2])}}">Geografi</a></li>
@@ -33,7 +39,9 @@
 
             <li class="dropdown">
                 <a href="#" class="nav-link has-dropdown">
-                    <span>Ekonomi & Perdagangan</span></a>
+                    <i class="fas fa-circle fa-sm"></i>
+                    <span><small>Ekonomi & Perdagangan</small></span>
+                  </a>
                 <ul class="dropdown-menu">
                     <li><a class="nav-link" href="{{route('home.subject_detail',['subject_id' =>1])}}">Energi</a></li>
                     <li><a class="nav-link" href="{{route('home.subject_detail',['subject_id' =>3])}}">Harga Eceran</a></li>
@@ -52,7 +60,10 @@
             </li>
             <li class="dropdown">
                 <a href="#" class="nav-link has-dropdown">
-                    <span>Pertanian dan Kehutanan</span></a>
+                    <i class="fas fa-circle fa-sm"></i>
+                    <span><small>Pertanian & Kehutanan</small>
+                    </span>
+                </a> 
                 <ul class="dropdown-menu">
                     <li><a class="nav-link" href="{{route('home.subject_detail',['subject_id' =>4])}}">Holtikultura</a></li>
                     <li><a class="nav-link" href="{{route('home.subject_detail',['subject_id' =>22])}}">Perikanan</a></li>
@@ -61,6 +72,9 @@
                     <li><a class="nav-link" href="{{route('home.subject_detail',['subject_id' =>29])}}">Tanaman Pangan</a></li>
                 </ul>
             </li>
+
+
+      
 
             <li class="menu-header">Sosial Media </li>
             <li>

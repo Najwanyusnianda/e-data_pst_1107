@@ -23,11 +23,7 @@
         }
     </style>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-      
-        gtag('config', 'UA-94034622-3');
+
       </script>
 
       <style>
@@ -35,12 +31,13 @@
 font-size: 20px;
           }
       </style>
+      @yield('style')
 </head>
 
 
-<body class="layout-2" style="position: relative;">
+<body class="" >
     <div id="app">
-        <div class="main-wrapper">
+        <div class="main-wrapper main-wrapper-1">
             <div class="navbar-bg"></div>
             @include('layout._navbar_front')
             @include('layout._sidebar_front')
@@ -84,7 +81,7 @@ font-size: 20px;
  
 
     <script src="{{asset('vendor/stisla/js/stisla.js')}}"></script>
-    <script src="{{asset('vendor/sticky-kit.min.js')}}"></script>
+  
         <!-- JS Libraies -->
 
     <!-- Page Specific JS File -->
@@ -95,19 +92,20 @@ font-size: 20px;
     <script src="{{asset('vendor/stisla/js/custom.js')}}"></script>
 
     <script src="{{asset('vendor/datatables/datatables.min.js')}}"></script>
-    @yield('script')
     <div id="ascrail2000" class="nicescroll-rails nicescroll-rails-vr"
-        style="width: 8px; z-index: 892; cursor: default; position: absolute; top: 148.656px; left: 147.875px; height: 489px; display: none; opacity: 0;">
-        <div class="nicescroll-cursors"
-            style="position: relative; top: 0px; float: right; width: 6px; height: 0px; background-color: rgb(66, 66, 66); border: 1px solid rgb(255, 255, 255); background-clip: padding-box; border-radius: 5px;">
-        </div>
+    style="width: 8px; z-index: 892; cursor: default; position: fixed; top: 0px; left: -8px; height: 576px; opacity: 0; display: block;">
+    <div class="nicescroll-cursors"
+        style="position: relative; top: 186px; float: right; width: 6px; height: 391px; background-color: rgb(66, 66, 66); border: 1px solid rgb(255, 255, 255); background-clip: padding-box; border-radius: 5px;">
+    </div>
     </div>
     <div id="ascrail2000-hr" class="nicescroll-rails nicescroll-rails-hr"
-        style="height: 8px; z-index: 892; top: 629.656px; left: -55.1563px; position: absolute; cursor: default; display: none; opacity: 0; width: 203px;">
+        style="height: 8px; z-index: 892; top: 568px; left: -250px; position: fixed; cursor: default; display: none; width: 242px; opacity: 0;">
         <div class="nicescroll-cursors"
-            style="position: absolute; top: 0px; height: 6px; width: 0px; background-color: rgb(66, 66, 66); border: 1px solid rgb(255, 255, 255); background-clip: padding-box; border-radius: 5px; left: 0px;">
+            style="position: absolute; top: 0px; height: 6px; width: 250px; background-color: rgb(66, 66, 66); border: 1px solid rgb(255, 255, 255); background-clip: padding-box; border-radius: 5px; left: 0px;">
         </div>
     </div>
+    @yield('script')
+
 
 </body>
 

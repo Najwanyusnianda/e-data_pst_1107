@@ -28,11 +28,13 @@ class SearchEngineController extends Controller
            $search_result = DB::table('pub_tables')
            ->where('title','like',"%".$keyword."%")
            ->get();
-    
+            
            if($search_result->isNotEmpty()){
-            return view('search.search_result',compact('search_result','keyword'));
+               $search_count=count($search_result);
+            return view('search.search_result',compact('search_result','keyword','search_count'));
            }else{
-            return view('search.search_result',compact('search_result','keyword'));
+            $search_count=0;
+            return view('search.search_result',compact('search_result','keyword','search_count'));
            }
 
            
@@ -41,9 +43,10 @@ class SearchEngineController extends Controller
 #### services
     public function searchTable($keyword){
         $search_result = DB::table('pub_tables')
-        ->where('title','like',"%".$keyword."%")
+        ->where('pub_tables.title','like',"%".$keyword."%")
         ->leftJoin('pub_table_files','pub_tables.id','=','pub_table_files.pub_table_id')
-        ->select('pub_tables.*','pub_table_files.*',
+        ->leftJoin('publikasis','pub_tables.type_id','=','publikasis.pub_id')
+        ->select('pub_tables.*','pub_table_files.*','publikasis.title AS pub_name',
         'pub_tables.id AS id','pub_tables.type AS type','pub_table_files.id AS file_id', 'pub_table_files.type AS filetype')
         ->get();
         $dt=DataTables::of($search_result)
@@ -60,8 +63,15 @@ class SearchEngineController extends Controller
 
         })
         ->addColumn('judul',function($search_result){
-            
+            if($search_result->type=='publikasi'){
+                $title='<a href="#" class="search-result-text">'. $search_result->title.'</a>';
+                $pub_name=$search_result->pub_name;
+                $source='<p style="margin-top:0"><small class="text text-muted text-sm" >sumber:' .$pub_name.'</small></p>';
+
+                return($title.$source);
+            }  
         })
+        ->rawColumns(['action','judul'])
         ->make(true);
         return $dt;
 

@@ -7,7 +7,7 @@
             height: 30px !important;
         }
 
-        td{
+        #tableByBab td{
             text-align: center;
         }
         

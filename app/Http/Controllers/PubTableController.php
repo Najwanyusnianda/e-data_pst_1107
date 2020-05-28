@@ -9,6 +9,7 @@ use App\PubTableFiles;
 use App\Publikasi;
 use App\SubjectTable;
 use Yajra\DataTables\Facades\DataTables;
+use Illuminate\Support\Facades\Storage;
 
 class PubTableController extends Controller
 {
@@ -78,7 +79,7 @@ class PubTableController extends Controller
                 $name =$pubTable->hal_pdf_first.'_'.$pubTable->title.'.'.$file->extension();
     
                 //$file->move(public_path().'/files/'.$pubTable->pub_id, $name);  
-                $path=$file->store('file'.'/'.$pubTable->type_id.'/'.$name);
+                $path=$file->store('file'.'/'.$pubTable->type_id.'/'.$name,'public');
                 //$files[] = $name;  
     
                 PubTableFiles::create([
@@ -160,27 +161,27 @@ class PubTableController extends Controller
                     $file=$request->file('PdfFileTable');
                 
                     $name =$pubTable->hal_pdf_first.'_'.$pubTable->title.'.'.$file->extension();
-    
-                    if(!empty($tableFiles)){
+                   
+                   /* if(!empty($tableFiles)){
                         if(File::exists(public_path('/'.$tableFiles->filepath)))
                         {
                          File::delete(public_path('/'.$tableFiles->filepath));
                         }
         
-                    }
+                    }*/
                     //delete file lama
-
+                    $isExists = Storage::exists('app/public/'.$tableFiles->filepath);
 
                     //update file baru
-                     $file->move(public_path().'/files/'.$pubTable->pub_id, $name);  
-                    
+                    // $file->move(public_path().'/files/'.$pubTable->pub_id, $name);  
+                     $path=$file->store('file'.'/'.$pubTable->type_id.'/'.$name,'public');
     
                      $pubTableFiles=PubTableFiles::where('pub_table_id',$pubTable->id)->delete();
     
                      PubTableFiles::create([
                         'pub_table_id'=>$pubTable->id,
                         'filename'=>$name,
-                        'filepath'=>'files/'.$pubTable->pub_id.'/'.$name,
+                        'filepath'=>$path,
                         'type'=>'pdf'
                        ]);
                  

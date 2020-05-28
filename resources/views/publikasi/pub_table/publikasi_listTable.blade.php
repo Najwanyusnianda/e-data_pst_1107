@@ -7,7 +7,7 @@
             height: 30px !important;
         }
 
-        #tableByBab td{
+        #tableByBab .first_col_td{
             text-align: center;
         }
         
@@ -188,7 +188,7 @@ addTableButton.click(function(e){
     }
     
     $('#addTableFormModal .modal-title').html(judulModal);
-    $('#babNumberForm').val(bab_num_global);
+    
     var addTableForm_url="{{route('admin.pubTable_form',[$pub_detail->pub_id])}}"
 
     $.ajax({
@@ -200,7 +200,7 @@ addTableButton.click(function(e){
             //console.log("Data: " + response);
 
             $('#addTableFormBody').html(response);
-            $('#babNumberForm').val(babNumber);
+            $('#babNumberForm').val(bab_num_global);
             handleFileInput();
         },
         error: function (e) {
@@ -270,12 +270,17 @@ addTableButton.click(function(e){
 $('.section-body').on('click','.edit_table_form',function(e){
     e.preventDefault();
 
-    var tableListheaderComponent=$(this).closest('.card').find('#Bab-title');
+   // var tableListheaderComponent=$(this).closest('.card').find('#Bab-title');
            // console.log(tableListheaderComponent.html());
 
-            var babNumber=tableListheaderComponent.attr('bab-data');
-            console.log('halaman bab:'+babNumber);
-            var judulModal="Form Update Tabel  - "+tableListheaderComponent.html();
+            //var babNumber=tableListheaderComponent.attr('bab-data');
+            //console.log('halaman bab:'+babNumber);
+            //var judulModal="Form Update Tabel  - "+tableListheaderComponent.html();
+            if(bab_num_global){
+        var judulModal="Form Tambah Tabel Publikasi - Bab "+bab_num_global;
+    }else{
+        var judulModal="Form Tambah Tabel Publikasi - Bab 000"
+    }      
             $('#addTableFormModal .modal-title').html(judulModal);
           
     var table_id=$(this).attr('data-id');
@@ -290,7 +295,7 @@ $('.section-body').on('click','.edit_table_form',function(e){
                    // console.log("Data: " + response);
                    
                 $('#addTableFormBody').html(response);
-                $('#babNumberForm').val(babNumber);
+                $('#babNumberForm').val(bab_num_global);
                     handleFileInput();
                 },
                 error:function(e){

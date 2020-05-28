@@ -79,7 +79,7 @@
                             <tr style="background-color: #6c5ce7;">
                                
                                 <th style="color: white;">Judul Tabel</th>
-                                <th style="color: white;">Aksi</th>
+                                
                             </tr>
                         </thead>
                         <tbody></tbody>
@@ -117,7 +117,7 @@
         columns:[
             //{data: 'DT_RowIndex', name: 'DT_Row_Index' , orderable: false, searchable: false},
             {data:'judul'},
-            {data:'action'}
+         
 
     
     

@@ -63,7 +63,7 @@
         <div class="card-body">
             <div class="form-group">
 
-                <input type="hidden" class="form-control" placeholder="" id="babNumberForm" name="babNumberForm">
+                <input type="text" class="form-control" placeholder="" id="babNumberForm" name="babNumberForm">
             </div>
             <div class="form-group">
                 <label for="title">Judul Tabel<code>*</code></label>

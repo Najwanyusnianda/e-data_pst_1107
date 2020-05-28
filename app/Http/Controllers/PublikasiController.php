@@ -90,8 +90,8 @@ class PublikasiController extends Controller
                 'size'=>$collection['size'],
                 'cover'=>$collection['cover'],
                 'pdf'=>$collection['pdf'],
-                'release_date'=>$collection['sch_date'] ?? \Carbon\Carbon::now(),
-                'update_date'=>$collection['rl_date'],
+                'release_date'=>$collection['rl_date'],
+                'update_date'=>$collection['updt_date'] ,
                 'abstract'=>$collection['abstract'],
                 'kat_no'=>$collection['kat_no'],
                 'pub_no'=>$collection['pub_no'] 

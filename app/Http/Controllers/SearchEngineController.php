@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\DB;
 use DataTable;
 use App\PubTable;
 use App\SubjectTable;
+use App\Publikasi;
 use Yajra\DataTables\Facades\DataTables;
 
 class SearchEngineController extends Controller
@@ -46,9 +47,11 @@ class SearchEngineController extends Controller
         ->where('pub_tables.title','like',"%".$keyword."%")
         ->leftJoin('pub_table_files','pub_tables.id','=','pub_table_files.pub_table_id')
         ->leftJoin('publikasis','pub_tables.type_id','=','publikasis.pub_id')
+        ->where('publikasis.title','!=','null')
         ->select('pub_tables.*','pub_table_files.*','publikasis.title AS pub_name',
         'pub_tables.id AS id','pub_tables.type AS type','pub_table_files.id AS file_id', 'pub_table_files.type AS filetype')
         ->get();
+      // dd($search_result);
         $dt=DataTables::of($search_result)
         ->addIndexColumn()
         ->addColumn('action',function($search_result){
@@ -64,11 +67,53 @@ class SearchEngineController extends Controller
         })
         ->addColumn('judul',function($search_result){
             if($search_result->type=='publikasi'){
-                $title='<a href="#" class="search-result-text">'. $search_result->title.'</a>';
-                $pub_name=$search_result->pub_name;
-                $source='<p style="margin-top:0"><small class="text text-muted text-sm" >sumber:' .$pub_name.'</small></p>';
+                if($search_result->filepath != null){
+                    //get publikasi link
+                    $publikasi=Publikasi::find($search_result->type_id);
+                    if(!empty($publikasi)){
+                        $pub_from_web_link="https://acehbaratkab.bps.go.id/publication/";
+          
+                        $date_link=str_replace('-','/',$publikasi->release_date);
+                        //$date_link='';
+                        $pub_id_link=$publikasi->pub_id;
+                        $name_link=str_replace(' ','-',$publikasi->title);
+                        $pub_source_link=$pub_from_web_link.$date_link.'/'.$pub_id_link.'/'.$name_link;
+                        $pub_name='<a href="'.$pub_source_link.'" style="text-decoration: none !important;color:#98a6ad !important;"  target="_blank">'.$search_result->pub_name.'</a>';  
+                    }else{
+                        $pub_name='<a href="#" style="text-decoration: none !important;color:#98a6ad !important;" >'.$search_result->pub_name.'</a>';  
+                    }
 
-                return($title.$source);
+                    /////
+                    $source=asset('storage/'.$search_result->filepath);
+                    $title='<a href="'.$source.'" class="search-result-text" target="_blank">'. $search_result->title.'</a>';
+                    $sumber_tabel='<p style="margin-top:0"><small class="text text-muted text-sm" >sumber: Publikasi ' .$pub_name.'</small></p>';
+    
+                    return($title.$sumber_tabel);
+                }
+                else{
+                     //get publikasi link
+                    $publikasi=Publikasi::find($search_result->type_id);
+                    if(!empty($publikasi)){
+                        $pub_from_web_link="https://acehbaratkab.bps.go.id/publication/";
+          
+                        $date_link=str_replace('-','/',$publikasi->release_date);
+                       // $date_link='';
+                        $pub_id_link=$publikasi->pub_id;
+                        $name_link=str_replace(' ','-',$publikasi->title);
+                        $pub_source_link=$pub_from_web_link.$date_link.'/'.$pub_id_link.'/'.$name_link;
+                        $pub_name='<a href="'.$pub_source_link.'" style="text-decoration: none !important;color:#98a6ad !important;" >'.$search_result->pub_name.'</a>';  
+                    }else{
+                        $pub_name='<a href="#" style="text-decoration: none !important;color:#98a6ad !important;" >'.$search_result->pub_name.'</a>';  
+                    }
+
+                    $title=$search_result->title;
+                    $sumber_tabel='<p style="margin-top:0"><small class="text text-muted text-sm" >sumber: Publikasi ' .$pub_name.'</small></p>';
+    
+                    return($title.$sumber_tabel);
+                }
+   
+            }else{
+
             }  
         })
         ->rawColumns(['action','judul'])

@@ -108,6 +108,10 @@ Route::get('/migrate', function() {
     return '<h1>migrate and seed success</h1>';
 });
 
+Route::get('/storage-link', function() {
+    $status = Artisan::call('storage:link');
+    return '<h1>Storage link Success</h1>';
+});
 
 
 

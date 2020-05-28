@@ -40,7 +40,7 @@ var tableListPubTable = $('#tableByBab').DataTable({
             searchable: false
         },
         {
-            data: 'title'
+            data: 'judul_new'
         },
         {
             data: 'action'

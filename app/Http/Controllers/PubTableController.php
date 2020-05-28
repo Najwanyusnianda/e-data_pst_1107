@@ -259,8 +259,18 @@ class PubTableController extends Controller
                $delete_button= '<a href="'.$delete_url.'" class="text-decoration-none text-danger"><i class="fas fa-trash-alt"></i></a>';
                return($update_button.$delete_button);
             })
+            ->addColumn('judul_new',function($publikasi_table){
+                if($publikasi_table->filepath != null){
+                  
+                   $link= '<small class="font-weight-light"><a href="'.$publikasi_table->filepath.')}}" class="">'. $publikasi_table->title.'</a></small>';
+                   return $link;
+                }else{
+                   $link= $publikasi_table->title;
+                   return $link;
+                }
+            })
             ->addIndexColumn()
-            ->rawColumns(['action'])
+            ->rawColumns(['action','judul_new'])
             ->make(true);
 
             return($dt);

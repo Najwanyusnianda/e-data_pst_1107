@@ -45,6 +45,9 @@ var tableListPubTable = $('#tableByBab').DataTable({
         },
         {
             data: 'action'
-        }]
+        }],
+    columnDefs: [
+        { className: "first_col_td", "targets": [ 0 ] }
+        ]        
 });
 </script>

@@ -28,9 +28,7 @@
     font-size: 13px;
   }
 
- #search {
-    border-radius: 30px !important;
-}
+
 .page-search .btn {
     border-radius: 30px;
     margin-left: 10px;

@@ -7,15 +7,16 @@
             <a href="index.html">E-D</a>
           </div>
         <ul class="sidebar-menu">
-            <li class="menu-header">Dashboard</li>
+            <li class="menu-header">Beranda</li>
             <li class="dropdown">
                 <a href="#" class="nav-link has-dropdown"><i
-                        class="fas fa-fire"></i><span>Dashboard</span></a>
+                        class="fas fa-search"></i><span> Menu Utama</span></a>
                 <ul class="dropdown-menu">
-                    <li><a class="nav-link" href="#">Dashboard</a></li>
+                    <li><a class="nav-link" href="#">Pencarian Data</a></li>
+                    <li><a class="nav-link" href="#">Pencarian Publikasi</a></li>
                 </ul>
             </li>
-            <li class="menu-header">Subject</li>
+           <!-- <li class="menu-header">Subject</li>
             <li class="dropdown ">
                 <a href="#" class="nav-link has-dropdown" data-toggle="dropdown">
                     <i class="fas fa-circle fa-sm"></i>
@@ -71,7 +72,7 @@
                     <li><a class="nav-link" href="{{route('home.subject_detail',['subject_id' =>24])}}">Peternakani</a></li>
                     <li><a class="nav-link" href="{{route('home.subject_detail',['subject_id' =>29])}}">Tanaman Pangan</a></li>
                 </ul>
-            </li>
+            </li>-->
 
 
       

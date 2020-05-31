@@ -25,6 +25,16 @@ class PublikasiController extends Controller
         return view('publikasi.publikasi_list');
     }
 
+    public function updateIndex($pub_id){
+        $publikasi=Publikasi::find($pub_id);
+        if (!empty($publikasi)) {
+         
+            return view('publikasi.update_detail_publikasi',compact('publikasi'));
+        }else{
+            return redirect()->back();
+        }
+    }
+
 
 
     public function publicationTableDetail($id){
@@ -102,8 +112,26 @@ class PublikasiController extends Controller
         
     }
 
+    public function updatePublikasi(Request $request,$pub_id)
+    {
+    
+        $publikasi=Publikasi::find($pub_id);
+
+        if (!empty($publikasi)) {
+            $publikasi->update([
+                'n_bab'=>$request->n_bab
+            ]);
+            
+            $request->session()->flash('pub_update_success', 'Publikasi berhasil diupdate');
+            return redirect()->route('admin.pubTable.detail',[$publikasi->pub_id]);
+        }else{
+            return redirect()->back();
+        }
+    }
+
     public function storeJumlahBab(Request $request,$id){
        // dd($request);
+
         $publikasi=Publikasi::where('pub_id',$id)->first();
         
         $publikasi->update([

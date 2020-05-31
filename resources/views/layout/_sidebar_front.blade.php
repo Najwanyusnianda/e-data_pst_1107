@@ -16,6 +16,10 @@
                     <li><a class="nav-link" href="#">Pencarian Publikasi</a></li>
                 </ul>
             </li>
+        <li><a class="nav-link" href="{{'home.home.data'}}"><i class="far fa-search"></i>
+             <span></span>
+            </a>
+        </li>
            <!-- <li class="menu-header">Subject</li>
             <li class="dropdown ">
                 <a href="#" class="nav-link has-dropdown" data-toggle="dropdown">

@@ -8,6 +8,7 @@ use DataTable;
 use App\PubTable;
 use App\SubjectTable;
 use App\Publikasi;
+use App\PubTableFiles;
 use Yajra\DataTables\Facades\DataTables;
 
 class SearchEngineController extends Controller
@@ -39,6 +40,25 @@ class SearchEngineController extends Controller
            }
 
            
+        }
+    }
+
+
+    public function new_search(Request $request){
+        
+        if($request->has('search')){
+            $keyword = $request->search;
+            $search_result = PubTable::search($keyword)->paginate(10);
+        
+            $search_result->withPath(url('/search/post/new?'.$request->_token));
+            $publikasi=Publikasi::all();
+            //$pub_tableFile=PubTableFiles::select('filepath')->get();
+           return view('search.search_result',compact('search_result','keyword','publikasi'));
+            //return view('search.search_result');
+            
+           
+        }else{
+            return redirect()->back();
         }
     }
 #### services

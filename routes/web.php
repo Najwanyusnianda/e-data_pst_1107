@@ -30,11 +30,16 @@ Route::group(['middleware' => ['auth']], function () {
         //Publikasi
         Route::get('backend/dashboard','DashboardController@index')->name('dashboard_index');
         Route::get('backend/publikasi','PublikasiController@index')->name('publikasi_index');
+        Route::get('backend/publikasi/{pub_id}/update_','PublikasiController@updateIndex')->name('publikasi_updateIndex');
         Route::get('backend/publikasi/publikasi_table_detail/{id}','PublikasiController@publicationTableDetail')->name('pubTable.detail');
         Route::post('backend/publikasi/post','PublikasiController@postPublikasi')->name('pubCollection.store');
         Route::get('backend/table/publikasi','PublikasiController@publicationListTable')->name('pubCollection.table');
         Route::post('backend/publikasi/{id}/post/n_bab','PublikasiController@storeJumlahBab')->name('pubCollection.n_bab.store');
         Route::post('backend/delete/publikasi','PublikasiController@deletePublikasi')->name('publikasi.delete');
+        Route::post('backend/update/publikasi/{pub_id}','PublikasiController@updatePublikasi')->name('publikasi.update');
+        
+        
+        
         //api publikasi
         Route::get('backend/publikasi/pub_api','WebApiPublikasiController@publicationListApi')->name('pubApi.list');
         Route::post('backend/publikasi/pub_api','WebApiPublikasiController@publicationListApi')->name('pubApi.list.post');
@@ -67,14 +72,16 @@ Route::group(['middleware' => ['auth']], function () {
 });*/
 Route::name('home.')->group(function () {
     Route::get('/','HomeController@index')->name('home');
+    Route::get('/search_data','HomeController@dataSearchIndex')->name('home.data');
+    Route::get('/search_pub','HomeController@pubSearchIndex')->name('home.pub');
     Route::get('/faq','HomeController@faqIndex')->name('faq');
 
     #### search data $$$
 
-    Route::get('/{subject_id}/subject_index','SearchEngineController@subject_detail')->name('subject_detail');
-    Route::get('/result?={keyword}','SearchEngineController@search_result_index')->name('seach_index');
+    Route::get('search_data/{subject_id}/subject_index','SearchEngineController@subject_detail')->name('subject_detail');
+    Route::get('search_data/result?={keyword}','SearchEngineController@search_result_index')->name('seach_index');
     Route::post('/search/post','SearchEngineController@post_search')->name('seach_post');
-
+    Route::get('/search_data/post/new','SearchEngineController@new_search')->name('seach_post_new');
     #---services--
     Route::get('/table/keyword={keyword}','SearchEngineController@searchTable')->name('seach_result.table');
     

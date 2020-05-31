@@ -23,6 +23,14 @@
 @endsection
 
 @section('content')
+
+@if (session('pub_update_success'))
+
+<div class="alert alert-success">
+ {{ session('pub_update_success') }}
+</div>
+@endif
+
 <h2 class="section-title">Detail Publikasi</h2>
 <p class="section-lead">
     Detail Publikasi

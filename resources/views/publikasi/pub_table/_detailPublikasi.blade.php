@@ -12,7 +12,9 @@
 
         <div class="card-header-action">
             <!--<a href="#" class="btn btn-primary">View All</a>-->
-            <a href="#" class="btn btn-warning ml-auto">Update Publikasi</a>
+        <a href="{{route('admin.publikasi_updateIndex',['pub_id'=>$pub_detail->pub_id])}}" class="btn btn-warning ml-auto">
+          Update Publikasi
+        </a>
           </div>
     </div>
     <div class="card-body">

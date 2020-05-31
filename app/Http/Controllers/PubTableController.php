@@ -89,6 +89,10 @@ class PubTableController extends Controller
                     'filepath'=>$path,
                     'type'=>'pdf'
                 ]);
+
+                $pubTable->update([
+                    'pdf'=>$path
+                ]);
     
     
                 //multiple file
@@ -188,6 +192,11 @@ class PubTableController extends Controller
                         'filepath'=>$path,
                         'type'=>'pdf'
                        ]);
+
+                       $pubTable->update([
+                        'pdf'=>$path
+                         ]);
+        
                  
                   /* foreach($request->file('PdfFileTable') as $key=>$file)
         

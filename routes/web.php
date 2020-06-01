@@ -73,7 +73,7 @@ Route::group(['middleware' => ['auth']], function () {
 Route::name('home.')->group(function () {
     Route::get('/','HomeController@index')->name('home');
     Route::get('/search_data','HomeController@dataSearchIndex')->name('home.data');
-    Route::get('/search_pub','HomeController@pubSearchIndex')->name('home.pub');
+    //Route::get('/search_pub','HomeController@pubSearchIndex')->name('home.pub');
     Route::get('/faq','HomeController@faqIndex')->name('faq');
 
     #### search data $$$
@@ -82,6 +82,13 @@ Route::name('home.')->group(function () {
     Route::get('search_data/result?={keyword}','SearchEngineController@search_result_index')->name('seach_index');
     Route::post('/search/post','SearchEngineController@post_search')->name('seach_post');
     Route::get('/search_data/post/new','SearchEngineController@new_search')->name('seach_post_new');
+
+
+    #### search publikasi $$$
+    Route::get('search_pub/index','PubSearchController@indexApi')->name('pub.search_index');
+    Route::post('search_pub/index','PubSearchController@indexApi')->name('pub.search_index');
+   // Route::get('search_pub/index','PubSearchController@index')->name('pub.search_index');
+
     #---services--
     Route::get('/table/keyword={keyword}','SearchEngineController@searchTable')->name('seach_result.table');
     

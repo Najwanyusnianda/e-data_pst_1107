@@ -50,10 +50,7 @@ font-size: 20px;
                     </div>
 
                     <div class="section-body">
-                        <div class="container-fluid">
-                            
-                        
-                        </div>
+@yield('content')
                     </div>
                 </section>
             </div>
@@ -73,7 +70,7 @@ font-size: 20px;
             </footer>
         </div>
     </div>
-
+@yield('modals')
     <!-- General JS Scripts -->
     <!-- General JS Scripts -->
     <script src="{{asset('vendor/jquery-3.4.1.min.js')}}"></script>

@@ -8,16 +8,14 @@
           </div>
         <ul class="sidebar-menu">
             <li class="menu-header">Beranda</li>
-            <li class="dropdown">
-                <a href="#" class="nav-link has-dropdown"><i
-                        class="fas fa-search"></i><span> Menu Utama</span></a>
-                <ul class="dropdown-menu">
-                    <li><a class="nav-link" href="#">Pencarian Data</a></li>
-                    <li><a class="nav-link" href="#">Pencarian Publikasi</a></li>
-                </ul>
-            </li>
-        <li><a class="nav-link" href="{{'home.home.data'}}"><i class="far fa-search"></i>
-             <span></span>
+
+        <li><a class="nav-link" href="{{route('home.home.data')}}">
+            <i class="fas fa-list"></i>
+                <span>Pencarian Data</span>
+               </a>
+        </li>    
+        <li><a class="nav-link" href="{{route('home.pub.search_index')}}"><i class="fas fa-newspaper"></i>
+             <span>Pencarian Publikasi</span>
             </a>
         </li>
            <!-- <li class="menu-header">Subject</li>

@@ -191,11 +191,7 @@ addTableButton.click(function(e){
     e.preventDefault()
     if(bab_num_global){
         var judulModal="Form Tambah Tabel Publikasi - Bab "+bab_num_global;
-    }else{
-        var judulModal="Form Tambah Tabel Publikasi - Bab 000"
-    }
-    
-    $('#addTableFormModal .modal-title').html(judulModal);
+        $('#addTableFormModal .modal-title').html(judulModal);
     
     var addTableForm_url="{{route('admin.pubTable_form',[$pub_detail->pub_id])}}"
 
@@ -210,12 +206,46 @@ addTableButton.click(function(e){
             $('#addTableFormBody').html(response);
             $('#babNumberForm').val(bab_num_global);
             handleFileInput();
+            $('#form_add_table').submit(function (e) {
+                e.preventDefault();
+
+                var formData = new FormData(this);
+                var url = $(this).attr('action')
+                $.ajax({
+                    type: 'POST',
+                    url: url,
+                    data: formData,
+                    cache: false,
+                    contentType: false,
+                    processData: false,
+                    global: false,
+                    success: (data) => {
+                        this.reset();
+                        $('#addTableFormModal').modal('hide');
+                                tableListPubTable.ajax.reload();
+                                Swal.fire(
+                                    'Berhasil!',
+                                    'Tabel Berhasil Ditambahkan',
+                                    'success'
+                                )
+                    },
+                    error: function (data) {
+                        console.log(data);
+                    }
+                });
+            });
         },
         error: function (e) {
 
         }
     });
     addTableForm.modal('show');
+    }else{
+        alert('pilih bab terlebih dahulu')
+        $('#addTableFormModal').modal('hide');
+    }
+    
+
 })
 ///--------------add table each --------------------
 
@@ -305,6 +335,34 @@ $('.section-body').on('click','.edit_table_form',function(e){
                 $('#addTableFormBody').html(response);
                 $('#babNumberForm').val(bab_num_global);
                     handleFileInput();
+                    $('#form_add_table').submit(function (e) {
+                        e.preventDefault();
+
+                        var formData = new FormData(this);
+                        var url = $(this).attr('action')
+                        $.ajax({
+                            type: 'POST',
+                            url: url,
+                            data: formData,
+                            cache: false,
+                            contentType: false,
+                            processData: false,
+                            global: false,
+                            success: (data) => {
+                                this.reset();
+                                $('#addTableFormModal').modal('hide');
+                                tableListPubTable.ajax.reload();
+                                Swal.fire(
+                                    'Berhasil!',
+                                    'Tabel Berhasil Di Update',
+                                    'success'
+                                )
+                            },
+                            error: function (data) {
+                                console.log(data);
+                            }
+                        });
+                    });
                 },
                 error:function(e){
                 
@@ -364,6 +422,8 @@ $('.section-body').on('click','.edit_table_form',function(e){
   
 
         });
+
+
 
     })
 

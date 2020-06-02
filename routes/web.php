@@ -72,7 +72,7 @@ Route::group(['middleware' => ['auth']], function () {
 });*/
 Route::name('home.')->group(function () {
     Route::get('/','HomeController@index')->name('home');
-    Route::get('/search_data','HomeController@dataSearchIndex')->name('home.data');
+    Route::get('search_data','HomeController@dataSearchIndex')->name('home.data');
     //Route::get('/search_pub','HomeController@pubSearchIndex')->name('home.pub');
     Route::get('/faq','HomeController@faqIndex')->name('faq');
 

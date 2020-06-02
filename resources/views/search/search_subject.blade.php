@@ -38,21 +38,18 @@
           <thead>
             <tr style="background-color: #6c5ce7;">
               <th style="color: white;">Judul Tabel</th>
-              <th style="color: white;">Aksi</th>
-              
+        
             </tr>
           </thead>
           <tbody>
             @forelse ($data as $search_result)
                 <tr>
-                  <td>  
-                      <a href="#" class="search-result-text">{{$search_result->title}}</a>
-                  </td>
+
                   <td>
-                    @if (!empty($search_result->filepath))
-                    <a href="#" class="btn btn-icon icon-left btn-info"><i class="fas fa-table"></i>lihat </a>
+                    @if ($search_result->pdf !=null)
+                    <a href="{{asset('storage/'.$search_result->pdf)}}" target="_blank" lass="search-result-text">{{$search_result->title}}</a>
                     @else
-                    <span class="badge badge-warning"><small>tidak tersedia</small>  </span>
+                    <span >{{$search_result->title}}</span>
                     @endif
                  
                   </td>

@@ -1,9 +1,8 @@
 @extends('layout.master_pub')
 
 @section('content')
-<h2 class="section-title">Daftar Publikasi WebAPI</h2>
-<p class="section-lead">Pilih Publikasi untuk ditambahkan ke dalam sistem</p>
-<div class="container">
+
+<div class="container-fluid">
     <div class="card">
         <div class="card-header">
             <div class="mr-auto">

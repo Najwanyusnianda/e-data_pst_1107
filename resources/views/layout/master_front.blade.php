@@ -62,12 +62,8 @@
                     <li class="nav-item"><a href="index.html" class="nav-link">Ecommerce Dashboard</a></li>
                   </ul>
                 </li>-->
-              <li class="nav-item {{Request::is('/') ? 'active' : ''}}">
-                <a href="{{route('home.home')}}" class="nav-link"><i class="fas fa-fire"></i><span>Beranda</span></a>
-                </li>
-                <li class="nav-item {{Request::is('faq') ? 'active' : ''}} ">
-                  <a href="{{route('home.faq')}}" class="nav-link"><i class="fas fa-question-circle"></i><span>Faq</span></a>
-                </li>
+
+ 
                 <!--<li class="nav-item dropdown">
                   <a href="#" data-toggle="dropdown" class="nav-link has-dropdown"><i class="far fa-clone"></i><span>Multiple Dropdown</span></a>
                   <ul class="dropdown-menu" style="display: none;">

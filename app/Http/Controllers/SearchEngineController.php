@@ -48,9 +48,9 @@ class SearchEngineController extends Controller
         
         if($request->has('search')){
             $keyword = $request->search;
-            $search_result = PubTable::search($keyword)->paginate(10);
-        
-            $search_result->withPath(url('/search/post/new?'.$request->_token));
+            $search_result = PubTable::search($keyword)->get();
+            $search_count=count($search_result);
+            //$search_result->withPath(url('/search/post/new?'.$request->_token));
             $publikasi=Publikasi::all();
             //$pub_tableFile=PubTableFiles::select('filepath')->get();
            return view('search.search_result',compact('search_result','keyword','publikasi'));

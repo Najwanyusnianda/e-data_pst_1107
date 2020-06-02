@@ -84,7 +84,6 @@
         Hasil Pencarian
 
         <div class="card-header-action">
-           {{ $search_result->links()}}
         </div>
     </div>
     <div class="card-body">

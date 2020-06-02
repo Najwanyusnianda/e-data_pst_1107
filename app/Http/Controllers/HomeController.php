@@ -20,6 +20,11 @@ class HomeController extends Controller
         }*/
         return view('home.home');
     }
+
+    public function dataSearchIndex(){
+
+        return view('home.search_data_index');
+    }
     
     
 

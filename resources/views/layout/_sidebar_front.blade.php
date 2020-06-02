@@ -9,12 +9,19 @@
         <ul class="sidebar-menu">
             <li class="menu-header">Beranda</li>
 
-        <li><a class="nav-link" href="{{route('home.home.data')}}">
+            <li class="{{Request::is('/')  ? 'active' : ''}}"><a class="nav-link" href="{{route('home.home')}}">
+                <i class="fas fa-fire"></i>
+                    <span>Beranda</span>
+                   </a>
+            </li>   
+            <li class="menu-header">Pencarian</li>
+
+        <li class="{{Request::is('search_data')  ? 'active' : (Request::is('search_data/*')  ? 'active' : '')}}"><a class="nav-link" href="{{route('home.home.data')}}">
             <i class="fas fa-list"></i>
                 <span>Pencarian Data</span>
                </a>
         </li>    
-        <li><a class="nav-link" href="{{route('home.pub.search_index')}}"><i class="fas fa-newspaper"></i>
+        <li  class="{{Request::is('search_pub')  ? 'active' : (Request::is('search_pub/*')  ? 'active' : '')}}"><a class="nav-link" href="{{route('home.pub.search_index')}}"><i class="fas fa-newspaper"></i>
              <span>Pencarian Publikasi</span>
             </a>
         </li>

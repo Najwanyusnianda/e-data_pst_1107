@@ -1,7 +1,7 @@
 
 @if (!empty($pubTable))
 <form action="{{route('admin.pubTable_update',['pub_id'=>$pub_detail->pub_id,'pubtable_id'=>$pubTable->id])}}" method="post"
-    enctype="multipart/form-data">
+    enctype="multipart/form-data" id="form_add_table">
     {{ csrf_field() }}
 <p class="text-muted">Update Table {{$pubTable->title}}</p>
     <div class="card">
@@ -53,10 +53,12 @@
             <button class="btn btn-primary btn-block">Submit</button>
         </div>
     </div>
-</form>   
+</form>  
+
+
 @else
 <form action="{{route('admin.pubTable_create',['pub_id'=>$pub_detail->pub_id])}}" method="post"
-    enctype="multipart/form-data">
+    enctype="multipart/form-data" id="form_add_table">
     {{ csrf_field() }}
     <p class="text-muted">Menambah Daftar Tabel Baru Untuk Publikasi</p>
     <div class="card">
@@ -106,9 +108,10 @@
             </div>
         </div>
         <div class="card-footer">
-            <button class="btn btn-primary btn-block">Submit</button>
+            <button class="btn btn-primary btn-block" >Submit</button>
         </div>
     </div>
 </form> 
+
 @endif
 

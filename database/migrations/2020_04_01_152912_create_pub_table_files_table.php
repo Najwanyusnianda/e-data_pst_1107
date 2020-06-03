@@ -16,8 +16,8 @@ class CreatePubTableFilesTable extends Migration
         Schema::create('pub_table_files', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('pub_table_id');
-            $table->string('filename');
-            $table->string('filepath');
+            $table->text('filename');
+            $table->text('filepath');
             $table->string('type')->nullable();
             $table->timestamps();
         });

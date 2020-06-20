@@ -262,41 +262,80 @@ class PubTableController extends Controller
     public function tableDatabyBab($pub_id,$bab_num){
  
         if(!empty($bab_num)){
-            $publikasi_table=PubTable::where('pub_tables.type','publikasi')
-            ->where('pub_tables.type_id',$pub_id)
-            ->where('pub_tables.bab_num',$bab_num)
-            ->leftJoin('pub_table_files','pub_table_files.pub_table_id','=','pub_tables.id')
-            ->select('pub_tables.*','pub_tables.type AS types','pub_table_files.*','pub_tables.id AS id','pub_table_files.id AS file_id')
-            ->get();
+          
+            if($bab_num==0){
+             
+                $publikasi_table=PubTable::where('pub_tables.type','publikasi')
+                ->where('pub_tables.type_id',$pub_id)
+                ->leftJoin('pub_table_files','pub_table_files.pub_table_id','=','pub_tables.id')
+                ->select('pub_tables.*','pub_tables.type AS types','pub_table_files.*','pub_tables.id AS id','pub_table_files.id AS file_id')
+                ->get();
+    
+    //dd($publikasi_table);
+                $dt=DataTables::of($publikasi_table)
+                ->addColumn('action',function($publikasi_table){
+                    $id=$publikasi_table->id;
+                    $delete_url="#";
+                    
+                   $update_button= '';
+                   $delete_button= '';
+                   return($update_button.$delete_button);
+                })
+                ->addColumn('judul_new',function($publikasi_table){
+                    if($publikasi_table->filepath != null){
+                        $source=asset('storage/'.$publikasi_table->filepath);
+                       $link= '<a href="'.$source.'" class="" target="_blank" > '. $publikasi_table->title.'</a>';
+                       return $link;
+                    }else{
+                       $link= $publikasi_table->title;
+                       return $link;
+                    }
+                })
+                ->addIndexColumn()
+                ->rawColumns(['action','judul_new'])
+                ->make(true);
+    
+                return($dt);
+            }else{
+                $publikasi_table=PubTable::where('pub_tables.type','publikasi')
+                ->where('pub_tables.type_id',$pub_id)
+               
+                ->leftJoin('pub_table_files','pub_table_files.pub_table_id','=','pub_tables.id')
+                ->select('pub_tables.*','pub_tables.type AS types','pub_table_files.*','pub_tables.id AS id','pub_table_files.id AS file_id')
+                ->get();
+    
+    //dd($publikasi_table);
+                $dt=DataTables::of($publikasi_table)
+                ->addColumn('action',function($publikasi_table){
+                    $id=$publikasi_table->id;
+                    $delete_url="#";
+                    
+                   $update_button= '<a href="" class="edit_table_form text-decoration-none text-warning" data-id="'.$id.'"><i class="far fa-edit"></i></a>';
+                   $delete_button= '<a href="'.$delete_url.'" class="text-decoration-none text-danger"><i class="fas fa-trash-alt"></i></a>';
+                   return($update_button.$delete_button);
+                })
+                ->addColumn('judul_new',function($publikasi_table){
+                    if($publikasi_table->filepath != null){
+                        $source=asset('storage/'.$publikasi_table->filepath);
+                       $link= '<a href="'.$source.'" class="" target="_blank" > '. $publikasi_table->title.'</a>';
+                       return $link;
+                    }else{
+                       $link= $publikasi_table->title;
+                       return $link;
+                    }
+                })
+                ->addIndexColumn()
+                ->rawColumns(['action','judul_new'])
+                ->make(true);
+    
+                return($dt);
+    
+            }
 
-//dd($publikasi_table);
-            $dt=DataTables::of($publikasi_table)
-            ->addColumn('action',function($publikasi_table){
-                $id=$publikasi_table->id;
-                $delete_url="#";
-                
-               $update_button= '<a href="" class="edit_table_form text-decoration-none text-warning" data-id="'.$id.'"><i class="far fa-edit"></i></a>';
-               $delete_button= '<a href="'.$delete_url.'" class="text-decoration-none text-danger"><i class="fas fa-trash-alt"></i></a>';
-               return($update_button.$delete_button);
-            })
-            ->addColumn('judul_new',function($publikasi_table){
-                if($publikasi_table->filepath != null){
-                    $source=asset('storage/'.$publikasi_table->filepath);
-                   $link= '<a href="'.$source.'" class="" target="_blank" > '. $publikasi_table->title.'</a>';
-                   return $link;
-                }else{
-                   $link= $publikasi_table->title;
-                   return $link;
-                }
-            })
-            ->addIndexColumn()
-            ->rawColumns(['action','judul_new'])
-            ->make(true);
-
-            return($dt);
-
-        }else{
-            dd($bab_num);
+        
+        }
+        else{
+           
             $publikasi_table=PubTable::where('pub_tables.type','publikasi')
             ->where('pub_tables.type_id',$pub_id)
             ->where('pub_tables.bab_num',1)

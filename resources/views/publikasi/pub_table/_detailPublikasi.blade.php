@@ -100,6 +100,28 @@
 
           
                 </tr>
+<tr>   
+               <td width=40%>Jumlah Bab</td>
+  <td width=10%>:</td>
+  <td>
+      @if (!empty($pub_detail->n_bab))
+      {{$pub_detail->n_bab}}
+      @else
+      <span class="text text-muted" > Tidak diketahui</span>
+      @endif
+  </td></tr>
+<tr>
+  <td width=40%>Jumlah Tabel</td>
+  <td width=10%>:</td>
+  <td>
+      @if (count($pub_table)>0)
+      {{count($pub_table)}}
+      @else
+      <span class="text text-muted" > Belum ditambahkan</span>
+      @endif
+  </td>
+</tr>
+
             </tbody>
         </table>
         <div class="w-100 d-sm-none"></div>

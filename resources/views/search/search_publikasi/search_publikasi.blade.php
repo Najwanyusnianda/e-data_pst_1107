@@ -1,11 +1,20 @@
 @extends('layout.master_pub')
+@section('section_header')
 
+<h1>Pencarian Publikasi</h1>
+<div class="section-header-breadcrumb">
+  <div class="breadcrumb-item active"><a href="#">Home</a></div>
+<div class="breadcrumb-item">Pencarian Publikasi</div>
+</div>
+
+@endsection
 @section('content')
 
 <div class="container-fluid">
     <div class="card">
         <div class="card-header">
-            <div class="mr-auto">
+            <h4>Pilih Tahun:</h4>
+            <div class="card-header-action">
           
                 <form action="{{route('home.pub.search_index')}}" method="POST">
                     {{ csrf_field() }}
@@ -56,7 +65,7 @@
             </div>
             <div class="modal-body text-center">
                 @include('misc.loadingBootstrap')
-                <h3 id="loading_text_api">Mengambil data dari Web API...</h3>
+                <h3 id="loading_text_api">Menyiapkan data...</h3>
                 <p><small class="text-muted ">Mohon Bersabar</small></p>
                 
                 
@@ -148,7 +157,9 @@
                         $loading.modal('hide');
                     },
                     success: function (result) {
-
+                        setInterval(function(){
+                            $loading.modal('hide');
+                         }, 5000);
                         pub_collection = pub_collection.concat(result.data[1])
                         console.log(pub_collection);
                         if (page < (parseInt(result.data[0].pages))) {
@@ -167,7 +178,10 @@
                                 "columns": [
 
                                     {
-                                        data: "title"
+                                        data: "title",
+                                        render:function(title){
+                                            return '<strong>'+title+'</strong>'
+                                        }
                                     },
                                     {
                                         data: "pub_id",
@@ -228,11 +242,18 @@
                 },
                 success: function (collection) {
                     detailPubData = collection.data;
-                    console.log(me);
+                    console.log(detailPubData);
+                    var pub_url_prefix="https://acehbaratkab.bps.go.id/publication/";
+                    var release_date=detailPubData.rl_date;
+                    release_date=release_date.split("-").join("/");
+                    var pub_id=detailPubData.pub_id;
+                    var pub_title=detailPubData.title;
+                    pub_title=pub_title.replace(/\s/g, "-");
+                    var url_complete=pub_url_prefix+release_date+'/'+pub_id+'/'+pub_title;
                     //me.attr('download','temp');
                     //me.attr('href',detailPubData.pdf);
  
-                    window.open(detailPubData.pdf, '_blank')
+                    window.open(url_complete, '_blank')
 
 
                 },

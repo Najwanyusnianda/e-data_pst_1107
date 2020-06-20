@@ -51,4 +51,8 @@ class LoginController extends Controller
             return redirect()->route('admin.dashboard_index');
         }
     }
+    public function logout(){
+        Auth::logout();
+        return redirect()->route('login');
+    }
 }

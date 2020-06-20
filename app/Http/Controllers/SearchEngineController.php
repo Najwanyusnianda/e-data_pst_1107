@@ -48,14 +48,20 @@ class SearchEngineController extends Controller
         
         if($request->has('search')){
             $keyword = $request->search;
-            $search_result = PubTable::search($keyword)->get();
+            $search_result = DB::table('pub_tables')
+            ->where('pub_tables.title','like',"%".$keyword."%")->get();
+            if($search_result->isEmpty()){
+                $search_result = PubTable::search($keyword)->get();
+            }
+         
             $search_count=count($search_result);
             //$search_result->withPath(url('/search/post/new?'.$request->_token));
             $publikasi=Publikasi::all();
+             
             //$pub_tableFile=PubTableFiles::select('filepath')->get();
-           return view('search.search_result',compact('search_result','keyword','publikasi'));
+           return view('search.search_result',compact('search_result','keyword','publikasi','search_count'));
             //return view('search.search_result');
-            
+        
            
         }else{
             return redirect()->back();
@@ -148,10 +154,12 @@ class SearchEngineController extends Controller
     public function subject_detail($subject_id){
         $data=PubTable::where('pub_tables.subject_id',$subject_id)
         ->join('subject_tables','pub_tables.subject_id','=','subject_tables.subject_id')
-        ->simplePaginate(10);
+        ->get();
+
+        $publikasi=Publikasi::all();
         //dd($data);
         $subject=SubjectTable::find($subject_id);
-        return view('search.search_subject',compact('data','subject'));
+        return view('search.search_subject',compact('data','subject','publikasi'));
     }
 
 

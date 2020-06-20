@@ -112,6 +112,35 @@
 
 
     $(document).ready(function(){
+    
+        var url_init="{{route('admin.pubTableCollection.pubTableList',['pub_id'=>$pub_detail->pub_id])}}"
+        $.ajax({
+                type: "post",
+                url:url_init,
+                data: {
+                    // change data to this object
+                    _token: $('meta[name="csrf-token"]').attr('content'),
+                    n_bab_value: 0
+
+                },
+                global:false,
+                success: function (result) {
+                 
+                    $('#table-by-bab-wrapper').html(result)
+                
+                },
+                error: function (error) {
+                    alert('erroraaa');
+                    console.log(error.toString());
+                }
+
+            });
+
+    //console.log(bab_id);
+
+ 
+
+
 
 //function=================================
 function handleFileInput(){
@@ -189,7 +218,7 @@ var addTableForm= $('#addTableFormModal');
 ///-------------- add table -------------------------
 addTableButton.click(function(e){
     e.preventDefault()
-    if(bab_num_global){
+    if(bab_num_global && bab_num_global !=0){
         var judulModal="Form Tambah Tabel Publikasi - Bab "+bab_num_global;
         $('#addTableFormModal .modal-title').html(judulModal);
     
@@ -219,6 +248,12 @@ addTableButton.click(function(e){
                     contentType: false,
                     processData: false,
                     global: false,
+                    beforeSend:function(){
+                        $('#addTableSubmit').attr('aria-disabled','true');
+                        $('#addTableSubmit').addClass('disabled');
+                        $('#addTableSubmit').html('  <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span> Loading...');
+
+                    },
                     success: (data) => {
                         this.reset();
                         $('#addTableFormModal').modal('hide');
@@ -348,6 +383,11 @@ $('.section-body').on('click','.edit_table_form',function(e){
                             contentType: false,
                             processData: false,
                             global: false,
+                            beforeSend:function(){
+                                $('#addTableSubmit').attr('aria-disabled','true');
+                                $('#addTableSubmit').addClass('disabled');
+                                $('#addTableSubmit').html('  <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span> Loading...')
+                            },
                             success: (data) => {
                                 this.reset();
                                 $('#addTableFormModal').modal('hide');

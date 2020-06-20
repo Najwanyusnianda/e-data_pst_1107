@@ -1,4 +1,4 @@
-@extends('layout.master_front')
+@extends('layout.master_landing')
 
 
 @section('section_header')
@@ -11,22 +11,7 @@
 
 @section('style')
 <style>
-    ::-webkit-input-placeholder {
-    color: peachpuff;
-    font-size: 13px;
-  }
-  ::-moz-placeholder {
-    color: peachpuff;
-    font-size: 13px;
-  }
-  :-ms-input-placeholder {
-    color: peachpuff;
-    font-size: 13px;
-  }
-  ::placeholder {
-    color: peachpuff;
-    font-size: 13px;
-  }
+
 
 
 .page-search .btn {
@@ -36,6 +21,8 @@
     border-top-left-radius:30px !important;
 }
 .input-group-text{height: 50px;}
+
+
 </style>
 @endsection
 

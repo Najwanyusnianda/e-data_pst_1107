@@ -19,7 +19,7 @@
 <script>
     ///datatable=========================================
  
-    var bab_id="{{$bab_num}}";
+    var bab_id="{{$bab_num ?? 0}} ";
     console.log(bab_id);
 
     var url="{{route('admin.pubTableCollection.table',['pub_id'=>$pub_id,'bab_num'=>':bab_id'])}}".replace(':bab_id', bab_id);

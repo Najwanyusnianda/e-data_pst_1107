@@ -8,7 +8,7 @@
         <div class="card-body">
             <div class="form-group">
                
-                <input type="text" class="form-control" placeholder="" id="babNumberForm" name="babNumberForm">
+                <input type="hidden" class="form-control" placeholder="" id="babNumberForm" name="babNumberForm">
             </div>
             <div class="form-group">
                 <label for="title">Judul Tabel</label>
@@ -65,7 +65,7 @@
         <div class="card-body">
             <div class="form-group">
 
-                <input type="text" class="form-control" placeholder="" id="babNumberForm" name="babNumberForm">
+                <input type="hidden" class="form-control" placeholder="" id="babNumberForm" name="babNumberForm">
             </div>
             <div class="form-group">
                 <label for="title">Judul Tabel<code>*</code></label>
@@ -108,7 +108,7 @@
             </div>
         </div>
         <div class="card-footer">
-            <button class="btn btn-primary btn-block" >Submit</button>
+            <button class="btn btn-primary btn-block" id="addTableSubmit" >Submit</button>
         </div>
     </div>
 </form> 

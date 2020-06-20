@@ -174,12 +174,15 @@ font-size: 20px;
 
     <!-- General JS Scripts -->
     <!-- General JS Scripts -->
-    <script src="{{asset('vendor/jquery-3.4.1.min.js')}}"></script>
+    <!--<script src="{{asset('vendor/jquery-3.4.1.min.js')}}"></script>-->
+    -<script src="{{asset('vendor/jquery.min.js')}}"></script>
     <script src="{{asset('vendor/jquery.nicescroll.min.js')}}"></script>
-    <script src="{{asset('vendor/popper.min.js')}}"></script>
+    <!--</script>
+    <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>-->
+        <script src="{{asset('vendor/popper.js')}}"></script>
+        <script src="{{asset('vendor/tooltip.js')}}"></script>
     <script src="{{asset('vendor/bootstrap/js/bootstrap.min.js')}}"></script>
-
- 
+    <script src="{{asset('vendor/jquery.nicescroll.min.js')}}"></script>
 
     <script src="{{asset('vendor/stisla/js/stisla.js')}}"></script>
   
@@ -205,6 +208,9 @@ font-size: 20px;
             style="position: absolute; top: 0px; height: 6px; width: 250px; background-color: rgb(66, 66, 66); border: 1px solid rgb(255, 255, 255); background-clip: padding-box; border-radius: 5px; left: 0px;">
         </div>
     </div>
+    <script>
+
+    </script>
     @yield('script')
 
 

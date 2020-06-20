@@ -4,6 +4,7 @@
             <select class="form-control" id="select_bab">
                 <option selected="selected" disabled>Pilih Bab Publikasi</option>
                 @if (!empty($pub_detail->n_bab))
+                        <option value="{{0}}">Semua Tabel</option>
                     @for($i = 0; $i < $pub_detail->n_bab ; $i++)
                         <option value="{{$i+1}}">Bab {{$i+1}}</option>
 

@@ -22,6 +22,14 @@ Auth::routes();
 
 
 Route::group(['middleware' => ['auth']], function () {
+    Route::name('user.')->group(function () {
+      Route::get('/user_management/index', 'UserController@index')->name('index');
+      Route::get('/user_management/create', 'UserController@create')->name('create');
+      Route::post('/user_management/store', 'UserController@store')->name('store');
+      Route::get('/user_management/update/{user_id}', 'UserController@update')->name('update');
+      Route::post('/user_management/updateStore/{user_id}', 'UserController@updateStore')->name('storeUpdate');
+      Route::get('/user_management/delete/{user_id}', 'UserController@delete')->name('delete');
+    });
 
     Route::get('backend', function () {
         return redirect()->route('admin.dashboard_index');
@@ -39,7 +47,12 @@ Route::group(['middleware' => ['auth']], function () {
         Route::post('backend/update/publikasi/{pub_id}','PublikasiController@updatePublikasi')->name('publikasi.update');
         
         
-        
+        Route::get('backend/lainnya/index','TableLainnyaController@index');
+        Route::get('backend/lainnya/detail/{lainnya_id}','TableLainnyaController@detailLainnya');
+        Route::get('backend/lainnya/add_form','TableLainnyaController@create');
+        Route::get('backend/lainnya/{lainnya_id}/update_form','TableLainnyaController@update');
+        ////service for lainnya
+        Route::get('backend/lainnya/table/index','TableLainnyaController@lainnyaTable');
         //api publikasi
         Route::get('backend/publikasi/pub_api','WebApiPublikasiController@publicationListApi')->name('pubApi.list');
         Route::post('backend/publikasi/pub_api','WebApiPublikasiController@publicationListApi')->name('pubApi.list.post');
@@ -56,6 +69,8 @@ Route::group(['middleware' => ['auth']], function () {
         Route::post('backend/pub_table/{pub_id}/update/{pubtable_id}','PubTableController@update')->name('pubTable_update'); 
         
         Route::post('backend/pub_table/getListTableByBab/index/{pub_id}','PubTableController@changeBabPubTableEvent')
+        ->name('pubTableCollection.pubTableList');
+        Route::get('backend/pub_table/getListTableByBab/index/{pub_id}','PubTableController@changeBabPubTableEvent')
         ->name('pubTableCollection.pubTableList');
 
         ///--------------service table publikasi---//

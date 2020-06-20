@@ -29,19 +29,17 @@
             </li>
 
             <li class="menu-header">Administrator</li>
-            <li class="dropdown ">
+            <li class="dropdown {{Request::is('user_management/*')  ? 'active' : ''}}">
                 <a href="#" class="nav-link has-dropdown " data-toggle="dropdown"><i
                         class="fas fa-columns"></i> <span>User Management</span></a>
                 <ul class="dropdown-menu"  >
-                <li class="">
-                    <a class="nav-link " href="{{route('admin.publikasi_index')}}">Tambah User</a>
+                <li class="{{Request::is('user_management/create')  ? 'active' : (Request::is('user_management/update/*')  ? 'active' : '')}}">
+                    <a class="nav-link " href="{{route('user.create')}}">Tambah User</a>
                 </li>
-                <li class="">
-                    <a class="nav-link " href="{{route('admin.publikasi_index')}}">Kelola User</a>
+                <li class="{{Request::is('user_management/index')  ? 'active' : ''}}">
+                    <a class="nav-link " href="{{route('user.index')}}">Kelola User</a>
                 </li>
-                <li>
-                    <a class="nav-link" href="#">Tabel Lainnya</a>
-                </li>
+
                    
                 </ul>
             </li>

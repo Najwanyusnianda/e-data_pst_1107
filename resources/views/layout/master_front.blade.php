@@ -24,12 +24,35 @@
     height: 100%;
     }
 
+    img.bg {
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1024px;
+	
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+	
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+@media screen and (max-width: 1024px) { /* Specific to this particular image */
+  img.bg {
+    left: 50%;
+    margin-left: -512px;   /* 50% */
+  }
+}
 
 
+}
 
 </style>
+@yield('style')
 <body class="layout-3">
-
+  <img src="{{ asset('img/background/temp.jpg') }}" alt="" srcset="" class="bg">
   
     <div id="app">
         <div class="main-wrapper container">

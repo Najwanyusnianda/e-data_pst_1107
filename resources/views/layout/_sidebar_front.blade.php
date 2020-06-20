@@ -87,31 +87,26 @@
       
 
             <li class="menu-header">Sosial Media </li>
-            <li>
-                <div class="col border" >
-                    <div class="row">
-                        <div class="col">
-                            <a href="https://www.facebook.com/BPS-Kabupaten-Aceh-Barat-794846153959538/"><i class="fab fa-facebook-f fa-2x"></i></a>
-                        </div>
-                        <div class="col">
-                            <a href="https://twitter.com/bpskabacehbarat"><i class="fab fa-twitter fa-2x"></i></a>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
 
-                            <a href="https://www.instagram.com/bps.kab.acehbarat/"><i class="fab fa-instagram fa-2x"></i></a>
-
-                     
-
-                        </div>
-                        <div class="col">
-                            <a href="https://www.youtube.com/channel/UCn4IaaxHaaP-mAjZzrAtixA"><i class="fab fa-youtube"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-            </li>
+            <li class="dropdown">
+                <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-comments"></i><span>Sosial Media</span></a>
+                <ul class="dropdown-menu" style="display: none;">
+                    <li class="#">
+            
+                        <a href="https://www.facebook.com/BPS-Kabupaten-Aceh-Barat-794846153959538/"  target="_blank"><i class="fab fa-facebook-f fa-2x" style="color:#54a0ff"></i> Facebook</a>
+       
+                </li> 
+                <li class="#">
+                    <a href="https://twitter.com/bpskabacehbarat"  target="_blank"><i class="fab fa-twitter fa-2x" style="color: #48dbfb"></i> Twitter</a>
+                </li> 
+                <li class="#">
+                    <a href="https://www.instagram.com/bps.kab.acehbarat/"  target="_blank"><i class="fab fa-instagram fa-2x" style="color: #f368e0"></i> Instagram</a>
+                </li> 
+                <li class="#">
+                    <a href="https://www.youtube.com/channel/UCp856i__QgzWrpzIOgoaGHw" target="_blank"><i class="fab fa-youtube" style="color: #ee5253"></i> Youtube</a>
+                </li> 
+                </ul>
+              </li>
             <!--<li>
                 <a class="nav-link" href="index-0.html"><i class="fab fa-facebook-f"></i>Facebook</a>
         

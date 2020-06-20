@@ -24,32 +24,45 @@
     </style>
 @endsection
 @section('content')
-<div class="container">
+<div class="container-fluid">
   <div class="card">
     <div class="card-header">
       <h4>
-        {{$subject->subject}} ({{count($data)}})
+        {{$subject->subject}} ({{count($data) ?? ''}})
       </h4>
     
     </div>
     <div class="card-body">
       <div class="table-responsive">
-        <table class="table table-condensed">
+        <table class="table table-striped" id="searchResultTable">
           <thead>
             <tr style="background-color: #6c5ce7;">
-              <th style="color: white;">Judul Tabel</th>
+              <th style="color: white;">Judul Data</th>
         
             </tr>
           </thead>
           <tbody>
-            @forelse ($data as $search_result)
+            @forelse ($data as $result)
                 <tr>
 
                   <td>
-                    @if ($search_result->pdf !=null)
-                    <a href="{{asset('storage/'.$search_result->pdf)}}" target="_blank" lass="search-result-text">{{$search_result->title}}</a>
+                    @if ($result->pdf !=null)
+                      @foreach ($publikasi as $pub)
+                       @if ($pub->pub_id == $result->type_id)
+                        <a href="{{asset('storage/'.$result->pdf)}}" class="search-result-text" target="_blank" data-toggle="popover"data-trigger="hover" data-html="true" title="Sumber" data-content="Publikasi {{ $pub->title }} hal. {{ $result->hal_pdf_first }} " data-placement="bottom">{{$result->title}}>{{$result->title}}</a>
+                       @else
+                       <a href="{{asset('storage/'.$result->pdf)}}" class="search-result-text" target="_blank"  data-toggle="popover"data-trigger="hover" data-html="true" title="Sumber" data-content="tidak ditemukan" data-placement="bottom">{{$result->title}}</a>
+                      @endif
+                      @endforeach
+              
                     @else
-                    <span >{{$search_result->title}}</span>
+                    @foreach ($publikasi as $pub)
+                        @if ($pub->pub_id == $result->type_id)
+                        <a onclick=dataNotFound(event); href="#"  class="search-result-text" data-toggle="popover"data-trigger="hover" data-html="true" title="Sumber" data-content="Publikasi {{ $pub->title }} hal. {{ $result->hal_pdf_first }} " data-placement="bottom">{{$result->title}}</a>
+                         @else
+                        <a onclick=dataNotFound(event); href="#"  class="search-result-text" data-toggle="popover"data-trigger="hover" data-html="true" title="Sumber" data-content="tidak ditemukan" data-placement="bottom">{{$result->title}}</a>
+                        @endif
+                      @endforeach
                     @endif
                  
                   </td>
@@ -63,9 +76,32 @@
       </div>
     </div>
     <div class="card-footer">
-      {{$data->links()}}
+     
     </div>
 
   </div>
 </div>
+@endsection
+
+@section('script')
+<script src="{{asset('vendor/sweetalert2.js')}}"></script>
+<script>
+    function dataNotFound(e){
+        e.preventDefault();
+        swal.fire({
+                text: "Data Tidak Ditemukan!",
+        });
+    }
+    $('[data-toggle="popover"]').popover(
+    {
+        trigger: "hover",
+        html:true,
+    } 
+  )
+
+    $('#searchResultTable').DataTable({
+      "searching":false,
+      "lengthChange": false,
+  });
+</script>
 @endsection

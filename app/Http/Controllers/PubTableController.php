@@ -126,6 +126,7 @@ class PubTableController extends Controller
             
             elseif ($pubTable->type=="lainnya") {
                 # code...
+                return redirect()->back();
             }
             //one file
            

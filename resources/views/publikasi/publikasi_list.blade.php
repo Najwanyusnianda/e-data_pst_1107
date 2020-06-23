@@ -31,16 +31,27 @@
             </div>
         @endif
  
+        @if (session('import_algolia'))
+
+        <div class="alert alert-success">
+         {{ session('import_algolia') }}
+        </div>
+        @endif
         <div class="card">
             <div class="card-header">
                 <!--<button class="btn btn-primary  ml-auto btn-icon " id="updatePublicationList">
                     <i class="fas fa-sync"></i>
                     Load data
                 </button>-->
+                <a class="btn btn-info btn-icon " id="updateImport" href="{{route('algolia.import')}}" >
+                    <i class="fas fa-file-import"></i>
+                    Indexing daftar tabel 
+                </a>
                 <a class="btn btn-primary ml-auto btn-icon " id="getPublicationFromApi" href="{{route('admin.pubApi.list')}}" >
                     <i class="fas fa-search-plus"></i>
                     Tambah Publikasi 
                 </a>
+
             </div>
     
 

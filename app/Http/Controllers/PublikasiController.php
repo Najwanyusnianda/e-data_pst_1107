@@ -168,10 +168,18 @@ class PublikasiController extends Controller
             return($raw_pdf);
         })
         ->addColumn('table_progress',function($publikasi){
-            $val_progress=0;
-            $raw_progress=' '.$val_progress.'%<div class="progress mb-3">
-            <div class="progress-bar" role="progressbar" aria-valuenow="'.$val_progress.'" aria-valuemin="'.$val_progress.'" aria-valuemax="100"></div>
+            $pubtable=pubTable::where('type_id',$publikasi->pub_id)->get();
+        
+            $pubtable_upload=pubTable::where('type_id',$publikasi->pub_id)->whereNotNull('pdf')->get();
+            $val_progress=(count($pubtable_upload)/count($pubtable))*100;
+            if($val_progress >0){
+                $raw_progress=' '.$val_progress.'%<div class="progress mb-3">
+            <div class="progress-bar bg-info" role="progressbar" data-width="'.$val_progress.'%" style="width: '.$val_progress.'%;" aria-valuenow="'.$val_progress.'" aria-valuemin="'.$val_progress.'" aria-valuemax="100"></div>
             </div>';
+            }else{
+                $raw_progress ='<span class="badge badge-warning">Belum Tersedia</span>';
+            }
+
             return($raw_progress);
         })
         ->addColumn('action',function($publikasi){

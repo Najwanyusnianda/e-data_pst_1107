@@ -14,15 +14,15 @@
 
            </li>
             <li class="menu-header">Menu</li>
-            <li class="dropdown {{Request::is('backend/publikasi/*') || Request::is('backend/publikasi') ? 'active' : ''}}">
+            <li class="dropdown {{Request::is('backend/publikasi/*') || Request::is('backend/publikasi') || Request::is('backend/lainnya/index') ? 'active' : ''}}">
                 <a href="#" class="nav-link has-dropdown " data-toggle="dropdown"><i
                         class="fas fa-columns"></i> <span>Input Data</span></a>
                 <ul class="dropdown-menu"  >
                 <li class="{{Request::is('backend/publikasi/*') || Request::is('backend/publikasi') ? 'active' : ''}}">
                     <a class="nav-link " href="{{route('admin.publikasi_index')}}">Tabel Publikasi</a>
                 </li>
-                <li>
-                    <a class="nav-link" href="#">Tabel Lainnya</a>
+                <li class="{{ Request::is('backend/lainnya/index') ? 'active' : '' }}">
+                    <a class="nav-link" href="{{ route('admin.lainnya.index') }}">Tabel Lainnya</a>
                 </li>
                    
                 </ul>

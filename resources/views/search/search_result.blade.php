@@ -127,7 +127,25 @@
                        </td>
                     </tr> 
                 @else
-                    
+                    <tr>
+                        <td>
+                            @if ($result->pdf != null)
+
+
+                                <a href="{{asset('storage/'.$result->pdf)}}" class="search-result-text" target="_blank"  data-toggle="popover"data-trigger="hover" data-html="true" title="Sumber" data-content="tidak ditemukan (lainnya)" data-placement="bottom">{{$result->title}}</a>
+  
+                            
+                                   
+                           @else
+        
+                               <a onclick=dataNotFound(event); href="#"  class="search-result-text" data-toggle="popover"data-trigger="hover" data-html="true" title="Sumber" data-content="tidak ditemukan (lainnya)" data-placement="bottom">{{$result->title}}</a>
+
+                                    
+
+                           @endif
+
+                        </td>
+                    </tr>
                 @endif
         
                 @empty

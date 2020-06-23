@@ -340,75 +340,75 @@ addTableButton.click(function(e){
 
 //update table detail --------------------->
 
-$('.section-body').on('click','.edit_table_form',function(e){
+$('.section-body').on('click', '.edit_table_form', function (e) {
     e.preventDefault();
 
-   // var tableListheaderComponent=$(this).closest('.card').find('#Bab-title');
-           // console.log(tableListheaderComponent.html());
+    // var tableListheaderComponent=$(this).closest('.card').find('#Bab-title');
+    // console.log(tableListheaderComponent.html());
 
-            //var babNumber=tableListheaderComponent.attr('bab-data');
-            //console.log('halaman bab:'+babNumber);
-            //var judulModal="Form Update Tabel  - "+tableListheaderComponent.html();
-            if(bab_num_global){
-        var judulModal="Form Tambah Tabel Publikasi - Bab "+bab_num_global;
-    }else{
-        var judulModal="Form Tambah Tabel Publikasi - Bab 000"
-    }      
-            $('#addTableFormModal .modal-title').html(judulModal);
-          
-    var table_id=$(this).attr('data-id');
- var updateTableForm_url="{{route('admin.pubTable_form_update',['pub_id'=>$pub_detail->pub_id,'pubtable_id'=>':table_id'])}}"
- updateTableForm_url = updateTableForm_url.replace(':table_id', table_id);
- console.log(updateTableForm_url);
+    //var babNumber=tableListheaderComponent.attr('bab-data');
+    //console.log('halaman bab:'+babNumber);
+    //var judulModal="Form Update Tabel  - "+tableListheaderComponent.html();
+    if (bab_num_global) {
+        var judulModal = "Form Tambah Tabel Publikasi - Bab " + bab_num_global;
+    } else {
+        var judulModal = "Form Tambah Tabel Publikasi - Bab 000"
+    }
+    $('#addTableFormModal .modal-title').html(judulModal);
+
+    var table_id = $(this).attr('data-id');
+    var updateTableForm_url = "{{route('admin.pubTable_form_update',['pub_id'=>$pub_detail->pub_id,'pubtable_id'=>':table_id'])}}"
+    updateTableForm_url = updateTableForm_url.replace(':table_id', table_id);
+    console.log(updateTableForm_url);
     $.ajax({
-                url: updateTableForm_url,
-                dataType: 'html',
-                global: false,
-                success: function(response) {
-                   // console.log("Data: " + response);
-                   
-                $('#addTableFormBody').html(response);
-                $('#babNumberForm').val(bab_num_global);
-                    handleFileInput();
-                    $('#form_add_table').submit(function (e) {
-                        e.preventDefault();
+        url: updateTableForm_url,
+        dataType: 'html',
+        global: false,
+        success: function (response) {
+            // console.log("Data: " + response);
 
-                        var formData = new FormData(this);
-                        var url = $(this).attr('action')
-                        $.ajax({
-                            type: 'POST',
-                            url: url,
-                            data: formData,
-                            cache: false,
-                            contentType: false,
-                            processData: false,
-                            global: false,
-                            beforeSend:function(){
-                                $('#addTableSubmit').attr('aria-disabled','true');
-                                $('#addTableSubmit').addClass('disabled');
-                                $('#addTableSubmit').html('  <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span> Loading...')
-                            },
-                            success: (data) => {
-                                this.reset();
-                                $('#addTableFormModal').modal('hide');
-                                tableListPubTable.ajax.reload();
-                                Swal.fire(
-                                    'Berhasil!',
-                                    'Tabel Berhasil Di Update',
-                                    'success'
-                                )
-                            },
-                            error: function (data) {
-                                console.log(data);
-                            }
-                        });
-                    });
-                },
-                error:function(e){
-                
-                }
+            $('#addTableFormBody').html(response);
+            $('#babNumberForm').val(bab_num_global);
+            handleFileInput();
+            $('#form_add_table').submit(function (e) {
+                e.preventDefault();
+
+                var formData = new FormData(this);
+                var url = $(this).attr('action')
+                $.ajax({
+                    type: 'POST',
+                    url: url,
+                    data: formData,
+                    cache: false,
+                    contentType: false,
+                    processData: false,
+                    global: false,
+                    beforeSend: function () {
+                        $('#addTableSubmit').attr('aria-disabled', 'true');
+                        $('#addTableSubmit').addClass('disabled');
+                        $('#addTableSubmit').html('  <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span> Loading...')
+                    },
+                    success: (data) => {
+                        this.reset();
+                        $('#addTableFormModal').modal('hide');
+                        tableListPubTable.ajax.reload();
+                        Swal.fire(
+                            'Berhasil!',
+                            'Tabel Berhasil Di Update',
+                            'success'
+                        )
+                    },
+                    error: function (data) {
+                        console.log(data);
+                    }
+                });
             });
-            addTableForm.modal('show');
+        },
+        error: function (e) {
+
+        }
+    });
+    addTableForm.modal('show');
 
 })
 

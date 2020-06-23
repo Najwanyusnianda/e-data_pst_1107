@@ -22,6 +22,13 @@ Auth::routes();
 
 
 Route::group(['middleware' => ['auth']], function () {
+
+  
+    Route::get('/algolia-import', function() {
+    $status = Artisan::call('scout:import');
+    return redirect()->back()->with('import_algolia','Berhasil di import');
+    })->name('algolia.import');
+
     Route::name('user.')->group(function () {
       Route::get('/user_management/index', 'UserController@index')->name('index');
       Route::get('/user_management/create', 'UserController@create')->name('create');
@@ -46,13 +53,22 @@ Route::group(['middleware' => ['auth']], function () {
         Route::post('backend/delete/publikasi','PublikasiController@deletePublikasi')->name('publikasi.delete');
         Route::post('backend/update/publikasi/{pub_id}','PublikasiController@updatePublikasi')->name('publikasi.update');
         
+        //lainnya
+        Route::get('backend/lainnya/index','TableLainnyaController@index')->name('lainnya.index');
+        Route::get('backend/lainnya/detail/{lainnya_id}','TableLainnyaController@detailLainnya')->name('lainnya.detail');
+        Route::get('backend/lainnya/add_form','TableLainnyaController@create')->name('lainnya.create');
+        Route::get('backend/lainnya/{lainnya_id}/update_form','TableLainnyaController@update')->name('lainnya.update');
         
-        Route::get('backend/lainnya/index','TableLainnyaController@index');
-        Route::get('backend/lainnya/detail/{lainnya_id}','TableLainnyaController@detailLainnya');
-        Route::get('backend/lainnya/add_form','TableLainnyaController@create');
-        Route::get('backend/lainnya/{lainnya_id}/update_form','TableLainnyaController@update');
+        //post
+        Route::post('backend/lainnya/store_table','TableLainnyaController@store')->name('lainnya.store');
+        Route::post('backend/lainnya/{lainnya_id}/update_table','TableLainnyaController@storeUpdate')->name('lainnya.storeUpdate');
+        Route::post('backend/lainnya/{lainnya_id}/delete','TableLainnyaController@delete')->name('lainnya.delete');
+
         ////service for lainnya
-        Route::get('backend/lainnya/table/index','TableLainnyaController@lainnyaTable');
+        Route::get('backend/lainnya/table/index','TableLainnyaController@lainnyaTable')->name('publainnyaCollection.table');
+
+
+
         //api publikasi
         Route::get('backend/publikasi/pub_api','WebApiPublikasiController@publicationListApi')->name('pubApi.list');
         Route::post('backend/publikasi/pub_api','WebApiPublikasiController@publicationListApi')->name('pubApi.list.post');
@@ -118,6 +134,8 @@ Route::get('/config-clear', function() {
     $status = Artisan::call('config:clear');
     return '<h1>Configurations cleared</h1>';
 });
+
+//
 
 //Clear cache:
 Route::get('/cache-clear', function() {

@@ -122,6 +122,21 @@ class TableLainnyaController extends Controller
     public function delete($lainnya_id){
         $otherPub=PubTable::find($lainnya_id);
         $otherPub->delete();
+
+        $tableFiles=PubTableFiles::where('pub_table_id',$lainnya_id)
+        ->where('type','pdf')
+        ->first();
+        if(!empty($tableFiles)){
+                        $isExists = Storage::exists('app/public/'.$tableFiles->filepath);
+                        /*if(File::exists(public_path('/'.$tableFiles->filepath)))
+                        {
+                         File::delete(public_path('/'.$tableFiles->filepath));
+                        }*/
+                        if($isExists){
+                            Storage::delete('app/public/'.$tableFiles->filepath);
+                        }
+        
+        }
     }
     ////pubtable lainnya
     public function createTableLainnya(){

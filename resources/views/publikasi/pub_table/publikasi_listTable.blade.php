@@ -182,7 +182,58 @@ var bab_num_global='';
                 global:false,
                 success: function (result) {
                     bab_num_global=bab_val
-                    $('#table-by-bab-wrapper').html(result)
+                    $('#table-by-bab-wrapper').html(result);
+                    $('.section-body').on('click', '.deleteTable', function (e) {
+                        e.preventDefault();
+
+
+                        // var pubId=$(this).attr('data-id');
+                        var deleteUrl = $(this).attr('href');
+                        Swal.fire({
+                            title: 'Hapus Tabel?',
+                            text: "Tabel ini akan dihapus",
+                            icon: 'warning',
+                            showCancelButton: true,
+                            confirmButtonColor: '#3085d6',
+                            cancelButtonColor: '#d33',
+                            confirmButtonText: 'Ya, hapus!'
+                        }).then((result) => {
+                            if (result.value) {
+                                $.ajax({
+                                    type: "post",
+                                    global:false,
+
+                                    url: deleteUrl,
+                                    data: {
+                                        // change data to this object
+                                        _token: $('meta[name="csrf-token"]').attr('content'),
+
+                                    },
+                                    success: function (result) {
+                                        //console.log(result);
+                                        Swal.fire(
+                                            'Terhapus!',
+                                            'Tabel Berhasil dihapus.',
+                                            'success'
+                                        )
+                                        //permintaanTable.ajax.reload();
+                                        //  $('#daftar_publikasi').DataTable().ajax.reload();
+                                        tableListPubTable.ajax.reload();
+                                        //$("#close").trigger("click");
+                                    },
+                                    error: function (error) {
+                                        alert('error');
+                                        console.log(error);
+                                    }
+
+                                });
+
+                            }
+                        })
+
+
+
+                    })
                 
                 },
                 error: function (error) {
@@ -473,7 +524,56 @@ $('.section-body').on('click', '.edit_table_form', function (e) {
 <script>
 
 
+$('.container-fluid').on('click','.deleteTable',function(e){
+        e.preventDefault();
+        alert('aaaaa');
+        
+       // var pubId=$(this).attr('data-id');
+        var deleteUrl=$(this).attr('href');
+        Swal.fire({
+            title: 'Hapus Tabel?',
+            text: "Tabel ini akan dihapus",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Ya, hapus!'
+        }).then((result) => {
+            if (result.value) {
+        $.ajax({
+                type: "post",
 
+                url: deleteUrl,
+                data: {
+                    // change data to this object
+                    _token: $('meta[name="csrf-token"]').attr('content'),
+
+                },
+                success: function (result) {
+                    //console.log(result);
+                    Swal.fire(
+                    'Terhapus!',
+                    'Tabel Berhasil dihapus.',
+                    'success'
+                    )
+                    //permintaanTable.ajax.reload();
+                  //  $('#daftar_publikasi').DataTable().ajax.reload();
+                    $('#daftar_grup').DataTable().ajax.reload();
+                    //$("#close").trigger("click");
+                },
+                error: function (error) {
+                    alert('error');
+                    console.log(error);
+                }
+
+        });
+
+            }
+        })
+       
+
+
+})
 </script>
 
 @endsection

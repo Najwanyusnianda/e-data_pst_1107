@@ -83,7 +83,7 @@ Route::group(['middleware' => ['auth']], function () {
         Route::post('backend/pub_table/{pub_id}','PubTableController@create')->name('pubTable_create');
         ///---update    
         Route::post('backend/pub_table/{pub_id}/update/{pubtable_id}','PubTableController@update')->name('pubTable_update'); 
-        
+        Route::post('backend/pub_table/delete/{pubtable_id}','PubTableController@delete')->name('pubTable_delete'); 
         Route::post('backend/pub_table/getListTableByBab/index/{pub_id}','PubTableController@changeBabPubTableEvent')
         ->name('pubTableCollection.pubTableList');
         Route::get('backend/pub_table/getListTableByBab/index/{pub_id}','PubTableController@changeBabPubTableEvent')

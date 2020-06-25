@@ -292,7 +292,7 @@ $('.container-fluid').on('click','.deleteLainnya',function(e){
                     //console.log(result);
                     Swal.fire(
                     'Terhapus!',
-                    'Publikasi Berhasil dihapus.',
+                    'Tabel Berhasil dihapus.',
                     'success'
                     )
                     //permintaanTable.ajax.reload();
@@ -312,6 +312,6 @@ $('.container-fluid').on('click','.deleteLainnya',function(e){
        
 
 
-    })
+})
     </script>
 @endsection

@@ -528,8 +528,12 @@
     <header class="masthead">
         <div class="container h-100">
             <div class="row h-100 align-items-center justify-content-center text-center">
-                <div class="col-lg-10 align-self-end">
-                    <h1 class="text-uppercase text-white font-weight-bold">E - Data BPS Aceh Singkil
+
+
+                <div class="col-lg-12 align-self-end">
+                    <img src="{{ asset('img/Lambang_Badan_Pusat_Statistik_(BPS)_Indonesia.png') }}" alt="" srcset=""  style="max-width:200px; height:auto">
+                    <h1 class="text-uppercase text-white font-weight-bold">Pelayanan Statistik Terpadu</h1>
+                    <h1 class="text-uppercase text-white font-weight-bold">E - Data BPS Aceh Barat
                     </h1>
                     <hr class="divider my-4" style="border-color:#8e44ad !important">
                 </div>
@@ -609,7 +613,7 @@
                             c0-2.666,0.849-4.856,2.56-6.567c1.708-1.713,3.897-2.568,6.57-2.568h91.354c2.663,0,4.854,0.855,6.571,2.568
                             c1.707,1.711,2.562,3.901,2.562,6.567V173.587z"/>
                         </svg><!-- <i class="fas fa-4x fa-laptop-code text-primary mb-4"></i> -->
-                        <h3 class="h4 mb-2">Pencarian Data</h3>
+                        <h3 class="h4 mb-2"><a href="{{route('home.home.data')}}">Pencarian Data</a></h3>
                         <p class="text-muted mb-0">Pencarian Data data berupa tabel tabel Statistik yang dipublikasikan BPS Aceh Barat </p>
                     </div>
                 </div>
@@ -620,7 +624,7 @@
                             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg="">
                             <g><path d="m15 1c-8.284 0-15 6.716-15 15v345h196c16.87 0 32.457 5.599 45 15.036v-305.036c0-38.66-31.34-70-70-70zm166 315h-121c-8.284 0-15-6.716-15-15s6.716-15 15-15h121c8.284 0 15 6.716 15 15s-6.716 15-15 15zm0-60h-121c-8.284 0-15-6.716-15-15s6.716-15 15-15h121c8.284 0 15 6.716 15 15s-6.716 15-15 15zm0-60h-121c-8.284 0-15-6.716-15-15s6.716-15 15-15h121c8.284 0 15 6.716 15 15s-6.716 15-15 15zm0-60h-121c-8.284 0-15-6.716-15-15s6.716-15 15-15h121c8.284 0 15 6.716 15 15s-6.716 15-15 15zm0-60h-121c-8.284 0-15-6.716-15-15s6.716-15 15-15h121c8.284 0 15 6.716 15 15s-6.716 15-15 15z"/><path d="m196 391h-196v45c0 8.284 6.716 15 15 15h226v-15c0-24.813-20.187-45-45-45z"/><g><path d="m271 334.694v41.342c9.472-7.126 20.682-12.06 32.867-14.051-12.463-7.169-23.575-16.429-32.867-27.291z"/><path d="m366 348.534c-52.383 0-95-42.617-95-95.001 0-52.383 42.617-94.999 95-94.999s95 42.617 95 95-42.617 95-95 95z"/><g><path d="m316 391c-24.813 0-45 20.187-45 45v15h103.015l-21.838-60z"/><path d="m512 436v-45h-32.123l21.592 59.323c6.102-1.903 10.531-7.595 10.531-14.323z"/><g><path d="m497 1h-156c-38.66 0-70 31.34-70 70v101.405c23.689-27.693 59.243-44.95 98.711-43.801 66.402 1.934 120.077 56.245 121.269 122.664.582 32.456-11.283 62.181-31.121 84.732l9.099 25h43.042v-345c0-8.284-6.716-15-15-15zm-45 75h-121c-8.284 0-15-6.716-15-15s6.716-15 15-15h121c8.284 0 15 6.716 15 15s-6.716 15-15 15z"/></g></g><g><path d="m379.312 377.825 41.284 113.428c5.667 15.569 22.882 23.597 38.451 17.93 15.569-5.667 23.597-22.882 17.93-38.451l-41.299-113.468c-16.446 11.083-35.659 18.358-56.366 20.561z"/></g></g></g>
                         </svg><!-- <i class="fas fa-4x fa-gem text-primary mb-4"></i> -->
-                        <h3 class="h4 mb-2">Pencarian Data</h3>
+                        <h3 class="h4 mb-2"><a href=" {{route('home.pub.search_index')}} ">Pencarian Publikasi</a></h3>
                         <p class="text-muted mb-0">Download Berbagai Publikasi yang dirilis oleh BPS Aceh Barat </p>
                     </div>
                 </div>
@@ -719,11 +723,11 @@
     <!-- Call to action-->
     <section class="page-section bg-dark text-white" style="">
         <div class="container text-center">
-            <img src="{{ asset('img/Lambang_Badan_Pusat_Statistik_(BPS)_Indonesia.png') }}" alt="" srcset=""  style="max-width:200px; height:auto;">
+           <!-- <img src="{{ asset('img/Lambang_Badan_Pusat_Statistik_(BPS)_Indonesia.png') }}" alt="" srcset=""  style="max-width:200px; height:auto;">
             <p></p>
 
             <h2 class="mb-4">Badan Pusat Statistik Kabupaten Aceh Barat</h2>
-            <!--<a class="btn btn-light btn-xl" href="https://startbootstrap.com/themes/creative/"></a>-->
+            <a class="btn btn-light btn-xl" href="https://startbootstrap.com/themes/creative/"></a>-->
         </div>
     </section>
     <!-- Contact-->
@@ -731,7 +735,7 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8 text-center">
-                    <h2 class="mt-0">Tentang Kami</h2>
+                    <h2 class="mt-0">Kontak</h2>
                     <hr class="divider my-4">
                     <p class="text-muted mb-5"> Alamat Kantor : Jl. Sisingamangaraja No. 2 Meulaboh 23617 Aceh Barat,</p>
                 </div>

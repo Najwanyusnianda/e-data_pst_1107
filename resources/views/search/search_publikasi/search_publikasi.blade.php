@@ -31,11 +31,11 @@
         <div class="card-body">
             <div class="table-wrapper">
                 <div class="table-responsive">
-                    <table class="table" id="pub_api">
+                    <table class="table table-striped" id="pub_api">
                         <thead>
-                            <tr>
-                                <th>Judul</th>
-                                <th>Aksi</th>
+                            <tr style="background-color: #6c5ce7;">
+                                <th style="color: white;">Judul</th>
+                                <th style="color: white;">Aksi</th>
                             </tr>
                         </thead>
                         <tbody id="pub_api_table_body">

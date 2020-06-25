@@ -237,6 +237,25 @@ class PubTableController extends Controller
             return redirect()->back();
     }
 
+    public function delete($table_id){
+        $otherPub=PubTable::find($table_id);
+        $otherPub->delete();
+        $tableFiles=PubTableFiles::where('pub_table_id',$table_id)
+        ->where('type','pdf')
+        ->first();
+        if(!empty($tableFiles)){
+                        $isExists = Storage::exists('app/public/'.$tableFiles->filepath);
+                        /*if(File::exists(public_path('/'.$tableFiles->filepath)))
+                        {
+                         File::delete(public_path('/'.$tableFiles->filepath));
+                        }*/
+                        if($isExists){
+                            Storage::delete('app/public/'.$tableFiles->filepath);
+                        }
+        
+        }
+    }
+
 
     public function changeBabPubTableEvent(Request $request,$pub_id){
       
@@ -263,7 +282,7 @@ class PubTableController extends Controller
     public function tableDatabyBab($pub_id,$bab_num){
  
         if(!empty($bab_num)){
-          
+       
             if($bab_num==0){
              
                 $publikasi_table=PubTable::where('pub_tables.type','publikasi')
@@ -272,7 +291,7 @@ class PubTableController extends Controller
                 ->select('pub_tables.*','pub_tables.type AS types','pub_table_files.*','pub_tables.id AS id','pub_table_files.id AS file_id')
                 ->get();
     
-    //dd($publikasi_table);
+                    //dd($publikasi_table);
                 $dt=DataTables::of($publikasi_table)
                 ->addColumn('action',function($publikasi_table){
                     $id=$publikasi_table->id;
@@ -300,7 +319,7 @@ class PubTableController extends Controller
             }else{
                 $publikasi_table=PubTable::where('pub_tables.type','publikasi')
                 ->where('pub_tables.type_id',$pub_id)
-               
+                ->where('pub_tables.bab_num',$bab_num)
                 ->leftJoin('pub_table_files','pub_table_files.pub_table_id','=','pub_tables.id')
                 ->select('pub_tables.*','pub_tables.type AS types','pub_table_files.*','pub_tables.id AS id','pub_table_files.id AS file_id')
                 ->get();
@@ -309,10 +328,10 @@ class PubTableController extends Controller
                 $dt=DataTables::of($publikasi_table)
                 ->addColumn('action',function($publikasi_table){
                     $id=$publikasi_table->id;
-                    $delete_url="#";
+                    $delete_url=route('admin.pubTable_delete',[$id]);
                     
                    $update_button= '<a href="" class="edit_table_form text-decoration-none text-warning" data-id="'.$id.'"><i class="far fa-edit"></i></a>';
-                   $delete_button= '<a href="'.$delete_url.'" class="text-decoration-none text-danger"><i class="fas fa-trash-alt"></i></a>';
+                   $delete_button= '<a href="'.$delete_url.'" class="text-decoration-none text-danger deleteTable"><i class="fas fa-trash-alt"></i></a>';
                    return($update_button.$delete_button);
                 })
                 ->addColumn('judul_new',function($publikasi_table){
